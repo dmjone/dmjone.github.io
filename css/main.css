@@ -11,6 +11,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import "normalize.css";
+
 html {
   color: #222;
   font-size: 1em;
