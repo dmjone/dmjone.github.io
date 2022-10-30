@@ -276,6 +276,15 @@ body {
 header {
   background: #1e6c93;
   padding: 2rem;
+  color: white;
+}
+header h1{
+  font: Lato;
+  font-size: x-large;
+}
+header p {
+  font: 'Maven Pro', Verdena;
+  font-size: medium;
 }
 
 main div:nth-child(odd) {
@@ -283,6 +292,7 @@ main div:nth-child(odd) {
   place-items: center;
   padding: 1.5rem;
   text-align: justify;
+  color: white;
 }
 
 main div:nth-child(even) {
@@ -293,7 +303,7 @@ main div:nth-child(even) {
 }
 
 footer {
-  background: #f2f2f2;
+  background: silver;
   padding: 1.5rem;
   text-align: center;
 }
