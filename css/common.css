@@ -182,9 +182,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -195,6 +195,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -263,3 +264,39 @@ textarea {
   }
 }
 
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* etc */
+
+header {
+  background: #1e6c93;
+  padding: 1rem;
+}
+
+main div:nth-child(odd) {
+  background: #f2f2f2;
+  place-items: center;
+  padding: 2rem;
+}
+
+main div:nth-child(odd) {
+  background: #f2f2f2;
+  place-items: center;
+  padding: 2rem;
+}
+
+footer {
+  background: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+  position: absolute;
+}
+
+body {
+  font-family: 16px/1.4 'Lato', system-ui, sans-serif;
+}
