@@ -4,7 +4,7 @@
 <html lang="en">
     <!--<![endif]-->
 
-    <head>        
+    <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Gruppo|Lato:100,300,700|Roboto" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/common.css" />
-        
+
 
         <link rel="fluid-icon" href="https://dmj.one/images/common/logo.png">
         <link rel="shortcut icon" href="https://dmj.one/images/common/logo.png?v=2">
@@ -36,21 +36,21 @@
 
     <body>
         <header>
-                <h1>Header.com</h1>
+            <h1>Header.com</h1>
         </header>
-        
+
         <main>
             <article>
                 This is a test document.
             </article>
             Thi is a main content
-            
+
         </main>
-        
+
         <footer>
             <script>copyright();</script>>
         </footer>
-        
+
 
         <div id="cookie-notice" class="w-100 bg-dark text-white pt-3 px-4 pb-1 position-fixed"
             style="z-index: 1000; bottom: 0;">
@@ -59,7 +59,8 @@
                     <div class="col-sm-8 col-md-9">
                         <p class="p-2">This website uses cookies so that we can provide you with the best website
                             experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a
-                                href="/tos"><u>Terms and Conditions</a> and <a href="/privacy">Privacy Policy</u></a>.</p>
+                                href="/tos"><u>Terms and Conditions</a> and <a href="/privacy">Privacy Policy</u></a>.
+                        </p>
                     </div>
                     <div class="col-sm-4 col-md-3">
                         <a class="i-accept btn btn-primary m-2">I Accept</a>
@@ -67,6 +68,17 @@
                 </div>
             </div>
         </div>
+        <script>(function ($) {
+                $('.i-accept').on('click', function () {
+                    if (localStorage.noshow !== '1') {
+                        $('#cookie-notice').addClass('d-none');
+                        localStorage.noshow = '1';
+                    }
+                });
+                if (localStorage.noshow == '1') {
+                    $('#cookie-notice').addClass('d-none');
+                };
+            })(jQuery);</script>
         <!--[if IE]><div class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed" style="z-index: 1000; bottom: 0;"><p onClick="parentNode.remove()">Please use a modern browser for a better browsing experience. <span class="float-right">X</span></p></div><![endif]-->
         <script>//dcevar(notify_cookie);</script>
     </body>
