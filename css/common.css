@@ -280,11 +280,11 @@ header {
 }
 header h1{
   font: Lato;
-  font-size: x-large;
+  font-size: 6vw;
 }
 header p {
   font: 'Maven Pro', Verdena;
-  font-size: medium;
+  font-size: 2.5vw;
 }
 
 main article:nth-child(odd) {
