@@ -52,7 +52,7 @@
         </footer>
 
 
-        <div id="cookie-notice" class="w-100 bg-dark text-white pt-3 px-4 pb-1 position-fixed"
+        <!--<div id="cookie-notice" class="w-100 bg-dark text-white pt-3 px-4 pb-1 position-fixed"
             style="z-index: 1000; bottom: 0;">
             <div class="container p-2">
                 <div class="row">
@@ -80,7 +80,18 @@
                 };
             })(jQuery);</script>
         <!--[if IE]><div class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed" style="z-index: 1000; bottom: 0;"><p onClick="parentNode.remove()">Please use a modern browser for a better browsing experience. <span class="float-right">X</span></p></div><![endif]-->
-        <script>//dcevar(notify_cookie);</script>
+        <script>dcevar(notify_cookie);
+        (function ($) {
+                $('.i-accept').on('click', function () {
+                    if (localStorage.noshow !== '1') {
+                        $('#cookie-notice').addClass('d-none');
+                        localStorage.noshow = '1';
+                    }
+                });
+                if (localStorage.noshow == '1') {
+                    $('#cookie-notice').addClass('d-none');
+                };
+            })(jQuery);</script>
     </body>
 
 </html>
