@@ -287,15 +287,14 @@ header p {
   font-size: medium;
 }
 
-main div:nth-child(odd) {
+main article:nth-child(odd) {
   background: #f2f2f2;
   place-items: center;
   padding: 1.5rem;
   text-align: justify;
-  color: white;
 }
 
-main div:nth-child(even) {
+main article:nth-child(even) {
   background: #fdfdfd;
   place-items: center;
   padding: 1.5rem;
