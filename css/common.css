@@ -275,24 +275,24 @@ body {
 
 header {
   background: #1e6c93;
-  padding: 1rem;
-}
-
-main div:nth-child(odd) {
-  background: #f2f2f2;
-  place-items: center;
   padding: 2rem;
 }
 
 main div:nth-child(odd) {
   background: #f2f2f2;
   place-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+main div:nth-child(odd) {
+  background: #f2f2f2;
+  place-items: center;
+  padding: 1.5rem;
 }
 
 footer {
   background: #f2f2f2;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
