@@ -330,7 +330,15 @@ main h3 {
   font-family: Lato, sans-serif;
   color: #226e93;
 }
-
+.title {
+  font-family: Roboto;
+  font-size: xx-large;
+  padding: 4%;
+}
+.summary {
+  font-family: 'Maven Pro', verdana;;
+  font-size: 18px;
+}
 .syntax pre,
 .syntax code {
   font-family: Hack, monospace;
