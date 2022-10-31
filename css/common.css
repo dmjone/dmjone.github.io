@@ -280,11 +280,6 @@ p {
   font-weight: normal;
 }
 
-pre,
-code {
-  font-family: Hack, monospace;
-}
-
 /** Header **/
 header {
   background: #1e6c93;
@@ -315,6 +310,14 @@ main article:nth-child(even) {
   place-items: center;
   padding: 1.5rem;
   text-align: justify;
+}
+
+.c_code pre,
+code {
+  font-family: Hack, monospace;
+  margin-left: -120px;
+  margin-top: -20px;
+  margin-bottom: -40px;
 }
 
 /** Footer **/
