@@ -286,10 +286,12 @@ header {
   padding: 2rem;
   color: white;
 }
-header h1{
+
+header h1 {
   font-family: Lato, sans-serif;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
+
 header p {
   font-family: 'Maven Pro', verdena;
   font-size: 1.2vw;
@@ -297,13 +299,14 @@ header p {
 
 /** Main Content **/
 main article:nth-child(odd) {
-  background: #f2f2f2;
+  background: white;
   place-items: center;
   padding: 1.5rem;
   text-align: justify;
 }
+
 main article:nth-child(even) {
-  background: #fdfdfd;
+  background: #f2f2f2;
   place-items: center;
   padding: 1.5rem;
   text-align: justify;
@@ -317,12 +320,18 @@ footer {
 }
 
 /** Portrait Oriantation Devices **/
-@media only screen and (orientation: portrait) {
+@media only screen and (orientation: portrait),
+(max-width:632px) {
   header h1 {
-      font-size: 4vw;
-    }
-  
-    header p {
-      font-size: 2vw;
-    }
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  header button {
+    font-size: 18px;
+
+  }
 }
