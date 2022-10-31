@@ -272,20 +272,17 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  font-family: 16px/1.4 'Lato', system-ui, sans-serif;
+  font-family: 16px/1.5 'Lato', 'Maven Pro', Roboto, Verdana, system-ui, sans-serif;
 }
 
 p {
   text-align: justify;
-  color: #363b42;
   font-family: 'Maven Pro', verdana;
-  /*  font-size: 16px; */
   font-weight: normal;
 }
 
 h1 {
   font-family: Lato, sans-serif;
-  /*  font-size: 34px; */
 }
 
 pre,
@@ -325,7 +322,10 @@ main article:nth-child(even) {
 main h2 {
   font-family: Lato, sans-serif;
   color: #226e93;
-  /*  font-size: 25px; */
+}
+
+main p {
+  color: #363b42;
 }
 
 main h3 {
@@ -341,13 +341,11 @@ main article:first-child .title {
 
 main article:first-child .summary {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
   line-height: 1.5;
 }
 
 main article .notes {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
   line-height: 1.5;
   line-break: loose;
 }
@@ -362,7 +360,7 @@ main article .notes {
 
 /** Footer **/
 footer {
-  background: silver;
+  background: rgba(192, 192, 192, 0.637);
   padding: 1rem;
   text-align: center;
 }
@@ -370,13 +368,9 @@ footer {
 /** Portrait Oriantation Devices **/
 @media only screen and (orientation: portrait),
 (max-width:632px) {
-  header h1 {
-    /*    font-size: 34px; */
-  }
+  header h1 {}
 
-  header p {
-    /*    font-size: 16px; */
-  }
+  header p {}
 
   header button {
     /*    font-size: 14px; */
