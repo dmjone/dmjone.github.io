@@ -280,6 +280,11 @@ p {
   font-weight: normal;
 }
 
+pre,
+code {
+  font-family: Hack, monospace;
+}
+
 /** Header **/
 header {
   background: #1e6c93;
