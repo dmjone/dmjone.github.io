@@ -272,8 +272,11 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  text-align: justify;
   font-family: 16px/1.4 'Lato', system-ui, sans-serif;
+}
+
+p {
+  text-align: justify;
 }
 
 /** Header **/
