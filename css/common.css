@@ -288,10 +288,20 @@ h1 {
   font-size: 34px;
 }
 
+pre,
+code {
+  font-family: Hack, monospace;
+  padding-left: 2%;
+}
+
 /** Header **/
 header {
   background: #1e6c93;
   padding: 2rem;
+  color: white;
+}
+
+header p {
   color: white;
 }
 
@@ -315,6 +325,7 @@ main h2 {
   color: #226e93;
   font-size: 25px;
 }
+
 main h3 {
   font-family: Lato, sans-serif;
   color: #226e93;
