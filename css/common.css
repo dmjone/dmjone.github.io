@@ -344,7 +344,9 @@ main article:first-child p {
   line-height: 1.5;
 }
 
-main article p {
+main article p,
+ol,
+li {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   line-break: loose;
@@ -372,8 +374,5 @@ footer {
 
   header p {}
 
-  header button {
-    /*    font-size: 14px; */
-
-  }
+  header button {}
 }
