@@ -315,6 +315,10 @@ main h2 {
   color: #226e93;
   font-size: 25px;
 }
+main h3 {
+  font-family: Lato, sans-serif;
+  color: #226e93;
+}
 
 .syntax pre,
 .syntax code {
