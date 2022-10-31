@@ -306,20 +306,20 @@ header p {
 }
 
 /** Main Content **/
-main {
-  padding: 2rem;
-}
+main {}
 
 main article:nth-child(odd) {
   background: white;
   place-items: center;
   text-align: justify;
+  padding: 2rem;
 }
 
 main article:nth-child(even) {
   background: #f2f2f2;
   place-items: center;
   text-align: justify;
+  padding: 2rem;
 }
 
 main h2 {
@@ -334,8 +334,9 @@ main h3 {
 }
 
 main article:first-child .title {
-  font-family: Gruppo;
+  font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-large;
+  text-shadow: #999;
 }
 
 main article:first-child .summary {
