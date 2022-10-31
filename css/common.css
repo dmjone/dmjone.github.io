@@ -333,18 +333,18 @@ main h3 {
   color: #226e93;
 }
 
-main article:first-child .title {
+main article:first-child h2 {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-large;
   text-shadow: #999;
 }
 
-main article:first-child .summary {
+main article:first-child p {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
 }
 
-main article .notes {
+main article p {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   line-break: loose;
