@@ -265,13 +265,17 @@ textarea {
 }
 
 
+
+/* Custom CSS - From Scratch */
+
 body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
-
-/* etc */
+body {
+  font-family: 16px/1.4 'Lato', system-ui, sans-serif;
+}
 
 header {
   background: #1e6c93;
@@ -279,11 +283,11 @@ header {
   color: white;
 }
 header h1{
-  font: Lato;
+  font-family: Lato, sans-serif;
   font-size: 6vw;
 }
 header p {
-  font: 'Maven Pro', Verdena;
+  font-family: 'Maven Pro', verdena;
   font-size: 2.5vw;
 }
 
@@ -293,7 +297,6 @@ main article:nth-child(odd) {
   padding: 1.5rem;
   text-align: justify;
 }
-
 main article:nth-child(even) {
   background: #fdfdfd;
   place-items: center;
@@ -307,6 +310,12 @@ footer {
   text-align: center;
 }
 
-body {
-  font-family: 16px/1.4 'Lato', system-ui, sans-serif;
+@media only screen and (orientation: portrait) {
+  header h1 {
+      font-size: 10vw;
+    }
+  
+    header p {
+      font-size: 4.5vw;
+    }
 }
