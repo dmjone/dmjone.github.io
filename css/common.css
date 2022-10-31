@@ -330,15 +330,25 @@ main h3 {
   font-family: Lato, sans-serif;
   color: #226e93;
 }
-.title {
-  font-family: Roboto;
+
+main article:first-child .title {
+  font-family: Gruppo;
   font-size: xx-large;
-  padding: 4%;
 }
-.summary {
-  font-family: 'Maven Pro', verdana;;
+
+main article:first-child .summary {
+  font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
+  line-height: 1.5;
 }
+
+main article .notes {
+  font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  line-break: loose;
+}
+
 .syntax pre,
 .syntax code {
   font-family: Hack, monospace;
