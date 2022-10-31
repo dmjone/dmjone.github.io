@@ -323,15 +323,15 @@ footer {
 @media only screen and (orientation: portrait),
 (max-width:632px) {
   header h1 {
-    font-size: 24px;
+    font-size: 34px;
   }
 
   header p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   header button {
-    font-size: 18px;
+    font-size: 14px;
 
   }
 }
