@@ -277,6 +277,7 @@ body {
 
 p {
   text-align: justify;
+  font-weight: normal;
 }
 
 /** Header **/
@@ -291,7 +292,7 @@ header h1{
 }
 header p {
   font-family: 'Maven Pro', verdena;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 /** Main Content **/
