@@ -272,11 +272,11 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-}
-body {
+  text-align: justify;
   font-family: 16px/1.4 'Lato', system-ui, sans-serif;
 }
 
+/** Header **/
 header {
   background: #1e6c93;
   padding: 2rem;
@@ -291,6 +291,7 @@ header p {
   font-size: 2.5vw;
 }
 
+/** Main Content **/
 main article:nth-child(odd) {
   background: #f2f2f2;
   place-items: center;
@@ -304,12 +305,14 @@ main article:nth-child(even) {
   text-align: justify;
 }
 
+/** Footer **/
 footer {
   background: silver;
   padding: 1.5rem;
   text-align: center;
 }
 
+/** Portrait Oriantation Devices **/
 @media only screen and (orientation: portrait) {
   header h1 {
       font-size: 10vw;
