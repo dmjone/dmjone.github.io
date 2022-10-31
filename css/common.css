@@ -303,7 +303,16 @@ header p {
 }
 
 /** Main Content **/
-main {}
+main article:first-child h2 {
+  font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  text-shadow: #999;
+}
+
+main article:first-child p {
+  font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
 
 main article:nth-child(odd) {
   background: white;
@@ -319,29 +328,14 @@ main article:nth-child(even) {
   padding: 2rem;
 }
 
-main h2 {
-  font-family: Lato, sans-serif;
-  color: #226e93;
-}
-
-main p {
-  color: #363b42;
-}
-
-main h3 {
-  font-family: Lato, sans-serif;
-  color: #226e93;
-}
-
-main article:first-child h2 {
+main h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: xx-large;
-  text-shadow: #999;
-}
-
-main article:first-child p {
-  font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
+  color: #226e93;
 }
 
 main article p,
@@ -349,6 +343,7 @@ ol,
 li {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
+  color: #363b42;
   line-break: loose;
 }
 
