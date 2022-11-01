@@ -31,12 +31,12 @@ function header_author(teacher_init, author_init, include_bio) {
             break;
         case "rt":
             var prof = "Dr. Ravinder Thakur";
-            var prof_bio = "<p></p>";
+            var prof_bio = "<p>Dr. Ravinder Thakur is an assistant professor at Shoolini University.</p>";
             var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Dr.%20Ravinder%20Thakur.%20Please%20provide%20his%20contact%20details.%0AThanks";
             break;
         case "rw":
             var prof = "Rajesh Williams";
-            var prof_bio = "<p></p>";
+            var prof_bio = "<p>Rajesh Williams is an English Language professional from Faculty of Liberal Arts.</p>";
             var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Rajesh%20Williams.%20Please%20provide%20his%20contact%20details.%0AThanks";
             break;
         default:
