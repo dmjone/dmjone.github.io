@@ -43,7 +43,7 @@ function header_author(teacher_init, author_init) {
             break;
     }
     switch (author_init) {
-        case "dmj":
+        case "dm":
             var author = "Divya Mohan";
             var author_bio = "<p>Divya Mohan is a student from India currently pursuing his B. Tech in Computer Science and Engineering. This summary is designed to give the learners easy access to the learning techniques of the concepts in the simplest forms of chunks.</p>";
             var author_href = "mailto:contact@dmj.one";
@@ -57,13 +57,13 @@ function header_author(teacher_init, author_init) {
             break;
     }
 
-    var profname = "<strong>" + prof + "</strong>";
+    var profname = "<strong>" + prof + "</strong> ";
     var prof_link = '<a href="' + prof_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + prof + '" data-original-title="Get in touch with ' + prof + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
     
-    document.write("Summarized by " + authorname + author_link + "under the guidance of " + profname + prof_link + prof_bio + author_bio);
+    document.write("<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio);
 }
 
 /******** Body ***********/
