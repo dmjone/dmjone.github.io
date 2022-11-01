@@ -23,6 +23,14 @@ function dcevar(s) {
     var decoded = decodeURIComponent(t);
     document.write(decoded);
 }
+// For better compatiblity of vars and var usage spelling mistake
+function dcevars(s) {
+    var s1 = decodeURIComponent(s.substr(0, s.length - 1));
+    var t = '';
+    for (i = 0; i < s1.length; i++) t += String.fromCharCode(s1.charCodeAt(i) - s.substr(s.length - 1, 1));
+    var decoded = decodeURIComponent(t);
+    document.write(decoded);
+}
 
 
 //plugins.js code:
