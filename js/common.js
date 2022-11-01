@@ -12,7 +12,7 @@ hljs.highlightAll();
 /******** Header ***********/
 
 function header_author(author, href) {
-    var authorname = "<strong>" + author + "</strong>";
+    var authorname = "<strong>" + author + "</strong> ";
     var mail_link = '<a href="' + href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
     document.write(authorname + mail_link);
 }
