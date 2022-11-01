@@ -101,7 +101,7 @@ function header_author(teacher_init, author_init, include_bio, include_button) {
     if (!include_button || include_button == 0) {
         var button = "";
     }
-    course = "<h1>" + course + " (" + course_detail + ")";
+    course = "<h1>" + course + " (" + course_detail + ")</h2>";
     document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
 }
 
