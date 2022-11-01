@@ -11,7 +11,7 @@ hljs.highlightAll();
 
 /******** Header ***********/
 
-function header_author(teacher_init, author_init, inc_bio) {
+function header_author(teacher_init, author_init, include_bio) {
 //  get the actual author and professor name
     switch (teacher_init) {
         case "pv":
@@ -63,7 +63,7 @@ function header_author(teacher_init, author_init, inc_bio) {
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
     
-    if (inc_bio === "") {
+    if (include_bio === "") {
         var prof_bio = "";
         var author_bio = "";
     }
