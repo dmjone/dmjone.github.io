@@ -66,7 +66,7 @@ function header_author(teacher_init, author_init, include_bio) {
     if (!include_bio || include_bio.length === 0) {
         var prof_bio = "";
         var author_bio = "";
-        document.getElementsByClassName('header_csu1128_sub_sel_button').style.display = 'none';
+        $(".header_csu1128_sub_sel_button").hide();
     }
     document.write("<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio);
 }
