@@ -11,12 +11,18 @@ hljs.highlightAll();
 
 /******** Header ***********/
 
-function header_author(teacher_init, author_init, include_bio, include_button) {
-    /* USAGE - header_author(teacher_FL, author_FL, biblography, button)
+function header_author(include_course, is_lab, teacher_init, author_init, include_bio, include_button) {
+    /* USAGE - header_author(include_course_name, define_is_lab, teacher_FL, author_FL, biblography, button)
      * FL - First and Last Name initials 
-     * Example: header_author("pv", "dm", 0, 1) / header_author("bt", "vn", 1, 1) :: 1 - display | 0 - Not Display 
+     * Example: header_author(1, 0, "pv", "dm", 0, 1) / header_author(1, 0, "bt", "vn", 1, 1) :: 1 - display | 0 - Not Display 
     */
     //  get the actual author and professor name
+
+    if (is_lab == 1) {
+        var lab = " Lab";
+        var lab_code = "(P)";
+    }
+
     switch (teacher_init) {
         case "pv":
             var prof = "Dr. Pankaj Vaidya";
@@ -71,7 +77,7 @@ function header_author(teacher_init, author_init, include_bio, include_button) {
             break;
     }
 
-    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + ' Lab!">' + course + '(P)</button></a></div></div>';
+    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + lab + '!">' + course + lab_code +'</button></a></div></div>';
     var fsu930_button = "";
     var csu953_button = "";
 
@@ -101,7 +107,8 @@ function header_author(teacher_init, author_init, include_bio, include_button) {
     if (!include_button || include_button == 0) {
         var button = "";
     }
-    course = "<h1>" + course + " (" + course_detail + ")</h2>";
+
+    course = "<h1>" + course + lab_code + " (" + course_detail + lab + ")</h2>";
     document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
 }
 
