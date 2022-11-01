@@ -77,8 +77,8 @@ function dcevars(s) {
 /******** Footer ***********/
 var footer_all_rights = ' &#8226; All rights reserved';
 var footer_some_rights = ' &#8226; Some rights reserved';
-var footer_link_privacy = ' &#8226; <a href="/privacy/">Privacy</a>';
-var footer_link_tos = ' &#8226; <a href="/tos/">Terms and Condition</a>';
+var footer_link_privacy = ' &#8226; <a href="/privacy">Privacy</a>';
+var footer_link_tos = ' &#8226; <a href="/tos">Terms and Condition</a>';
 function copyright(rights) {
     if (rights == "all") {
         var rights = footer_all_rights;
