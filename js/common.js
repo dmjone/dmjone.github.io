@@ -63,12 +63,15 @@ function header_author(teacher_init, author_init, include_bio) {
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
+    var csu1128_button = '<div class="row"><div class="col"><a href="/csu1128/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="Logic Building with Computer Programming">CSU1128</button></a></div><div class="col"><a href="/csu1128p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="Logic Building with Computer Programming Lab!">CSU1128(P)</button></a></div></div>';
+
     if (!include_bio || include_bio.length === 0) {
         var prof_bio = "";
         var author_bio = "";
-        document.getElementById("header_csu1128_sub_sel_button").classList.add(".d-none");
+        var csu1128_button = "";
     }
-    document.write("<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio);
+
+    document.write("<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + csu1128_button);
 }
 
 /******** Body ***********/
