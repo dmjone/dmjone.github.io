@@ -11,10 +11,59 @@ hljs.highlightAll();
 
 /******** Header ***********/
 
-function header_author(author, href) {
+function header_author(teacher_init, author_init) {
+//  get the actual author and professor name
+    switch (teacher_init) {
+        case "pv":
+            var prof = "Dr. Pankaj Vaidya";
+            var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
+            var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+            break;
+        case "bt":
+            var prof = "Bharti Thakur";
+            var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
+            var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+            break;
+        case "pk":
+            var prof = "Dr. Pawan Kumar";
+            var prof_bio = "<p>Dr. Pawan Kumar is a assistant Professor at Shoolini University. He has more than 17 years of experience in teaching, research, and administration. He completed his Ph.D.in 2019 from Amity University, Noida with the collaboration of Punjab University, Chandigarh. He is currently working on Optical, Thermal and Electrical Properties of Chalcogenide Glasses/Thin Films.</p>";
+            var prof_href = "mailto:pawankumarsu783@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+            break;
+        case "rt":
+            var prof = "Dr. Ravinder Thakur";
+            var prof_bio = "<p></p>";
+            var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Dr.%20Ravinder%20Thakur.%20Please%20provide%20his%20contact%20details.%0AThanks";
+            break;
+        case "rw":
+            var prof = "Rajesh Williams";
+            var prof_bio = "<p></p>";
+            var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Rajesh%20Williams.%20Please%20provide%20his%20contact%20details.%0AThanks";
+            break;
+        default:
+            break;
+    }
+    switch (author_init) {
+        case "dmj":
+            var author = "Divya Mohan";
+            var author_bio = "<p>Divya Mohan is a student from India currently pursuing his B. Tech in Computer Science and Engineering. This summary is designed to give the learners easy access to the learning techniques of the concepts in the simplest forms of chunks.</p>";
+            var author_href = "mailto:contact@dmj.one";
+            break;
+        case "vp":
+            var author = "Vanshika Painuly";
+            var author_bio = "<p></p>";
+            var author_href = "mailto:vp@dmj.one";
+            break;
+        default:
+            break;
+    }
+
+    var profname = "<strong>" + prof + "</strong>";
+    var prof_link = '<a href="' + prof_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + prof + '" data-original-title="Get in touch with ' + prof + '"><i class="bi bi-envelope-plus text-light"></i></a>';
+
     var authorname = "<strong>" + author + "</strong> ";
-    var mail_link = '<a href="' + href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
-    document.write(authorname + mail_link);
+    var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
+    
+    document.write("Summarized by " + authorname + author_link + "under the guidance of " + profname + prof_link + prof_bio + author_bio);
 }
 
 /******** Body ***********/
