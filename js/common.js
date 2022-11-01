@@ -12,12 +12,15 @@ hljs.highlightAll();
 /******** Header ***********/
 
 function header_author(teacher_init, author_init, include_bio) {
+
     //  get the actual author and professor name
     switch (teacher_init) {
         case "pv":
             var prof = "Dr. Pankaj Vaidya";
             var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
             var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+            var course = "CSU1128";
+            var course_detail = "Logic Building with Computer Programming";
             break;
         case "bt":
             var prof = "Bharti Thakur";
@@ -57,21 +60,36 @@ function header_author(teacher_init, author_init, include_bio) {
             break;
     }
 
+    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + ' Lab!">' + course + '(P)</button></a></div></div>';
+    var fsu930_button = "";
+    var csu953_button = "";
+
+    switch (course) {
+        case "CSU1128":
+            var button = csu1128_button;
+            break;
+        case "FSU930":
+            var button = fsu930_button;
+            break;
+        case "CSU953":
+            var button = csu953_button;
+        default:
+            break;
+    }
+
     var profname = "<strong>" + prof + "</strong> ";
     var prof_link = '<a href="' + prof_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + prof + '" data-original-title="Get in touch with ' + prof + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
-    var csu1128_button = '<div class="row"><div class="col"><a href="/csu1128/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="Logic Building with Computer Programming">CSU1128</button></a></div><div class="col"><a href="/csu1128p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="Logic Building with Computer Programming Lab!">CSU1128(P)</button></a></div></div>';
-
     if (!include_bio || include_bio.length === 0) {
         var prof_bio = "";
         var author_bio = "";
-        var csu1128_button = "";
+        var button = "";
     }
 
-    document.write("<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + csu1128_button);
+    document.write("<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
 }
 
 /******** Body ***********/
