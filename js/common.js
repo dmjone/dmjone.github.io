@@ -29,21 +29,29 @@ function header_author(teacher_init, author_init, include_bio, include_button) {
             var prof = "Bharti Thakur";
             var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
             var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+            var course = "CSU953";
+            var course_detail = "Front End Development Lab";
             break;
         case "pk":
             var prof = "Dr. Pawan Kumar";
             var prof_bio = "<p>Dr. Pawan Kumar is a assistant Professor at Shoolini University. He has more than 17 years of experience in teaching, research, and administration. He completed his Ph.D.in 2019 from Amity University, Noida with the collaboration of Punjab University, Chandigarh. He is currently working on Optical, Thermal and Electrical Properties of Chalcogenide Glasses/Thin Films.</p>";
             var prof_href = "mailto:pawankumarsu783@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+            var course = "FSU930";
+            var course_detail = "Engineering Physics";
             break;
         case "rt":
             var prof = "Dr. Ravinder Thakur";
             var prof_bio = "<p>Dr. Ravinder Thakur is an assistant professor at Shoolini University.</p>";
             var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Dr.%20Ravinder%20Thakur.%20Please%20provide%20his%20contact%20details.%0AThanks";
+            var course = "CSU1128";
+            var course_detail = "Basic Mathematics";
             break;
         case "rw":
             var prof = "Rajesh Williams";
             var prof_bio = "<p>Rajesh Williams is an English Language professional from Faculty of Liberal Arts.</p>";
             var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Rajesh%20Williams.%20Please%20provide%20his%20contact%20details.%0AThanks";
+            var course = "CSU1128";
+            var course_detail = "Functional English - 1";
             break;
         default:
             break;
@@ -63,7 +71,7 @@ function header_author(teacher_init, author_init, include_bio, include_button) {
             break;
     }
 
-    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase(); + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase(); + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + ' Lab!">' + course + '(P)</button></a></div></div>';
+    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + ' Lab!">' + course + '(P)</button></a></div></div>';
     var fsu930_button = "";
     var csu953_button = "";
 
@@ -93,8 +101,8 @@ function header_author(teacher_init, author_init, include_bio, include_button) {
     if (!include_button || include_button == 0) {
         var button = "";
     }
-
-    document.write("<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
+    course = "<h1>" + course + " (" + course_detail + ")";
+    document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
 }
 
 /******** Body ***********/
