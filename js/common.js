@@ -13,7 +13,7 @@ hljs.highlightAll();
 
 function a_href(href, title) {
     var header_mail = '<a href="' + href + '" data-toggle="tooltip" data-placement="top" title="' + title + '" data-original-title="' + title + '"><i class="bi bi-envelope-plus text-light"></i></a>';
-    document.write += header_mail;
+    document.write(header_mail);
 }
 
 /******** Body ***********/
