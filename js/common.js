@@ -9,8 +9,17 @@ window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/
 hljs.highlightAll();
 
 // Footer Copyright
-function copyright() {
-    document.write('&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan');
+var footer_all_rights = ' &#8226; All rights reserved';
+var footer_some_rights = ' &#8226; Some rights reserved';
+var footer_link_privacy = ' &#8226; <a href="/privacy/">Privacy</a>';
+var footer_link_tos = ' &#8226; <a href="/tos/">Terms and Condition</a>';
+function copyright(rights) {
+    if (rights == "all") {
+        var rights = footer_all_rights;
+    } else if (rights == "some") {
+        var rights = footer_some_rights;
+    } else { rights = ""; }
+    document.write('&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos);
 }
 
 // Decode Encrypted Variable's - Call this function to decode variables.

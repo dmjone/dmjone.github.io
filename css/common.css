@@ -339,8 +339,8 @@ h6 {
 }
 
 main article p,
-ol,
-li {
+main article ol,
+main article li {
   font-family: 'Maven Pro', Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   color: #363b42;
