@@ -18,11 +18,6 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
     */
     //  get the actual author and professor name
 
-    if (is_lab == 1) {
-        var lab = " Lab";
-        var lab_code = "(P)";
-    }
-
     switch (teacher_init) {
         case "pv":
             var prof = "Dr. Pankaj Vaidya";
@@ -77,7 +72,12 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
             break;
     }
 
-    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + lab + '!">' + course + lab_code +'</button></a></div></div>';
+    if (is_lab == 1) {
+        var lab = " Lab";
+        var lab_code = "(P)";
+    }
+
+    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + lab + '!">' + course + lab_code + '</button></a></div></div>';
     var fsu930_button = "";
     var csu953_button = "";
 
