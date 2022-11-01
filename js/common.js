@@ -11,8 +11,11 @@ hljs.highlightAll();
 
 /******** Header ***********/
 
-function header_author(teacher_init, author_init, include_bio) {
-
+function header_author(teacher_init, author_init, include_bio, include_button) {
+    /* USAGE - header_author(teacher_FL, author_FL, biblography, button)
+     * FL - First and Last Name initials 
+     * Example: header_author("pv", "dm", 0, 1) / header_author("bt", "vn", 1, 1) :: 1 - display | 0 - Not Display 
+    */
     //  get the actual author and professor name
     switch (teacher_init) {
         case "pv":
@@ -60,7 +63,7 @@ function header_author(teacher_init, author_init, include_bio) {
             break;
     }
 
-    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + ' Lab!">' + course + '(P)</button></a></div></div>';
+    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase(); + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase(); + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + ' Lab!">' + course + '(P)</button></a></div></div>';
     var fsu930_button = "";
     var csu953_button = "";
 
@@ -83,9 +86,11 @@ function header_author(teacher_init, author_init, include_bio) {
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
-    if (!include_bio || include_bio.length === 0) {
+    if (!include_bio || include_bio == 0) {
         var prof_bio = "";
         var author_bio = "";
+    }
+    if (!include_button || include_button == 0) {
         var button = "";
     }
 
