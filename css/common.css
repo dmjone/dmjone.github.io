@@ -332,14 +332,14 @@ main li:nth-child(odd) {
   background: white;
   place-items: center;
   text-align: justify;
-  padding: 0.5rem;
+  padding: 30px;
 }
 
 main li:nth-child(even) {
   background: #f2f2f2;
   place-items: center;
   text-align: justify;
-  padding: 0.5rem;
+  padding: 30px;
 }
 
 main h1,
