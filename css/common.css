@@ -357,6 +357,7 @@ main article li {
 
 main article p .output {
   font-family: Hack, monospace;
+  color: auto;
 }
 
 /** Footer **/
