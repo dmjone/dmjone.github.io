@@ -325,7 +325,7 @@ main article:nth-child(even) {
   background: #f2f2f2;
   place-items: center;
   text-align: justify;
-  padding: 0.5rem;
+  padding: 2rem;
 }
 
 main li:nth-child(odd) {
@@ -339,7 +339,7 @@ main li:nth-child(even) {
   background: #f2f2f2;
   place-items: center;
   text-align: justify;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 main h1,
