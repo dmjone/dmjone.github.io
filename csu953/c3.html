@@ -10,10 +10,10 @@
         <link rel="preconnect" href="https://dmj.one">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <title>CSU1128 - CSE 2026</title>
-        <meta name="description" content="Current course of CSE for the session 2022 - 2026" />
+        <title>CSU953 LAB 3 - CSE 2026</title>
+        <meta name="description" content="Lab 3 of Front End Development Lab - CSE 2022 - 2026" />
 
-        <meta property="og:title" content="CSE 2026" />
+        <meta property="og:title" content="CSU953 LAB 3 - CSE 2026" />
         <meta property="og:description" content="Current course of CSE for the session 2022 - 2026" />
         <meta property="og:image" content="/logo.png" />
 
@@ -57,43 +57,56 @@
         <main>
             <article>
                 <h2>
-                    1. Write a program to print Hello World.
+                    2. Write a few lines with the use of tags sub, sup, text-align, address, and abbr.
                 </h2>
                 <p>
-                    This program will print a basic statement of Hello World to showcase the learnings in C
-                    language.
+                    This file will write a few lines with the use of tags.
                 </p>
             </article>
 
             <article>
-                <h3>
-                    Details:
-                </h3>
                 <p>
-                    C is a structured, procedural programming language that has been widely used both for operating
-                    systems and applications
-                    and that has had a wide following in the academic community. Many versions of UNIX-based
-                    operating systems are written
-                    in C. C has been standardized as part of the Portable Operating System Interface (POSIX). We are
-                    learning C as it will provide base for every and any language we want to learn later on.
+                    sub: Subscript moves the text down comparative to the normal text.
+                </p>
+                <p>
+                    sup: Superscript move the text up comparative to the normal text
+                </p>
+                <p>
+                    abbr: This is used to write an abbreviation of a content. 
+                </p>
+                <p>
+                    address: This tag is used to create a syntactical address in the file. 
+                </p>
+                <p>
+                    text-align: This is an inline style property which can be used to provide give the text a custom alignment.
                 </p>
                 <h6>
-                    Steps to write Hello World are:
+                    Hierachy / Place of writing the tags in order:
                 </h6>
                 <ol>
-                    <li>Declare preprocessor stdio.h</li>
-                    <li>Print Hello World.</li>
+                    <li>title is declared in the head of the html</li>
+                    <li>heading is decleared inside the body</li>
+                    <li>p is decleared inside the body</li>
+                    <li>bg-color is defined inline usder style property of the tag inside / in the body</li>
+                    <li>details is used to summarize a content under a dropdown carousal.</li>
                 </ol>
             </article>
 
             <article class="syntax">
                 <pre>
                     <code>
-                        #include &lt;stdio.h&gt;
-                        int main(){
-                            printf("Hello World");
-                            return 0;
-                        }
+                        &lt;!doctype html&gt;
+                            &lt;head&gt;
+                                &lt;title&gt;CSU953 LAB 3 - CSE 2026&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;p style="text-align:left"&gt;This paragraph with left aligned with &lt;sub&gt;subscript&lt;/sub&gt; and &lt;sup&gt;superscript&lt;sup&gt; text.&lt;/p&gt;
+                                &lt;address&gt;
+                                    &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; &lt;br /&gt;
+                                    The above address is abbreviated.
+                                &lt;/details&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
                     </code>
                 </pre>
             </article>
@@ -102,9 +115,14 @@
                 <h3>
                     Output:
                 </h3>
-                <code>
-                    Hello World
-                </code>
+                <p class="output">
+                    <p style="text-align:left">This paragraph with left aligned with <sub>subscript</sub> and
+                    <sup>superscript</sup> text.</p>
+                    <address>
+                    <abbr title="World Health Organization">WHO</abbr> <br />
+                    The above address is abbreviated.
+                    </details>
+                </p>
             </article>
         </main>
 
