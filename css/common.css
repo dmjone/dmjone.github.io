@@ -328,6 +328,20 @@ main article:nth-child(even) {
   padding: 2rem;
 }
 
+main li:nth-child(odd) {
+  background: white;
+  place-items: center;
+  text-align: justify;
+  padding: 2rem;
+}
+
+main li:nth-child(even) {
+  background: #f2f2f2;
+  place-items: center;
+  text-align: justify;
+  padding: 2rem;
+}
+
 main h1,
 h2,
 h3,
