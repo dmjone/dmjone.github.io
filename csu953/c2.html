@@ -10,10 +10,10 @@
         <link rel="preconnect" href="https://dmj.one">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <title>CSU1128 - CSE 2026</title>
-        <meta name="description" content="Current course of CSE for the session 2022 - 2026" />
+        <title>CSU953 LAB 2 - CSE 2026</title>
+        <meta name="description" content="Lab 2 of Front End Development Lab - CSE 2022 - 2026" />
 
-        <meta property="og:title" content="CSE 2026" />
+        <meta property="og:title" content="CSU953 LAB 2 - CSE 2026" />
         <meta property="og:description" content="Current course of CSE for the session 2022 - 2026" />
         <meta property="og:image" content="/logo.png" />
 
@@ -57,37 +57,64 @@
         <main>
             <article>
                 <h2>
-                    Front End Development lab
+                    1. With the use of tags p, heading, bg-color, and title to write a few lines.
                 </h2>
                 <p>
-                    This course tells us how to develop our skills in HTML, CSS, and JS.
+                    This program will print a basic statement of Hello World to showcase the learnings in C
+                    language.
                 </p>
             </article>
 
             <article>
                 <h3>
-                    Classes with its topics:
+                    details: The <details> tag specifies additional details that the user can open and close on demand.
                 </h3>
                 <p>
-                    These are the following classes which were held in the field of HTML, CSS, JS. 
+                    title: 
+                </p>
+                <p>
+                    heading: 
+                </p>
+                <p>
+                    p:  
+                </p>
+                
+                <p>
+                    bg-color: bg-color is an inline style property which can be used to provide background color the the tag described with.
                 </p>
                 <h6>
-                    Classes in accordance to the lab classes held:
+                    Hierachy / Place of writing the tags in order:
                 </h6>
                 <ol>
-                    <li><script>a_href("/csu953/c1", "Lab 1");</script> Lab 1</li>
-                    <li>Lab 2</li>
+                    <li>title is declared in the head of the html</li>
+                    <li>heading is decleared inside the body</li>
+                    <li>p is decleared inside the body</li>
+                    <li>bg-color is defined inline usder style property of the tag inside / in the body</li>
+                    <li>details is used to summarize a content under a dropdown carousal.</li>
                 </ol>
             </article>
 
             <article class="syntax">
                 <pre>
                     <code>
-                        #include &lt;stdio.h&gt;
-                        int main(){
-                            printf("Hello World");
-                            return 0;
-                        }
+                        <!doctype html>
+                            <head>
+                                <title>CSU953 LAB 2 - CSE 2026</title>
+                            </head>
+                            <body>
+                                <h1>H1</h1>
+                                <h2>H2</h2>
+                                <h3>H3</h3>
+                                <h4>H4</h4>
+                                <h5>H5</h5>
+                                <h6>H6</h6>
+                                <p style="background-color:grey">This is a paragraph with background color grey</p>
+                                <details>
+                                    <summary>This is the summary of the content</summary>
+                                    <p>This is the details of the summary.</p>
+                                </details>
+                            </body>
+                        </html>
                     </code>
                 </pre>
             </article>
@@ -96,9 +123,19 @@
                 <h3>
                     Output:
                 </h3>
-                <code>
-                    Hello World
-                </code>
+                <p class="output">
+                    <h1>H1</h1>
+                    <h2>H2</h2>
+                    <h3>H3</h3>
+                    <h4>H4</h4>
+                    <h5>H5</h5>
+                    <h6>H6</h6>
+                    <p style="background-color:grey">This is a paragraph with background color grey</p>
+                    <details>
+                        <summary>This is the summary of the content</summary>
+                        <p>This is the details of the summary.</p>
+                    </details>
+                </p>
             </article>
         </main>
 
