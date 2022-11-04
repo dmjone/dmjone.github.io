@@ -65,7 +65,7 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
             break;
         case "vp":
             var author = "Vanshika Painuly";
-            var author_bio = "<p></p>";
+            var author_bio = "<p>Vanshika Painuly is a brilliant student from Uttrakhand, India currently pursuing her B. Tech in Computer Science and Engineering. This course is designed to give the learners easy access to the learning techniques of the concepts in the simplest forms of chunks.</p>";
             var author_href = "mailto:vp@dmj.one";
             break;
         default:
@@ -81,15 +81,15 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
     }
 
     var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + lab + '!">' + course + '(P)</button></a></div></div>';
-    var fsu930_button = "";
+    var fsu030_button = "";
     var csu953_button = "";
 
     switch (course) {
         case "CSU1128":
             var button = csu1128_button;
             break;
-        case "FSU930":
-            var button = fsu930_button;
+        case "FSU030":
+            var button = fsu030_button;
             break;
         case "CSU953":
             var button = csu953_button;
