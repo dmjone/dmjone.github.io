@@ -27,7 +27,7 @@ function header_nav() {
     var nav_path = '<a href="/' + nav_folder + '"><i class="bi bi-journals text-light"></i></a>';
     var nav_file = '<a href="' + nav_filename + '"><i class="bi bi-journal-code text-light"></i></a>';
 
-    var list_start = '<nav aria-label="breadcrumb" class="navbar-brand text-light"><ol class="breadcrumb" style="margin-top:">';
+    var list_start = '<nav aria-label="breadcrumb" class="navbar-brand text-light"><ol class="breadcrumb" style="margin-top:revert">';
     var list_home = '<li class="breadcrumb-item">' + nav_home + '</li>';
     var list_path = '';
     var list_close = '</ol></nav>';
