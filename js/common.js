@@ -45,14 +45,15 @@ function header_nav() {
 
 
 
-function header_author(include_course, is_lab, teacher_init, author_init, include_bio, include_button) {
+function header_author(include_course, is_lab, author_init, include_bio, include_button) {
     /* USAGE - header_author(include_course_name, define_is_lab, teacher_FL, author_FL, biblography, button)
      * FL - First and Last Name initials 
      * Example: header_author(1, 0, "pv", "dm", 0, 1) / header_author(1, 0, "bt", "vn", 1, 1) :: 1 - display | 0 - Not Display 
     */
     //  get the actual author and professor name
 
-    switch (teacher_init) {
+    var folder = window.location.pathname.split("/")[1];
+    switch (folder) {
         case "csu1128":
             var prof = "Dr. Pankaj Vaidya";
             var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
