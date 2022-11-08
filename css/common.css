@@ -270,7 +270,7 @@ textarea {
 
 body {
   display: grid;
-  height: 100vh;
+  height: auto;
   grid-template-rows: auto 1fr auto;
   font-family: 16px/1.5 'Lato', 'Maven Pro', Roboto, Verdana, system-ui, sans-serif;
 }
