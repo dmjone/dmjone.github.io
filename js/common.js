@@ -30,7 +30,7 @@ function header_nav() {
     var list_start = '<nav aria-label="breadcrumb text-light"><ol class="breadcrumb">';
     var list_home = '<li class="breadcrumb-item">' + nav_home + '</li>';
     var list_path = '';
-    var list_close = '</ol></nav>';
+    var list_close = '</ol> | ';
 
     if (nav_folder) {
         var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
@@ -160,7 +160,7 @@ function header_author(include_course, is_lab, author_init, include_bio, include
         var button = "";
     }
 
-    course = "<h1>" + course + " (" + course_detail + ") <span>" + header_nav() + "</span></h2>";
+    course = "<h1>" + header_nav() + course + " (" + course_detail + ")</nav></h2>";
 
     document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
 }
