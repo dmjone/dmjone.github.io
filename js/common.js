@@ -12,6 +12,21 @@ hljs.highlightAll();
 /******** Header ***********/
 
 // Get current URL
+function header_nav() {
+    const url = new URL(window.location.href);
+    var url_filename = url.pathname.substring(url.lastIndexOf('/') + 1);
+
+    var nav_home = '<a href="' + url.hostname + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-house-fill text-light"></i></a>';
+    var nav_path = '<a href="' + url.pathname + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-journals text-light"></i></a>';
+    var nav_file = '<a href="' + url_filename + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-journal-code text-light"></i></a>';
+
+    var list_home = '<nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">' + nav_home + '</li>';
+    var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
+    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li></ol></nav>';
+    document.write(list_home + list_path + list_file);
+}
+
+
 
 function header_author(include_course, is_lab, teacher_init, author_init, include_bio, include_button) {
     /* USAGE - header_author(include_course_name, define_is_lab, teacher_FL, author_FL, biblography, button)
@@ -114,21 +129,6 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
     }
 
     course = "<h1>" + course + lab_code + " (" + course_detail + lab + ")</h2>";
-
-    function header_nav() {
-        var url = window.location.href;
-        var url_pathname = window.location.pathname;
-        var url_filename = url.substring(url.lastIndexOf('/') + 1);
-
-        var nav_home = '<a href="' + url + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-house-fill text-light"></i></a>';
-        var nav_path = '<a href="' + url_pathname + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-journals text-light"></i></a>';
-        var nav_file = '<a href="' + url_filename + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-journal-code text-light"></i></a>';
-
-        var list_home = '<nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">' + nav_home + '</li>';
-        var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
-        var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li></ol></nav>';
-        document.write(list_home + list_path + list_file);
-    }
 
     document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + header_nav());
 }
