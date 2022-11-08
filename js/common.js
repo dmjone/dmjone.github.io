@@ -66,7 +66,7 @@ function header_author(include_course, is_lab, author_init, include_bio, include
             var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
             var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
             var course = "CSU1128(P)";
-            var course_detail = "Logic Building with Computer Programming";
+            var course_detail = "Logic Building with Computer Programming Lab";
             break;
         case "csu953":
             var prof = "Dr. Bharti Thakur";
@@ -93,7 +93,7 @@ function header_author(include_course, is_lab, author_init, include_bio, include
             var prof = "Rajesh Williams";
             var prof_bio = "<p>Rajesh Williams is an English Language professional from Faculty of Liberal Arts.</p>";
             var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Rajesh%20Williams.%20Please%20provide%20his%20contact%20details.%0AThanks";
-            var course = "CSU1128";
+            var course = "CSU730";
             var course_detail = "Functional English - 1";
             break;
         default:
@@ -122,13 +122,22 @@ function header_author(include_course, is_lab, author_init, include_bio, include
         var lab_code = "";
     }
 
-    var csu1128_button = '<div class="row"><div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div><div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + lab + '!">' + course + '(P)</button></a></div></div>';
+    var row_button_start = '<div class="row" style="padding-bottom:30px;">';
+    var row_button_end = "</div>";
+    // Just write the content in the vars
+
+    var csu1128_button = '<div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div>';
+    var csu1128p_button = '<div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '!">' + course + '(P)</button></a></div>';
     var fsu030_button = "";
     var csu953_button = "";
 
+
     switch (course) {
-        case "CSU1128" || "CSU1128(P)":
-            var button = csu1128_button;
+        case "CSU1128":
+            var button = row_button_start + csu1128_button + csu1128p_button + row_button_end;
+            break;
+        case "CSU1128(P)":
+            var button = row_button_start + csu1128_button + csu1128p_button + row_button_end;
             break;
         case "FSU030":
             var button = fsu030_button;
@@ -153,7 +162,7 @@ function header_author(include_course, is_lab, author_init, include_bio, include
         var button = "";
     }
 
-    course = "<h1>" + course + lab_code + " (" + course_detail + lab + ")</h2>";
+    course = "<h1>" + course + " (" + course_detail + ")</h2>";
 
     document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + header_nav());
 }
