@@ -28,20 +28,17 @@ function header_nav() {
     var nav_file = '<a href="' + nav_filename + '"><i class="bi bi-journal-code text-light"></i></a>';
 
     var list_start = '<nav aria-label="breadcrumb text-light"><ol class="breadcrumb">';
-
-    //    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
+    var list_home = '<li class="breadcrumb-item">' + nav_home + '</li>';
+    var list_path = '';
     var list_close = '</ol></nav>';
 
-    if (!nav_folder) {
-        var list_path = '<li class="breadcrumb-item">' + nav_home + '</li>';
-    } else {
-        if (nav_filename) {
-            var list_path = '<li class="breadcrumb-item">' + nav_path + '</li ><li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
-        }
+    if (nav_folder) {
         var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
     }
-
-    return (list_start + list_path + list_close);
+    if (nav_filename) {
+        var list_path = '<li class="breadcrumb-item">' + nav_path + '</li><li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
+    }
+    return (list_start + list_home + list_path + list_close);
 }
 
 
