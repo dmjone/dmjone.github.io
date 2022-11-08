@@ -11,6 +11,13 @@ hljs.highlightAll();
 
 /******** Header ***********/
 
+// Get current URL
+
+var url = window.location.pathname;
+// var pathname = new URL(url).pathname;
+
+console.log(url);
+
 function header_author(include_course, is_lab, teacher_init, author_init, include_bio, include_button) {
     /* USAGE - header_author(include_course_name, define_is_lab, teacher_FL, author_FL, biblography, button)
      * FL - First and Last Name initials 
@@ -65,7 +72,7 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
             break;
         case "vp":
             var author = "Vanshika Painuly";
-            var author_bio = "<p>Vanshika Painuly is a brilliant student from Uttrakhand, India currently pursuing her B. Tech in Computer Science and Engineering. This course is designed to give the learners easy access to the learning techniques of the concepts in the simplest forms of chunks.</p>";
+            var author_bio = "<p>Vanshika Painuly is a student from Uttrakhand, India currently pursuing her B. Tech in Computer Science and Engineering. This summary is designed to give the learners easy access to the learning techniques of the concepts in the simplest forms of chunks.</p>";
             var author_href = "mailto:vp@dmj.one";
             break;
         default:
