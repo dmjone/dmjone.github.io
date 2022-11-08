@@ -34,7 +34,7 @@ function header_nav() {
     if (list_file == "/") {
         list_file = "";
     }
-    if (list_path.trim().length === 0) {
+    if (list_path == "/") {
         list_path = "";
     }
 
