@@ -33,7 +33,7 @@ function header_nav() {
     var list_close = '</ol></nav>';
 
     if (nav_filename) {
-        list_path += '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
+        var list_path = '<li class="breadcrumb-item">' + nav_path + '</li ><li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
     } else {
         var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
     }
