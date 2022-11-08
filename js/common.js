@@ -17,7 +17,7 @@ function header_nav() {
     var nav_course = url.pathname.split("/")[1];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
-    var navv = window.location.href.pathname.split(" /")[1];
+    var navv = window.location.pathname.split(" /")[1];
     console.log(url.hostname);
     console.log(nav_course);
     console.log(nav_filename);
