@@ -160,9 +160,9 @@ function header_author(include_course, is_lab, author_init, include_bio, include
         var button = "";
     }
 
-    course = "<h1>" + header_nav() + course + " (" + course_detail + ")</h2>";
+    course = "<h1>" + course + " (" + course_detail + ")</h2>";
 
-    document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
+    document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + header_nav());
 }
 
 /******** Body ***********/
