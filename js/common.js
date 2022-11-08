@@ -14,7 +14,7 @@ hljs.highlightAll();
 // Get current URL
 function header_nav() {
     const url = new URL(window.location.href);
-    var url_filename = url.pathname.substring(url.lastIndexOf('/') + 1);
+    var url_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
     var nav_home = '<a href="' + url.hostname + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-house-fill text-light"></i></a>';
     var nav_path = '<a href="' + url.pathname + '" data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-journals text-light"></i></a>';
