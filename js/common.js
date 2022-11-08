@@ -41,7 +41,7 @@ function header_nav() {
         var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
     }
 
-    return (list_start + list_home + list_path + list_close);
+    return (list_start + list_path + list_close);
 }
 
 
