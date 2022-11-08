@@ -31,7 +31,7 @@ function header_nav() {
     var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
     var list_close = '</ol></nav>';
 
-    if (list_file.trim().length === 0) {
+    if (list_file == "/") {
         list_file = "";
     }
     if (list_path.trim().length === 0) {
