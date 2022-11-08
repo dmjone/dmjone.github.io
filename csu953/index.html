@@ -55,28 +55,37 @@
     </head>
 
     <body>
-        <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navbar-expand-lg">
-
-            <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none"><a href="/"
-                    data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i
-                        class="bi bi-house-fill text-light"></i></a>
-            </div>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">FSU030</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">CSU953</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">CSU1128</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">CSU1128(P)</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">CSU951</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">CSU730</a></li>
-            </ul>
-
-            <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
-            </div>
-        </div>
         <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
             <script>
                 header_author(1, 0, "dm", 1, 1);
             </script>
