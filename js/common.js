@@ -60,7 +60,7 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
             var course = "CSU1128";
             var course_detail = "Logic Building with Computer Programming";
             break;
-        case "bt":
+        case "csu953":
             var prof = "Dr. Bharti Thakur";
             var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
             var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
