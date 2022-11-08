@@ -41,6 +41,9 @@ function header_nav() {
     return (list_start + list_home + list_path + list_close);
 }
 
+function navbar() {
+    var nav = '';
+}
 
 
 function header_author(include_course, is_lab, author_init, include_bio, include_button) {
