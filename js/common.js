@@ -23,7 +23,8 @@ function header_nav() {
 
     var list_home = '<nav aria-label="breadcrumb"><ol class="breadcrumbs"><li class="breadcrumb-item">' + nav_home + '</li>';
     var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
-    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li></ol></nav>';
+    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
+    var list_close = '</ol></nav>';
 
     if (nav_filename == "/") {
         list_path = "";
@@ -33,7 +34,7 @@ function header_nav() {
         list_file = "";
     }
 
-    return (list_home + list_path + list_file);
+    return (list_home + list_path + list_file + list_close);
 }
 
 
