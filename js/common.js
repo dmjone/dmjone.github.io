@@ -29,15 +29,13 @@ function header_nav() {
 
     var list_start = '<nav aria-label="breadcrumb text-light"><ol class="breadcrumb">';
     var list_home = '<li class="breadcrumb-item">' + nav_home + '</li>';
-    var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
     //    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
     var list_close = '</ol></nav>';
 
-    if (!nav_filename) {
+    if (nav_filename) {
         list_path += '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
-    }
-    if (!nav_folder) {
-        list_path = "";
+    } else {
+        var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
     }
 
     return (list_start + list_home + list_path + list_close);
