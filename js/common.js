@@ -53,7 +53,7 @@ function header_author(include_course, is_lab, teacher_init, author_init, includ
     //  get the actual author and professor name
 
     switch (teacher_init) {
-        case "pv":
+        case "csu1128":
             var prof = "Dr. Pankaj Vaidya";
             var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
             var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
