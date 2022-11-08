@@ -59,33 +59,36 @@
             <script>
                 header_author(1, 0, "dm", 1, 1);
             </script>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Fixed navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <div class="col-lg-4">
+                        <nav class="site-navigation text-right ml-auto " role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                                <li><a href="project.html" class="nav-link">Projects</a></li>
+                                <li><a href="services.html" class="nav-link">Services</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="site-logo">
+                            <a href="index.html">Brand</a>
+                        </div>
+                        <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#"
+                                class="site-menu-toggle py-5 js-menu-toggle text-black"><span
+                                    class="icon-menu h3 text-black"></span></a></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <nav class="site-navigation text-left mr-auto " role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                                <li><a href="about.html" class="nav-link">About</a></li>
+                                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </nav>
+            </div>
         </header>
 
         <main>
