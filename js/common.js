@@ -30,17 +30,17 @@ function header_nav() {
     var list_start = '<nav aria-label="breadcrumb text-light"><ol class="breadcrumb">';
     var list_home = '<li class="breadcrumb-item">' + nav_home + '</li>';
     var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
-    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
+    //    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
     var list_close = '</ol></nav>';
 
-    if (list_file == "/") {
-        list_file = "";
+    if (!nav_filename) {
+        list_path += '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
     }
-    if (list_path == "/") {
+    if (!nav_folder) {
         list_path = "";
     }
 
-    return (list_start + list_home + list_path + list_file + list_close);
+    return (list_start + list_home + list_path + list_close);
 }
 
 
