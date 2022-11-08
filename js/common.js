@@ -28,13 +28,16 @@ function header_nav() {
     var nav_file = '<a href="' + nav_filename + '"><i class="bi bi-journal-code text-light"></i></a>';
 
     var list_start = '<nav aria-label="breadcrumb text-light"><ol class="breadcrumb">';
-    var list_home = '<li class="breadcrumb-item">' + nav_home + '</li>';
+
     //    var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
     var list_close = '</ol></nav>';
 
-    if (nav_filename) {
-        var list_path = '<li class="breadcrumb-item">' + nav_path + '</li ><li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
+    if (!nav_folder) {
+        var list_path = '<li class="breadcrumb-item">' + nav_home + '</li>';
     } else {
+        if (nav_filename) {
+            var list_path = '<li class="breadcrumb-item">' + nav_path + '</li ><li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li>';
+        }
         var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
     }
 
@@ -160,9 +163,9 @@ function header_author(include_course, is_lab, author_init, include_bio, include
         var button = "";
     }
 
-    course = "<h1>" + course + " (" + course_detail + ")</h2>";
+    course = "<h1>" + course + " (" + course_detail + ")" + header_nav() + "</h2>";
 
-    document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + header_nav());
+    document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
 }
 
 /******** Body ***********/
