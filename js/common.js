@@ -21,9 +21,18 @@ function header_nav() {
     var nav_path = '<a href="/' + nav_course + '"><i class="bi bi-journals text-light"></i></a>';
     var nav_file = '<a href="' + nav_filename + '"><i class="bi bi-journal-code text-light"></i></a>';
 
-    var list_home = '<nav aria-label="breadcrumb"><ol class="breadcrumb text-light"><li class="breadcrumb-item">' + nav_home + '</li>';
+    var list_home = '<nav aria-label="breadcrumb"><ol class="breadcrumbs"><li class="breadcrumb-item">' + nav_home + '</li>';
     var list_path = '<li class="breadcrumb-item">' + nav_path + '</li >';
     var list_file = '<li class="breadcrumb-item active" aria-current="page">' + nav_file + '</li></ol></nav>';
+
+    if (nav_filename == "/") {
+        list_path = "";
+    }
+
+    if (nav_course == "/") {
+        list_file = "";
+    }
+
     return (list_home + list_path + list_file);
 }
 
