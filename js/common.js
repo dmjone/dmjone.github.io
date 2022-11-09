@@ -103,8 +103,7 @@ function header_nav() {
 }
 
 function header_navbar() {
-    var nav = `<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mw-100 px-3 py-3">
-            <div class="container-fluid">
+    var nav = `<div class="container-fluid">
                 <script>document.write(header_nav())</script>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
                     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,8 +135,7 @@ function header_navbar() {
                                             <button class="btn btn-outline-light" type="submit">Search</button>
                                         </form> -->
                 </div>
-            </div>
-        </nav>`;
+            </div>`;
     return nav;
 }
 
@@ -153,7 +151,7 @@ function header_author(author_init, include_bio, include_button) {
     var file = window.location.pathname.split("/")[2];
     console.log(folder.length + folder);
     console.log(file.length + file);
-    
+
     switch (folder) {
         case "csu1128":
             var prof = "Dr. Pankaj Vaidya";
