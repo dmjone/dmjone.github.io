@@ -26,7 +26,7 @@ function include_body_js(src, hash, mode) { // Include script / js at the end of
     if (hash) { script.setAttribute("integrity", hash); }
     if (mode) { script.setAttribute("crossorigin", "anonymous"); }
     if (mode) { script.setAttribute("referrerpolicy", "no-referrer"); }
-    return document.body.appendChild(script);
+    return document.appendChild(script);
 }
 
 let run_once_counter = 1;
@@ -128,7 +128,7 @@ function header_navbar() {
                                         </form> -->
                 </div>
             </div>`;
-    return nav;
+    return document.write(nav);
 }
 
 
