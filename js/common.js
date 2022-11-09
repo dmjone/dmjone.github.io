@@ -46,12 +46,9 @@ if (counter == 1) {
             include_head_link("stylesheet", "/css/common.css");
 
             include_head_js("/js/var.js");
-            /* jquery */
-            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js", "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==", "async");
-            /* bootstrap bundle*/
-            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async");
-            /* highlight.js */
-            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "defer");
+            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js", "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==", "async"); /* jquery */
+            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async"); /* bootstrap bundle*/
+            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "defer"); /* highlight.js */
 
             include_body_js("/js/common.js");
             counter++;
@@ -105,12 +102,47 @@ function header_nav() {
     return (list_start + list_home + list_path + list_close);
 }
 
-function navbar() {
-    var nav = ``;
+function header_navbar() {
+    var nav = `<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mw-100 px-3 py-3">
+            <div class="container-fluid">
+                <script>document.write(header_nav())</script>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/csu953">CSU953</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/csu1128">CSU1128</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/csu1128p">CSU1128(P)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fsu030">FSU030</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/csu730">CSU730</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/csu951">CSU951</a>
+                        </li>
+                    </ul>
+                    <!---  <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                            <button class="btn btn-outline-light" type="submit">Search</button>
+                                        </form> -->
+                </div>
+            </div>
+        </nav>`;
+    return nav;
 }
 
 
-function header_author(include_course, is_lab, author_init, include_bio, include_button) {
+function header_author(author_init, include_bio, include_button) {
     /* USAGE - header_author(include_course_name, define_is_lab, teacher_FL, author_FL, biblography, button)
      * FL - First and Last Name initials 
      * Example: header_author(1, 0, "pv", "dm", 0, 1) / header_author(1, 0, "bt", "vn", 1, 1) :: 1 - display | 0 - Not Display 
@@ -118,6 +150,10 @@ function header_author(include_course, is_lab, author_init, include_bio, include
     //  get the actual author and professor name
 
     var folder = window.location.pathname.split("/")[1];
+    var file = window.location.pathname.split("/")[2];
+    console.log(folder.length + folder);
+    console.log(file.length + file);
+    
     switch (folder) {
         case "csu1128":
             var prof = "Dr. Pankaj Vaidya";
@@ -179,18 +215,9 @@ function header_author(include_course, is_lab, author_init, include_bio, include
             break;
     }
 
-    if (is_lab == 1) {
-        var lab = " Lab";
-        var lab_code = "(P)";
-    } else {
-        var lab = "";
-        var lab_code = "";
-    }
-
     var row_button_start = '<div class="row" style="padding-bottom:30px;">';
     var row_button_end = "</div>";
     // Just write the content in the vars
-
     var csu1128_button = '<div class="col"><a href="/' + course.toLowerCase() + '/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '">' + course + '</button></a></div>';
     var csu1128p_button = '<div class="col"><a href="/' + course.toLowerCase() + 'p/"><button type="button" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="' + course_detail + '!">' + course + '(P)</button></a></div>';
     var fsu030_button = "";
@@ -205,7 +232,7 @@ function header_author(include_course, is_lab, author_init, include_bio, include
             var button = row_button_start + csu1128_button + csu1128p_button + row_button_end;
             break;
         case "FSU030":
-            var button = fsu030_button;
+            var button = row_button_start + fsu030_button + row_button_end;
             break;
         case "CSU953":
             var button = csu953_button;
@@ -229,7 +256,7 @@ function header_author(include_course, is_lab, author_init, include_bio, include
 
     course = "<h1>" + course + " (" + course_detail + ")</h2>";
 
-    document.write(course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button);
+    document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>");
 }
 
 /******** Body ***********/
