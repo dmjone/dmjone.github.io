@@ -149,6 +149,9 @@ function header_author(author_init) {
             var author_href = "mailto:vp@dmj.one";
             break;
         default:
+            var author = "Divya Mohan";
+            var author_bio = "<p>Divya Mohan is a student from India currently pursuing his B. Tech in Computer Science and Engineering. This summary is designed to give the learners easy access to the learning techniques of the concepts in the simplest forms of chunks.</p>";
+            var author_href = "mailto:contact@dmj.one";
             break;
     }
 
