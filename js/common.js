@@ -45,7 +45,7 @@ function run_once() {
     include_head_js("/js/var.js");
     include_head_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js", "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==", "async"); /* jquery */
     include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async"); /* bootstrap bundle*/
-    include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ=="); /* highlight.js */
+    include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "async"); /* highlight.js */
 
     include_body_js("/js/common.js");
     counter++;
@@ -237,7 +237,7 @@ function header_author(author_init) {
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
-    if (!file) {
+    if (file) {
         var prof_bio = "";
         var author_bio = "";
     }
