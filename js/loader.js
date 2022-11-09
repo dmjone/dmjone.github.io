@@ -43,6 +43,6 @@ function run_once() {
     include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async"); /* bootstrap bundle*/
     include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "async"); /* highlight.js */
 
-    include_body_js("/js/common.js");
+//    include_body_js("/js/common.js");
 }
 run_once();
