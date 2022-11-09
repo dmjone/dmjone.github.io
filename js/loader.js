@@ -22,7 +22,7 @@ function include_body_js(src, hash, mode) { // Include script / js at the end of
     if (hash) { script.setAttribute("integrity", hash); }
     if (mode) { script.setAttribute("crossorigin", "anonymous"); }
     if (mode) { script.setAttribute("referrerpolicy", "no-referrer"); }
-    return document.body.appendChild(script);
+    return document.appendChild(script);
 }
 
 function run_once() {
@@ -36,13 +36,14 @@ function run_once() {
     include_head_link("stylesheet", "https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css");
     include_head_link("stylesheet", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs.min.css");
     include_head_link("stylesheet", "/css/common.css");
-
-    include_head_js("/js/var.js");
-    include_head_js("/js/common.js");
-    include_head_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js", "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==", "async"); /* jquery */
-    include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async"); /* bootstrap bundle*/
-    include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "async"); /* highlight.js */
-
-//    include_body_js("/js/common.js");
+    /*
+        include_head_js("/js/var.js");
+        include_head_js("/js/common.js");
+        include_head_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js", "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==", "async"); /* jquery *
+        include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async"); /* bootstrap bundle*
+        include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "async"); /* highlight.js *
+    
+        include_body_js("/js/common.js");
+    */
 }
 run_once();
