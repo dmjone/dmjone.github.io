@@ -42,7 +42,8 @@ function header_nav() {
 }
 
 function header_navbar() {
-    var nav = `<div class="container-fluid">
+    var nav = `<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mw-100 px-3 py-3">
+                <div class="container-fluid">
                 <script>document.write(header_nav())</script>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
                     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +75,8 @@ function header_navbar() {
                                             <button class="btn btn-outline-light" type="submit">Search</button>
                                         </form> -->
                 </div>
-            </div>`;
+            </div>
+        </nav>`;
     return document.write(nav);
 }
 
@@ -194,7 +196,7 @@ function header_author(author_init) {
 
     course = "<h1>" + course + " (" + course_detail + ")</h2>";
 
-    document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>");
+    document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>" + header_navbar());
 }
 
 /******** Body ***********/
