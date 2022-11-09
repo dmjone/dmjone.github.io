@@ -77,7 +77,7 @@ function header_navbar() {
                 </div>
             </div>
         </nav>`;
-    return document.write(nav);
+    return nav;
 }
 
 
