@@ -11,12 +11,16 @@ hljs.highlightAll();
 
 /******** Header ***********/
 
-function app_sc() {
-    var text2 = '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity = "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
-    document.body.append(text2);
-    document.head.append(text2);
+function include_head_link(rel, href) {
+    var link = document.createElement('link');
+    link.setAttribute("rel", rel);
+    link.setAttribute("href", href);
+    document.head.appendChild(link);
 }
-app_sc();
+include_head_link("fluid-icon", "https://dmj.one/images/common/logo.png");
+include_head_link("shortcut icon", "https://dmj.one/images/common/logo.png?v=2");
+include_head_link("apple-touch-icon", "https://dmj.one/images/common/logo.png");
+
 
 // Get current URL
 function header_nav() {
