@@ -187,7 +187,7 @@ function header_author(author_init) {
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
-    if (file.length == 0) {
+    if (file.length != 0) {
         var prof_bio = "";
         var author_bio = "";
     }
