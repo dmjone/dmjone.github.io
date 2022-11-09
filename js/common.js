@@ -3,7 +3,7 @@
  */
 
 let counter = 1;
-
+console.log(counter); // debug 
 
 function loadframework() {
     function include_head_link(rel, href) { // Include Link in the head tag.
@@ -139,7 +139,7 @@ function header_navbar() {
 }
 
 
-function header_author(author_init, include_bio, include_button) {
+function header_author(author_init) {
     /* USAGE - header_author(include_course_name, define_is_lab, teacher_FL, author_FL, biblography, button)
      * FL - First and Last Name initials 
      * Example: header_author(1, 0, "pv", "dm", 0, 1) / header_author(1, 0, "bt", "vn", 1, 1) :: 1 - display | 0 - Not Display 
@@ -232,8 +232,9 @@ function header_author(author_init, include_bio, include_button) {
             var button = row_button_start + fsu030_button + row_button_end;
             break;
         case "CSU953":
-            var button = csu953_button;
+            var button = row_button_start + csu953_button + row_button_end;
         default:
+            var button = "";
             break;
     }
 
@@ -243,12 +244,9 @@ function header_author(author_init, include_bio, include_button) {
     var authorname = "<strong>" + author + "</strong> ";
     var author_link = '<a href="' + author_href + '" data-toggle="tooltip" data-placement="top" title="Get in touch with ' + author + '" data-original-title="Get in touch with ' + author + '"><i class="bi bi-envelope-plus text-light"></i></a>';
 
-    if (!include_bio || include_bio == 0) {
+    if (!file) {
         var prof_bio = "";
         var author_bio = "";
-    }
-    if (!include_button || include_button == 0) {
-        var button = "";
     }
 
     course = "<h1>" + course + " (" + course_detail + ")</h2>";
