@@ -4,36 +4,35 @@
 
 let counter = 1;
 
-function loadframework() {
+if (counter == 1) {
+    function loadframework() {
+        function include_head_link(rel, href) { // Include Link in the head tag.
+            var link = document.createElement('link');
+            link.setAttribute("rel", rel);
+            link.setAttribute("href", href);
+            return document.head.appendChild(link);
+        }
+        function include_head_js(src, hash, mode) { // Include script / js at the end of the head tag. 
+            var script = document.createElement('script');
+            if (mode == "async") { script.async = true; }
+            if (mode == "defer") { script.defer = true; }
+            script.src = src;
+            if (hash) { script.setAttribute("integrity", hash); }
+            if (mode) { script.setAttribute("crossorigin", "anonymous"); }
+            if (mode) { script.setAttribute("referrerpolicy", "no-referrer"); }
+            return document.head.appendChild(script);
+        }
+        function include_body_js(src, hash, mode) { // Include script / js at the end of the body tag.
+            var script = document.createElement('script');
+            if (mode == "async") { script.async = true; }
+            if (mode == "defer") { script.defer = true; }
+            script.src = src;
+            if (hash) { script.setAttribute("integrity", hash); }
+            if (mode) { script.setAttribute("crossorigin", "anonymous"); }
+            if (mode) { script.setAttribute("referrerpolicy", "no-referrer"); }
+            return document.body.appendChild(script);
+        }
 
-    function include_head_link(rel, href) { // Include Link in the head tag.
-        var link = document.createElement('link');
-        link.setAttribute("rel", rel);
-        link.setAttribute("href", href);
-        return document.head.appendChild(link);
-    }
-    function include_head_js(src, hash, mode) { // Include script / js at the end of the head tag. 
-        var script = document.createElement('script');
-        if (mode == "async") { script.async = true; }
-        if (mode == "defer") { script.defer = true; }
-        script.src = src;
-        if (hash) { script.setAttribute("integrity", hash); }
-        if (mode) { script.setAttribute("crossorigin", "anonymous"); }
-        if (mode) { script.setAttribute("referrerpolicy", "no-referrer"); }
-        return document.head.appendChild(script);
-    }
-    function include_body_js(src, hash, mode) { // Include script / js at the end of the body tag.
-        var script = document.createElement('script');
-        if (mode == "async") { script.async = true; }
-        if (mode == "defer") { script.defer = true; }
-        script.src = src;
-        if (hash) { script.setAttribute("integrity", hash); }
-        if (mode) { script.setAttribute("crossorigin", "anonymous"); }
-        if (mode) { script.setAttribute("referrerpolicy", "no-referrer"); }
-        return document.body.appendChild(script);
-    }
-
-    if (counter == 1) {
         function run_once() {
             include_head_link("fluid-icon", "https://dmj.one/images/common/logo.png");
             include_head_link("shortcut icon", "https://dmj.one/images/common/logo.png?v=2");
@@ -46,14 +45,18 @@ function loadframework() {
             include_head_link("stylesheet", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs.min.css");
             include_head_link("stylesheet", "/css/common.css");
 
-            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js", "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==", "async");
-            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async");
-            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "defer");
             include_head_js("/js/var.js");
+            /* jquery */
+            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js", "sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==", "async");
+            /* bootstrap bundle*/
+            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js", "sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==", "async");
+            /* highlight.js */
+            include_head_js("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js", "sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==", "defer");
 
             include_body_js("/js/common.js");
             counter++;
         }
+        console.log(counter); // debug 
         run_once();
     }
 
@@ -63,8 +66,8 @@ function loadframework() {
     // Syntax highlighter - Enable is using highlight js.
     hljs.highlightAll();
 
+    loadframework();
 }
-loadframework();
 
 
 
@@ -288,11 +291,12 @@ function dcevars(s) {
 })(jQuery);
 
 /******** Footer ***********/
-var footer_all_rights = ' &#8226; All rights reserved';
-var footer_some_rights = ' &#8226; Some rights reserved';
-var footer_link_privacy = ' &#8226; <a href="/privacy">Privacy</a>';
-var footer_link_tos = ' &#8226; <a href="/tos">Terms and Condition</a>';
 function copyright(rights) {
+    var footer_all_rights = ' &#8226; All rights reserved';
+    var footer_some_rights = ' &#8226; Some rights reserved';
+    var footer_link_privacy = ' &#8226; <a href="/privacy">Privacy</a>';
+    var footer_link_tos = ' &#8226; <a href="/tos">Terms and Condition</a>';
+
     if (rights == "all") {
         var rights = footer_all_rights;
     } else if (rights == "some") {
