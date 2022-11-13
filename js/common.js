@@ -221,8 +221,7 @@ function dcevars(s) {
 
 // Footer Codes
 $(dcevar(notify_cookie)).appendTo("body");
-$(copyright("all")).appendTo("footer");
-
+document.getElementsByTagName("footer").append(copyright("all"));
 
 // document.body.append(dcevar(notify_cookie));
 
