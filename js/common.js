@@ -2,6 +2,8 @@
  * This file contains all the js combined.
  */
 
+let main = document.getElementById('main');
+
 // Verify If jquery is loaded
 window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>');
 
@@ -196,6 +198,7 @@ function header_author(author_init) {
 
     course = "<h1>" + course + " (" + course_detail + ")</h2>";
 
+
     document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>" + header_navbar());
 }
 
@@ -221,7 +224,7 @@ function dcevars(s) {
 
 // Footer Codes
 $(dcevar(notify_cookie)).appendTo("body");
-document.getElementsByTagName("footer").append(copyright("all"));
+//document.getElementsByTagName("footer").append(copyright("all"));
 
 // document.body.append(dcevar(notify_cookie));
 
@@ -274,5 +277,5 @@ function copyright(rights) {
     } else if (rights == "some") {
         var rights = footer_some_rights;
     } else { rights = ""; }
-    document.write('&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos);
+    document.write('<span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span>');
 }
