@@ -220,7 +220,11 @@ function dcevars(s) {
 }
 
 // Footer Codes
-document.body.append(dcevar(notify_cookie));
+$(document).ready(function () {
+    $(dcevar(notify_cookie)).appendTo("body");
+});
+
+// document.body.append(dcevar(notify_cookie));
 
 //plugins.js code:
 // Avoid `console` errors in browsers that lack a console.
