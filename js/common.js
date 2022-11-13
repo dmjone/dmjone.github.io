@@ -280,5 +280,5 @@ function copyright(rights) {
     } else { rights = ""; }
 
     dcevar(notify_cookie);
-    document.write('<span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span>');
+    document.write('<footer><span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></footer>');
 }
