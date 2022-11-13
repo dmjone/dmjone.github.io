@@ -220,10 +220,9 @@ function dcevars(s) {
 }
 
 // Footer Codes
-$(document).ready(function () {
-    $(dcevar(notify_cookie)).appendTo("body");
-    $(copyright("all")).appendTo("footer");
-});
+$(dcevar(notify_cookie)).appendTo("body");
+$(copyright("all")).appendTo("footer");
+
 
 // document.body.append(dcevar(notify_cookie));
 
