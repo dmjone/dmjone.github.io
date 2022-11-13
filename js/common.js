@@ -266,8 +266,10 @@ function copyright(rights) {
 
     document.write('<footer><span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></footer>');
 
-    // Notification - Privacy - I accept
+    // Notification cookie
+    dcevar(notify_cookie);
 
+    // Notification - Privacy - I accept
     $('.i-accept').on('click', function () {
         if (localStorage.noshow !== '1') {
             $('#cookie-notice').addClass('d-none');
@@ -277,9 +279,6 @@ function copyright(rights) {
     if (localStorage.noshow == '1') {
         $('#cookie-notice').addClass('d-none');
     };
-
-    // Notification cookie
-    dcevar(notify_cookie);
 
     // Syntax highlighter - Enable is using highlight js.
     hljs.highlightAll();
