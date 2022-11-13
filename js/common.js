@@ -223,7 +223,8 @@ function dcevars(s) {
 }
 
 // Footer Codes
-$(dcevar(notify_cookie)).appendTo("body");
+
+
 //document.getElementsByTagName("footer").append(copyright("all"));
 
 // document.body.append(dcevar(notify_cookie));
@@ -277,5 +278,7 @@ function copyright(rights) {
     } else if (rights == "some") {
         var rights = footer_some_rights;
     } else { rights = ""; }
+
+    dcevar(notify_cookie);
     document.write('<span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span>');
 }
