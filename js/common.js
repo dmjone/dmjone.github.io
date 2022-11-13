@@ -2,7 +2,7 @@
  * This file contains all the js combined.
  */
 
-let main = document.getElementById('main');
+var main = document.getElementById('main');
 
 // Verify If jquery is loaded
 window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>');
@@ -270,7 +270,7 @@ function copyright(rights) {
     var footer_all_rights = ' &#8226; All rights reserved';
     var footer_some_rights = ' &#8226; Some rights reserved';
     var footer_link_privacy = ' &#8226; <a href="/privacy">Privacy</a>';
-    var footer_link_tos = ' &#8226; <a href="/tos">Terms and Condition</a>';
+    var footer_link_tos = ' &#8226; <a href="/tos">Terms and Conditions</a>';
 
     if (rights == "all") {
         var rights = footer_all_rights;
