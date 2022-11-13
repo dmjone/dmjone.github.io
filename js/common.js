@@ -7,9 +7,6 @@ var main = document.getElementById('main');
 // Verify If jquery is loaded
 window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>');
 
-// Syntax highlighter - Enable is using highlight js.
-hljs.highlightAll();
-
 
 /******** Header ***********/
 
@@ -279,6 +276,11 @@ function copyright(rights) {
         var rights = footer_some_rights;
     } else { rights = ""; }
 
-    dcevar(notify_cookie);
     document.write('<footer><span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></footer>');
+
+    // Notification cookie
+    dcevar(notify_cookie);
+
+    // Syntax highlighter - Enable is using highlight js.
+    hljs.highlightAll();
 }
