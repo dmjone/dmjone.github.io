@@ -219,6 +219,9 @@ function dcevars(s) {
     document.write(decoded);
 }
 
+// Footer Codes
+
+document.append(dcevar(notify_cookie));
 
 //plugins.js code:
 // Avoid `console` errors in browsers that lack a console.
