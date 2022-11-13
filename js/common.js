@@ -267,17 +267,17 @@ function copyright(rights) {
     document.write('<footer><span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></footer>');
 
     // Notification - Privacy - I accept
-    (function ($) {
-        $('.i-accept').on('click', function () {
-            if (localStorage.noshow !== '1') {
-                $('#cookie-notice').addClass('d-none');
-                localStorage.noshow = '1';
-            }
-        });
-        if (localStorage.noshow == '1') {
+
+    $('.i-accept').on('click', function () {
+        if (localStorage.noshow !== '1') {
             $('#cookie-notice').addClass('d-none');
-        };
-    })(jQuery);
+            localStorage.noshow = '1';
+        }
+    });
+    if (localStorage.noshow == '1') {
+        $('#cookie-notice').addClass('d-none');
+    };
+
     // Notification cookie
     dcevar(notify_cookie);
 
