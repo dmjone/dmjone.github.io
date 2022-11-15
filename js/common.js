@@ -44,12 +44,12 @@ function header_navbar() {
     var common_nav_start = '<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mw-100 px-3 py-3"><div class="container-fluid"><script>document.write(header_nav())</script><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav ms-auto">';
     var common_nav_end = '</ul><!--- <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-light" type="submit">Search</button></form> --></div></div></nav>';
 
-    var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
-    links.sort();
     var li_link = "";
     var url = window.location.pathname;
     var folder = window.location.pathname.split("/")[1];
     var alreadyactive = 0;
+    var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
+    links.sort();
     for (let i = 0; i < links.length; i++) {
         if (links[i] != folder) {
             var linkactive = '"';
@@ -61,8 +61,6 @@ function header_navbar() {
         } else {
             linkname = links[i].toUpperCase();
         }
-
-
         li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/' + links[i] + '">' + linkname + "</a></li>";
     }
 
