@@ -48,7 +48,6 @@ function header_navbar() {
     links.sort();
     var li_link = "";
     var url = window.location.pathname;
-    console.log()
     var folder = window.location.pathname.split("/")[1];
     var alreadyactive = 0;
     for (let i = 0; i < links.length; i++) {
@@ -59,9 +58,11 @@ function header_navbar() {
         }
         if (url == "/") {
             linkname = '<i class="bi bi-house-fill text-light"></i>';
+        } else {
+            linkname = links[i].toUpperCase();
         }
 
-        linkname = links[i].toUpperCase();
+
         li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/' + links[i] + '">' + linkname + "</a></li>";
     }
 
