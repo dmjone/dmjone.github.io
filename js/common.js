@@ -42,7 +42,7 @@ function header_nav() {
 
 function header_navbar() {
     var common_nav_start = '<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mw-100 px-3 py-3"><div class="container-fluid"><script>document.write(header_nav())</script><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav ms-auto">';
-    var common_nav_end = '</ul>< !--- <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-light" type="submit">Search</button></form> --></div></div></nav>';
+    var common_nav_end = '</ul><!--- <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-light" type="submit">Search</button></form> --></div></div></nav>';
 
     var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
     links.sort();
@@ -61,35 +61,7 @@ function header_navbar() {
     }
 
     nav = common_nav_start + li_link + common_nav_end;
-
-    /*
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/csu953">CSU953</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/csu1128">CSU1128</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/csu1128p">CSU1128(P)</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/fsu030">FSU030</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/csu730">CSU730</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/csu951">CSU951</a>
-                        </li>
-                    </ul >
-                    < !--- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-        </form> -->
-                </div >
-            </div >
-        </nav > `;
-        */
+    
     return nav;
 }
 
