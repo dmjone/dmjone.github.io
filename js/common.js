@@ -47,6 +47,8 @@ function header_navbar() {
     var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
     links.sort();
     var li_link = "";
+    var url = window.location.pathname;
+    console.log()
     var folder = window.location.pathname.split("/")[1];
     var alreadyactive = 0;
     for (let i = 0; i < links.length; i++) {
@@ -55,16 +57,17 @@ function header_navbar() {
         } else {
             var linkactive = ' active" aria-current="page"';
         }
+        if (url == "/") {
+            linkname = '<i class="bi bi-house-fill text-light"></i>';
+        }
 
         linkname = links[i].toUpperCase();
         li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/' + links[i] + '">' + linkname + "</a></li>";
     }
 
     nav = common_nav_start + li_link + common_nav_end;
-
     return nav;
 }
-
 
 function header_author(author_init) {
     /* USAGE - header_author(include_course_name, define_is_lab, teacher_FL, author_FL, biblography, button)
