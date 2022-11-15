@@ -50,7 +50,7 @@ function header_navbar() {
     var folder = window.location.pathname.split("/")[1];
     var linkactive = '"';
     for (let i = 0; i < links.length; i++) {
-        if (link[i] == folder) { var linkactive = ' active" aria-current="page"'; }
+        if (links[i] == folder) { var linkactive = ' active" aria-current="page"'; }
 
         linkname = links[i].toUpperCase();
         li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/' + links[i] + '">' + linkname + "</a></li>";
