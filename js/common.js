@@ -48,12 +48,12 @@ function header_navbar() {
     links.sort();
     var li_link = "";
     var folder = window.location.pathname.split("/")[1];
-    var linkactive = '"';
     var alreadyactive = 0;
     for (let i = 0; i < links.length; i++) {
-        if (links[i] == folder && alreadyactive == 0) {
+        if (links[i] != folder) {
+            var linkactive = '"';
+        } else {
             var linkactive = ' active" aria-current="page"';
-            var alreadyactive = 1;
         }
 
         linkname = links[i].toUpperCase();
@@ -61,7 +61,7 @@ function header_navbar() {
     }
 
     nav = common_nav_start + li_link + common_nav_end;
-    
+
     return nav;
 }
 
