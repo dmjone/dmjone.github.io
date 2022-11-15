@@ -41,15 +41,16 @@ function header_nav() {
 }
 
 function header_navbar() {
-    var nav = `<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mw-100 px-3 py-3">
-                <div class="container-fluid">
-                <script>document.write(header_nav())</script>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ms-auto">
+    var common_nav_start = '<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mw-100 px-3 py-3"><div class="container-fluid"><script>document.write(header_nav())</script><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav ms-auto">';
+
+    var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
+    links.sort();
+
+var final_link = "";
+var isactive = '"';
+for (let i = 0; i < links.length; i++) {
+  final_link += '<li class="nav-item"><a class="nav-link' + isactive + ' href="'  + links[i] + "<br>";
+}
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/csu953">CSU953</a>
                         </li>
