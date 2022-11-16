@@ -585,16 +585,10 @@ a:hover {
 
   .genmenu div:nth-child(odd) {
     background: white;
-    place-items: center;
-    text-align: justify;
-    padding: 2rem;
   }
 
   .genmenu div:nth-child(even) {
     background: #f2f2f2;
-    place-items: center;
-    text-align: justify;
-    padding: 2rem;
   }
 
   .postcard:nth-child(2n+1) {
