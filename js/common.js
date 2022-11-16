@@ -270,6 +270,9 @@ function body_genmenu(course) {
 
 function body_blockcards(link, date, title, desc, codetype, readtime, include_generator) {
 
+    // USAGE - body_blockcards("/csu953/c1", "Thursday, September 29th 2022", "Lab 1 fn", "An introduction to HTML.", "HTML", "2");
+
+
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
