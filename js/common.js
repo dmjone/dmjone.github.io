@@ -209,6 +209,10 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
+    if (link) { } else link = "";
+    if (date) { } else var date = new Date().toDateString();
+    if (title) { } else title = "Unknown Title";
+    if (desc) { } else desc = "No desc provided";
 
     var color = ["yellow", "blue", "red", "green"];
     var getcolor = color[randomNum(0, 3)];
@@ -219,8 +223,8 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     var m3 = '<div class="postcard__subtitle small"><i class="fas fa-calendar-alt mr-2"></i>  ' + date + '</div>';
     var m4 = '<div class="postcard__bar"></div><div class="postcard__preview-txt">' + desc + '</div>';
     var m5 = '<ul class="postcard__tagbox">';
-    if (codetype) { var m6 = '<li class="tag__item"><i class="bi bi-file-earmark-code"></i>  ' + codetype + '</li>'; } else {var m6 = "";}
-    var m7 = '<li class="tag__item"><i class="fas fa-clock mr-2"></i>  ' + readtime + ' minute read</li>';
+    if (codetype) { var m6 = '<li class="tag__item"><i class="bi bi-file-earmark-code"></i>  ' + codetype + '</li>'; } else { var m6 = ""; }
+    if (readtime) { var m7 = '<li class="tag__item"><i class="fas fa-clock mr-2"></i>  ' + readtime + ' minute read</li>'; } else { var m7 = ""; }
     var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></div>';
 
     document.write(m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8);
