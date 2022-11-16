@@ -209,7 +209,7 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
-    if (link) { } else link = "";
+    if (link) { } else link = "#";
     if (date) { } else var date = new Date().toDateString();
     if (title) { } else title = "Unknown Title";
     if (desc) { } else desc = "No desc provided";
