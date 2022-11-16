@@ -204,6 +204,10 @@ function dcevars(s) {
 }
 
 function body_genmenu(course) {
+    var gen_start = '<section class="light"><div class="container py-2">';
+    var gen_end = '</div></section>';
+    document.write(gen_start);
+
     switch (course) {
         case "csu953":
             var cases = [1, 2, 3, 4, 5, 6];
@@ -261,9 +265,10 @@ function body_genmenu(course) {
         default:
             break;
     }
+    document.write(gen_end);
 }
 
-function body_blockcards(link, date, title, desc, codetype, readtime, include_generator) {
+function body_blockcards(link, date, title, desc, codetype, readtime) {
 
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
@@ -273,7 +278,6 @@ function body_blockcards(link, date, title, desc, codetype, readtime, include_ge
     if (date) { } else var date = new Date().toDateString();
     if (title) { } else title = "Unknown Title";
     if (desc) { } else desc = "No desc provided";
-    if (include_generator == 1) { var gen_start = '<section class="light"><div class="container py-2">'; var gen_end = '</div></section>'; } else { gen_start = ""; gen_end = ""; }
 
 
     var color = ["yellow", "blue", "red", "green"];
@@ -289,7 +293,7 @@ function body_blockcards(link, date, title, desc, codetype, readtime, include_ge
     if (readtime) { var m7 = '<li class="tag__item"><i class="fas fa-clock mr-2"></i>  ' + readtime + ' minute read</li>'; } else { var m7 = ""; }
     var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></div>';
 
-    document.write(gen_start + m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + gen_end);
+    document.write(m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8);
 }
 
 // Footer Codes
