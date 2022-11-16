@@ -299,7 +299,7 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     var m5 = '<ul class="postcard__tagbox">';
     if (codetype) { var m6 = '<li class="tag__item"><i class="bi bi-file-earmark-code"></i>  ' + codetype + '</li>'; } else { var m6 = ""; }
     if (readtime) { var m7 = '<li class="tag__item"><i class="fas fa-clock mr-2"></i>  ' + readtime + ' minute read</li>'; } else { var m7 = ""; }
-    var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></div>';
+    var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></section>';
 
     document.write(gen_start + m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + gen_end);
 }
