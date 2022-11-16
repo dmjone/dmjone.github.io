@@ -203,36 +203,64 @@ function dcevars(s) {
     document.write(decoded);
 }
 
-function body_genmenu() {
-    var cases = [0, 1, 2, 3];
-    for (let i = 0; i < cases.length; i++) {
-        switch (cases[i]) {
-            case 1:
-                link = "c1";
-                date = "Thu September 27, 2022";
-                title = "Lab 1 from array";
-                desc = "This is an introductory class";
-                codetype = "HTML";
-                readtime = "2";
-                body_blockcards(link, date, title, desc, codetype, readtime);
-                break;
-            case 2:
-                link = "c2";
-                date = "Thu September 27, 2022";
-                title = "Lab 2 from array";
-                desc = "This is an introductory class";
-                codetype = "HTML";
-                readtime = "2";
-                body_blockcards(link, date, title, desc, codetype, readtime);
-                break;
-
-            default:
-                break;
-        }
+function body_genmenu(course) {
+    switch (course) {
+        case "csu953":
+            var cases = [1, 2, 3, 4, 5, 6];
+            for (let i = 0; i < cases.length; i++) {
+                switch (cases[i]) {
+                    case 1:
+                        link = "c1";
+                        date = "Thu September 27, 2022";
+                        title = "Lab 1";
+                        desc = "This is an introductory class";
+                        codetype = "HTML";
+                        readtime = "2";
+                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        break;
+                    case 2:
+                        link = "c2";
+                        date = "Thu September 27, 2022";
+                        title = "Lab 2";
+                        desc = "Use of tags title, details, p, heading, and inline style of background-color.";
+                        codetype = "HTML";
+                        readtime = "2";
+                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        break;
+                    case 3:
+                        link = "c3";
+                        date = "Thu September 27, 2022";
+                        title = "Lab 3";
+                        desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
+                        codetype = "HTML";
+                        readtime = "2";
+                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        break;
+                    case 4:
+                        link = "c4";
+                        date = "Thu September 27, 2022";
+                        title = "Lab 4";
+                        desc = "Class Test";
+                        codetype = "HTML";
+                        readtime = "2";
+                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        break;
+                    case 5:
+                        link = "c5";
+                        date = "Thu September 27, 2022";
+                        title = "Lab 5";
+                        desc = "Use of table, tr, th tags in creation of Tables";
+                        codetype = "HTML";
+                        readtime = "4";
+                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        break;
+                    default:
+                        break;
+                }
+            }
     }
 }
 
-//function body_blockcards(link, date, title, desc, codetype, readtime) {
 function body_blockcards(link, date, title, desc, codetype, readtime) {
 
     function randomNum(min, max) {
