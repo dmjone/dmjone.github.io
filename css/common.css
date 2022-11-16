@@ -471,12 +471,22 @@ a:hover {
   font-size: 1.75rem;
 }
 
-.postcard .postcard__img {
+.postcard .postcard__img:nth-child(even) {
   max-height: 180px;
   width: 100%;
   object-fit: cover;
   position: relative;
-  background-image: url('https://picsum.photos/500/500');
+  background-image: url('https://picsum.photos/501/500');
+  background-size: cover;
+}
+
+.postcard .postcard__img:nth-child(odd) {
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  background-image: url('https://picsum.photos/500/501');
+  background-size: cover;
 }
 
 .postcard .postcard__img_link {
