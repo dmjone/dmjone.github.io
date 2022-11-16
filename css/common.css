@@ -583,14 +583,26 @@ a:hover {
     transform: scale(1.1);
   }
 
+  main article div:nth-child(odd) {
+    background: white;
+    place-items: center;
+    text-align: justify;
+    padding: 2rem;
+  }
+
+  main article div:nth-child(even) {
+    background: #f2f2f2;
+    place-items: center;
+    text-align: justify;
+    padding: 2rem;
+  }
+
   .postcard:nth-child(2n+1) {
     flex-direction: row;
-    background: #f2f2f2;
   }
 
   .postcard:nth-child(2n+0) {
     flex-direction: row-reverse;
-    background: white;
   }
 
   .postcard:nth-child(2n+1) .postcard__text::before {
