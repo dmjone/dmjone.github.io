@@ -205,7 +205,7 @@ function dcevars(s) {
 
 function body_genmenu() {
     var cases = [0, 1, 2, 3];
-    for (let i = 0; i < links.length; i++) {
+    for (let i = 0; i < cases.length; i++) {
         switch (cases[i]) {
             case 1:
                 link = "c1";
