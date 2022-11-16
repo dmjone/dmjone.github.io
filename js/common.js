@@ -258,6 +258,8 @@ function body_genmenu(course) {
                         break;
                 }
             }
+        default:
+            break;
     }
 }
 
