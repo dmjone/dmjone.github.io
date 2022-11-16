@@ -527,7 +527,7 @@ a:hover {
 }
 
 .postcard .postcard__tagbox .tag__item:hover {
-  background: rgba(83, 83, 83, 0.8);
+  background: rgba(83, 83, 83, 0.2);
 }
 
 .postcard:before {
