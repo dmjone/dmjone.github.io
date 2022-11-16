@@ -393,13 +393,14 @@ footer {
 }
 
 /** Postcard CSS **/
-body {
+/* body {
   font-family: "Baloo 2", cursive;
   font-size: 16px;
   color: #ffffff;
   text-rendering: optimizeLegibility;
   font-weight: initial;
 }
+*/
 
 .dark {
   background: #110f16;
