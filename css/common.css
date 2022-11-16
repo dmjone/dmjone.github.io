@@ -12,7 +12,7 @@
    ========================================================================== */
 
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Gruppo|Lato|Roboto|Quicksand|Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Gruppo|Lato|Roboto|Quicksand|Maven+Pro|Baloo+2');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css');
@@ -277,6 +277,7 @@ body {
   display: grid;
   height: auto;
   grid-template-rows: auto 1fr auto;
+  text-rendering: optimizeLegibility;
   font-family: 16px/1.5 'Lato', 'Maven Pro', Roboto, Verdana, system-ui, sans-serif;
 }
 
@@ -392,9 +393,38 @@ footer {
 }
 
 /** Postcard CSS **/
+body {
+  font-family: "Baloo 2", cursive;
+  font-size: 16px;
+  color: #ffffff;
+  text-rendering: optimizeLegibility;
+  font-weight: initial;
+}
+
+.dark {
+  background: #110f16;
+}
+
+.light {
+  background: #f3f5f7;
+}
+
+a, a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#pageHeaderTitle {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 /* Cards */
 .postcard {
   flex-wrap: wrap;
+  font-family: "Baloo 2", cursive;
   display: flex;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   border-radius: 10px;
