@@ -207,7 +207,7 @@ function body_genmenu(course) {
     //  var gen_start = '<section class="light"><div class="container py-2">';
     //  var gen_end = '</div></section>';
     //  document.write(gen_start);
-    var gen_start = '<article">';
+    var gen_start = '<article class="genmenu">';
     var gen_end = '</article>';
     document.write(gen_start);
 

@@ -583,14 +583,14 @@ a:hover {
     transform: scale(1.1);
   }
 
-  main article div:nth-child(odd) {
+  .genmenu div:nth-child(odd) {
     background: white;
     place-items: center;
     text-align: justify;
     padding: 2rem;
   }
 
-  main article div:nth-child(even) {
+  .genmenu div:nth-child(even) {
     background: #f2f2f2;
     place-items: center;
     text-align: justify;
