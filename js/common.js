@@ -50,20 +50,7 @@ function header_navbar() {
     var alreadyactive = 0;
     var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
     links.sort();
-    links.forEach(createlist());
-
-    function createlist(item) {
-        if (item != folder) {
-            var linkactive = '"';
-        } else {
-            var linkactive = ' active" aria-current="page"';
-        }
-        linkname = item.toUpperCase();
-        li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/' + item + '">' + linkname + "</a></li>";
-        return li_link;
-    }
-
-    /* for (let i = 0; i < links.length; i++) {
+    for (let i = 0; i < links.length; i++) {
         if (links[i] != folder) {
             var linkactive = '"';
         } else {
@@ -72,7 +59,6 @@ function header_navbar() {
         linkname = links[i].toUpperCase();
         li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/' + links[i] + '">' + linkname + "</a></li>";
     }
-    */
 
     nav = common_nav_start + li_link + common_nav_end;
     return nav;
@@ -222,9 +208,10 @@ function body_blocks() {
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
-    array.forEach(element => {
-
-    });
+    
+    
+        
+    
 
 }
 
