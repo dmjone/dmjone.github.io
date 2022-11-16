@@ -206,7 +206,7 @@ function dcevars(s) {
 function body_genmenu(course) {
     var gen_start = '<section class="light"><div class="container py-2">';
     var gen_end = '</div></section>';
-    document.write(gen_start);
+    //document.write(gen_start);
 
     switch (course) {
         case "csu953":
@@ -265,10 +265,10 @@ function body_genmenu(course) {
         default:
             break;
     }
-    document.write(gen_end);
+    //document.write(gen_end);
 }
 
-function body_blockcards(link, date, title, desc, codetype, readtime) {
+function body_blockcards(link, date, title, desc, codetype, readtime, include_generator) {
 
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
@@ -278,12 +278,13 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     if (date) { } else var date = new Date().toDateString();
     if (title) { } else title = "Unknown Title";
     if (desc) { } else desc = "No desc provided";
+    if (include_generator == 1) { var gen_start = '<article>'; var gen_end = '</article>'; } else { gen_start = ""; gen_end = ""; }
 
 
     var color = ["yellow", "blue", "red", "green"];
     var getcolor = color[randomNum(0, 3)];
 
-    var m = '<div class="postcard light shadow ' + getcolor + '">';
+    var m = '<div class="m-3 postcard light shadow ' + getcolor + '">';
     var m1 = '<a class="postcard__img_link" href="' + link + '"><img class="postcard__img" src="https://picsum.photos/' + randomNum(400, 700) + '"/></a>';
     var m2 = '<div class="postcard__text t-dark"><h1 class="postcard__title blue"><a href="' + link + '">' + title + '</a></h1>';
     var m3 = '<div class="postcard__subtitle small"><i class="fas fa-calendar-alt mr-2"></i>  ' + date + '</div>';
@@ -293,7 +294,7 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     if (readtime) { var m7 = '<li class="tag__item"><i class="fas fa-clock mr-2"></i>  ' + readtime + ' minute read</li>'; } else { var m7 = ""; }
     var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></div>';
 
-    document.write(m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8);
+    document.write(gen_start + m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + gen_end);
 }
 
 // Footer Codes
