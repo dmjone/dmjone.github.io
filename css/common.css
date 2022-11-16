@@ -471,22 +471,11 @@ a:hover {
   font-size: 1.75rem;
 }
 
-.postcard .postcard__img:nth-child(even) {
+.postcard .postcard__img {
   max-height: 180px;
   width: 100%;
   object-fit: cover;
   position: relative;
-  background-image: url('https://picsum.photos/501/500');
-  background-size: cover;
-}
-
-.postcard .postcard__img:nth-child(odd) {
-  max-height: 180px;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  background-image: url('https://picsum.photos/500/501');
-  background-size: cover;
 }
 
 .postcard .postcard__img_link {
@@ -638,7 +627,7 @@ a:hover {
 
 /* COLORS */
 .postcard .postcard__tagbox .green.play:hover {
-  background: #79dd09;
+  background: #7add093a;
   color: black;
 }
 
@@ -659,7 +648,7 @@ a:hover {
 }
 
 .postcard .postcard__tagbox .blue.play:hover {
-  background: #0076bd;
+  background: #0075bd33;
 }
 
 .blue .postcard__title:hover {
@@ -679,7 +668,7 @@ a:hover {
 }
 
 .postcard .postcard__tagbox .red.play:hover {
-  background: #bd150b;
+  background: #bd140b48;
 }
 
 .red .postcard__title:hover {
