@@ -204,7 +204,7 @@ function dcevars(s) {
 }
 
 
-function body_blocks(link, date, title, desc, codetype, readtime) {
+function body_blockcards(link, date, title, desc, codetype, readtime) {
 
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
