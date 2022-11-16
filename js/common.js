@@ -204,16 +204,26 @@ function dcevars(s) {
 }
 
 
-function body_blocks() {
+function body_blocks(link, date, title, desc, codetype, readtime) {
+
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
-    
-    
-    
-        
-    
 
+    var color = ["yellow", "blue", "red", "green"];
+    var getcolor = color[randomNum(0, 3)];
+
+    var m = '<div class="postcard light shadow ' + getcolor + '">';
+    var m1 = '<a class="postcard__img_link" href="' + link + '"><img class="postcard__img" src="https://picsum.photos/' + randomNum(400, 700); + '"/></a>';
+    var m2 = '<div class="postcard__text t-dark"><h1 class="postcard__title blue"><a href="' + link + '">' + title + '</a></h1>';
+    var m3 = '<div class="postcard__subtitle small"><i class="fas fa-calendar-alt mr-2"></i> ' + date + '</div>';
+    var m4 = '<div class="postcard__bar"></div><div class="postcard__preview-txt">' + desc + '</div>';
+    var m5 = '<ul class="postcard__tagbox">';
+    var m6 = '<li class="tag__item"><i class="bi bi-file-earmark-code"></i>' + codetype + '</li>';
+    var m7 = '<li class="tag__item"><i class="fas fa-clock mr-2"></i>' + readtime + ' minute read</li>';
+    var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i> Cont. Reading</a></li></ul></div></div>';
+
+    document.write(m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8);
 }
 
 // Footer Codes
