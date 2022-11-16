@@ -583,14 +583,6 @@ a:hover {
     transform: scale(1.1);
   }
 
-  .genmenu section:nth-child(odd) {
-    background: white;
-  }
-
-  .genmenu section:nth-child(even) {
-    background: #f2f2f2;
-  }
-
   .postcard:nth-child(2n+1) {
     flex-direction: row;
   }
