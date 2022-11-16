@@ -45,7 +45,7 @@ function header_navbar() {
     var common_nav_end = '</ul><!--- <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-light" type="submit">Search</button></form> --></div></div></nav>';
 
     var li_link = "";
-    var url = window.location.pathname;
+    var path = window.location.pathname;
     var folder = window.location.pathname.split("/")[1];
     var alreadyactive = 0;
     var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
