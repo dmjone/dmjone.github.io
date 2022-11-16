@@ -56,11 +56,7 @@ function header_navbar() {
         } else {
             var linkactive = ' active" aria-current="page"';
         }
-        if (url == "/") {
-            linkname = '<i class="bi bi-house-fill text-light"></i>';
-        } else {
-            linkname = links[i].toUpperCase();
-        }
+        linkname = links[i].toUpperCase();
         li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/' + links[i] + '">' + linkname + "</a></li>";
     }
 
