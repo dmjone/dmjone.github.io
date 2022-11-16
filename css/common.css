@@ -583,11 +583,11 @@ a:hover {
     transform: scale(1.1);
   }
 
-  .genmenu div:nth-child(odd) {
+  .genmenu section:nth-child(odd) {
     background: white;
   }
 
-  .genmenu div:nth-child(even) {
+  .genmenu section:nth-child(even) {
     background: #f2f2f2;
   }
 
