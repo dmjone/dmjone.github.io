@@ -292,7 +292,7 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     var getcolor = color[randomNum(0, 3)];
 
     var m = '<div class="m-4 my-5 postcard light shadow ' + getcolor + '">';
-    var m1 = '<a class="postcard__img_link" href="' + link + '"><img class="postcard__img" src="https://picsum.photos/' + randomNum(400, 700) + '"/></a>';
+    var m1 = '<a class="postcard__img_link" href="' + link + '"><img class="postcard__img" src="https://picsum.photos/' + randomNum(200, 400) + '"/></a>';
     var m2 = '<div class="postcard__text t-dark"><h1 class="postcard__title blue"><a href="' + link + '">' + title + '</a></h1>';
     var m3 = '<div class="postcard__subtitle small"><i class="fas fa-calendar-alt mr-2"></i>  ' + date + '</div>';
     var m4 = '<div class="postcard__bar"></div><div class="postcard__preview-txt">' + desc + '</div>';
