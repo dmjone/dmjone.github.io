@@ -216,7 +216,7 @@ function body_genmenu(course) {
                         desc = "This is an introductory class";
                         codetype = "HTML";
                         readtime = "2";
-                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
                     case 2:
                         link = "c2";
@@ -225,7 +225,7 @@ function body_genmenu(course) {
                         desc = "Use of tags title, details, p, heading, and inline style of background-color.";
                         codetype = "HTML";
                         readtime = "2";
-                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
                     case 3:
                         link = "c3";
@@ -234,7 +234,7 @@ function body_genmenu(course) {
                         desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
                         codetype = "HTML";
                         readtime = "2";
-                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
                     case 4:
                         link = "c4";
@@ -243,7 +243,7 @@ function body_genmenu(course) {
                         desc = "Class Test";
                         codetype = "HTML";
                         readtime = "2";
-                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
                     case 5:
                         link = "c5";
@@ -252,7 +252,7 @@ function body_genmenu(course) {
                         desc = "Use of table, tr, th tags in creation of Tables";
                         codetype = "HTML";
                         readtime = "4";
-                        body_blockcards(link, date, title, desc, codetype, readtime);
+                        body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
                     default:
                         break;
@@ -263,7 +263,7 @@ function body_genmenu(course) {
     }
 }
 
-function body_blockcards(link, date, title, desc, codetype, readtime) {
+function body_blockcards(link, date, title, desc, codetype, readtime, include_generator) {
 
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
@@ -273,6 +273,8 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     if (date) { } else var date = new Date().toDateString();
     if (title) { } else title = "Unknown Title";
     if (desc) { } else desc = "No desc provided";
+    if (include_generator == 1) { var gen_start = '<section class="light"><div class="container py-2">'; var gen_end = '</div></section>'; } else { gen_start = ""; gen_end = ""; }
+
 
     var color = ["yellow", "blue", "red", "green"];
     var getcolor = color[randomNum(0, 3)];
@@ -287,7 +289,7 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     if (readtime) { var m7 = '<li class="tag__item"><i class="fas fa-clock mr-2"></i>  ' + readtime + ' minute read</li>'; } else { var m7 = ""; }
     var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></div>';
 
-    document.write(m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8);
+    document.write(gen_start + m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + gen_end);
 }
 
 // Footer Codes
