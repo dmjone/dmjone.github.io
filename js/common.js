@@ -204,11 +204,41 @@ function dcevars(s) {
 }
 
 
-function body_blockcards(link, date, title, desc, codetype, readtime) {
+//function body_blockcards(link, date, title, desc, codetype, readtime) {
+function body_blockcards() {
 
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
+
+    var cases = [0, 1, 2, 3];
+    cases.forEach(setvars);
+
+    function setvars(items) {
+        switch (items) {
+            case 1:
+                link = "c1";
+                date = "Thu September 27, 2022";
+                title = "Lab 1 from array";
+                desc = "This is an introductory class";
+                codetype = "HTML";
+                readtime = "2";
+                break;
+            case 2:
+                link = "c2";
+                date = "Thu September 27, 2022";
+                title = "Lab 2 from array";
+                desc = "This is an introductory class";
+                codetype = "HTML";
+                readtime = "2";
+                break;
+
+            default:
+                break;
+        }
+    }
+
+
     if (link) { } else link = "#";
     if (date) { } else var date = new Date().toDateString();
     if (title) { } else title = "Unknown Title";
