@@ -204,9 +204,12 @@ function dcevars(s) {
 }
 
 function body_genmenu(course) {
-    var gen_start = '<section class="light"><div class="container py-2">';
-    var gen_end = '</div></section>';
-    //document.write(gen_start);
+  //  var gen_start = '<section class="light"><div class="container py-2">';
+  //  var gen_end = '</div></section>';
+  //  document.write(gen_start);
+    var gen_start = '<article">';
+    var gen_end = '</article>';
+    document.write(gen_start);
 
     switch (course) {
         case "csu953":
@@ -265,10 +268,10 @@ function body_genmenu(course) {
         default:
             break;
     }
-    //document.write(gen_end);
+    document.write(gen_end);
 }
 
-function body_blockcards(link, date, title, desc, codetype, readtime, include_generator) {
+function body_blockcards(link, date, title, desc, codetype, readtime ) {
 
     // USAGE - body_blockcards("/csu953/c1", "Thursday, September 29th 2022", "Lab 1 fn", "An introduction to HTML.", "HTML", "2");
 
