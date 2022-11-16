@@ -204,9 +204,9 @@ function dcevars(s) {
 }
 
 function body_genmenu(course) {
-  //  var gen_start = '<section class="light"><div class="container py-2">';
-  //  var gen_end = '</div></section>';
-  //  document.write(gen_start);
+    //  var gen_start = '<section class="light"><div class="container py-2">';
+    //  var gen_end = '</div></section>';
+    //  document.write(gen_start);
     var gen_start = '<article">';
     var gen_end = '</article>';
     document.write(gen_start);
@@ -271,7 +271,7 @@ function body_genmenu(course) {
     document.write(gen_end);
 }
 
-function body_blockcards(link, date, title, desc, codetype, readtime ) {
+function body_blockcards(link, date, title, desc, codetype, readtime) {
 
     // USAGE - body_blockcards("/csu953/c1", "Thursday, September 29th 2022", "Lab 1 fn", "An introduction to HTML.", "HTML", "2");
 
@@ -284,6 +284,7 @@ function body_blockcards(link, date, title, desc, codetype, readtime ) {
     if (date) { } else var date = new Date().toDateString();
     if (title) { } else title = "Unknown Title";
     if (desc) { } else desc = "No desc provided";
+    var include_generator = 2;
     if (include_generator == 1) { var gen_start = '<article>'; var gen_end = '</article>'; } else { gen_start = ""; gen_end = ""; }
 
 
