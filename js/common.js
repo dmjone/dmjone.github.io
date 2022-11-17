@@ -1,6 +1,8 @@
 /* 
  * This file contains all the js combined.
  */
+var hljs = "";
+function highlightAll() { };
 function header_createlink(rel_link, href) {
     newlink = document.createElement('link');
     newlink.setAttribute('rel', rel_link);
@@ -393,8 +395,6 @@ function copyright(rights) {
     };
 
     // Syntax highlighter - Enable is using highlight js.
-    var hljs = function highlightAll() { };
-
     setTimeout(hljs.highlightAll(), 5000);
 
 }
