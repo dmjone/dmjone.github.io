@@ -261,6 +261,15 @@ function body_genmenu(course) {
                         readtime = "4";
                         body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
+                    case 6:
+                        link = "c6";
+                        date = "Thu November 17, 2022";
+                        title = "Lab 6";
+                        desc = "VIVA based on questions directed towards odd and even students.";
+                        codetype = "HTML";
+                        readtime = "5";
+                        body_blockcards(link, date, title, desc, codetype, readtime, 1);
+                        break;
                     default:
                         break;
                 }
