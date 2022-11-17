@@ -379,9 +379,9 @@ main article li {
 .syntax pre,
 .syntax code {
   font-family: Hack, monospace;
-  margin-left: -120px;
+  /* margin-left: -120px; 
   margin-top: -20px;
-  margin-bottom: -40px;
+  margin-bottom: -40px; */
 }
 
 main article p .output {
@@ -648,7 +648,7 @@ a:hover {
 }
 
 .postcard .postcard__tagbox .blue.play:hover {
-  background: #0075bd33;
+  background: #0074bd33;
 }
 
 .blue .postcard__title:hover {
