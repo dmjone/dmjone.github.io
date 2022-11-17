@@ -214,9 +214,6 @@ function body_genmenu(course) {
 
     switch (course) {
         case "csu953":
-            var fs = require('fs');
-            var files = fs.readdirSync('/csu953/');
-            console.log(files);
             var cases = [1, 2, 3, 4, 5, 6];
             for (let i = 0; i < cases.length; i++) {
                 switch (cases[i]) {
