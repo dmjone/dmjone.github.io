@@ -1,8 +1,13 @@
 /* 
  * This file contains all the js combined.
  */
-
-var main = document.getElementById('main');
+function header_createlink(rel_link, href) {
+    newlink = document.createElement('link');
+    newlink.setAttribute('rel', rel_link);
+    newlink.setAttribute('href', href);
+    document.head.appendChild(newlink);
+}
+header_createlink("shortcut icon", "https://dmj.one/images/common/logo.png?v=2");
 
 // Verify If jquery is loaded
 window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>');
