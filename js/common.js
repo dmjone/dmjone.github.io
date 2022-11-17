@@ -393,7 +393,6 @@ function copyright(rights) {
     };
 
     // Syntax highlighter - Enable is using highlight js.
-    $(document).ready(function () {
-        hljs.highlightAll();
-    });
+    setTimeout(hljs.highlightAll(), 5000);
+
 }
