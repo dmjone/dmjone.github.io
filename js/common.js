@@ -7,7 +7,19 @@ function header_createlink(rel_link, href) {
     newlink.setAttribute('href', href);
     document.head.appendChild(newlink);
 }
+function header_createscript(src) {
+    newscript = document.createElement('script');
+    newscript.setAttribute('src', src);
+    document.head.appendChild(newscript);
+}
 header_createlink("shortcut icon", "https://dmj.one/images/common/logo.png?v=2");
+header_createlink("fluid-icon", "https://dmj.one/images/common/logo.png?v=2");
+header_createlink("apple-touch-icon", "https://dmj.one/images/common/logo.png?v=2");
+header_createlink("stylesheet", "/css/common.css");
+
+header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js");
+header_createscript("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js");
+header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
 
 // Verify If jquery is loaded
 window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>');
