@@ -207,12 +207,16 @@ function body_genmenu(course) {
     //  var gen_start = '<section class="light"><div class="container py-2">';
     //  var gen_end = '</div></section>';
     //  document.write(gen_start);
+    if (!course) { var course = window.location.pathname.split("/")[1]; }
     var gen_start = '<article class="genmenu" style="padding:0px">';
     var gen_end = '</article>';
     document.write(gen_start);
 
     switch (course) {
         case "csu953":
+            var fs = require('fs');
+            var files = fs.readdirSync('/csu953/');
+            console.log(files);
             var cases = [1, 2, 3, 4, 5, 6];
             for (let i = 0; i < cases.length; i++) {
                 switch (cases[i]) {
