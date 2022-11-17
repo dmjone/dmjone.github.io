@@ -393,5 +393,5 @@ function copyright(rights) {
     };
 
     // Syntax highlighter - Enable is using highlight js.
-    hljs.highlightAll();
+    window.onload = hljs.highlightAll();
 }
