@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lte 8]><html class="pre-ie9" lang="en"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+    <!--<![endif]-->
+
+    <head>
+        <script src="/js/var.js"></script>
+        <script src="/js/common.js"></script>
+        <!----<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <link rel="preconnect" href="https://dmj.one">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://picsum.photos">-->
+
+        <title>CSU953 - CSE 2026</title>
+        <meta name="description" content="Current course of CSE for the session 2022 - 2026" />
+
+        <meta property="og:title" content="CSE 2026" />
+        <meta property="og:description" content="Current course of CSE for the session 2022 - 2026" />
+        <meta property="og:image" content="/logo.png" />
+
+        <meta name="twitter:card" content="">
+        <meta name="twitter:site" content="https://su.dmj.one">
+        <meta name="twitter:title" content="CSE 2026">
+        <meta name="twitter:description" content="Current course of CSE for the session 2022 - 2026">
+        <meta name="twitter:image" content="/logo.png">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!--<link rel="fluid-icon" href="https://dmj.one/images/common/logo.png">
+        <link rel="shortcut icon" href="https://dmj.one/images/common/logo.png?v=2">
+        <link rel="apple-touch-icon" href="https://dmj.one/images/common/logo.png">
+
+        <link rel="stylesheet" href="/css/common.css" />-->
+
+        <!-- jQuery, bootstrap, highlight --
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"
+            integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"
+            integrity="sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+    </head>
+
+    <body>
+        <script>header_author("dm");</script>
+        <main id="main" name="main">
+            <script>body_genmenu();</script>
+        </main>
+        <script>copyright("all");</script>
+    </body>
+
+</html>
