@@ -12,7 +12,7 @@
   "start_url": "/csu953/?source=pwa",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "/csu953/",
+  "scope": "/",
   "theme_color": "#fafafa",
   "shortcuts": [
     {
@@ -35,7 +35,7 @@
       "url": "/csu953/c3?source=pwa",
       "icons": [
         {
-          "src": "logo.png",
+          "src": "/logo.png",
           "type": "image/png",
           "sizes": "254x254"
         }
