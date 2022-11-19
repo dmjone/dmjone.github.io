@@ -399,7 +399,8 @@ function copyright(rights) {
     document.write('<footer><span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></footer>');
 
     // Syntax highlighter - Enable is using highlight js.
-    setTimeout(hljs.highlightAll, 2500);
+    // setTimeout(hljs.highlightAll, 2500);
+    window.onload = hljs.highlightAll();
 
 
     // UselessFunctions -- Notification cookie
