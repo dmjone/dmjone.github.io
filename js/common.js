@@ -1,6 +1,9 @@
 /* 
  * This file contains all the js combined.
  */
+var hljs = "";
+function highlightAll() { };
+
 function header_createlink(rel_link, href) {
     newlink = document.createElement('link');
     newlink.setAttribute('rel', rel_link);
