@@ -21,14 +21,15 @@ header_createlink("preconnect", "https://dmj.one");
 header_createlink("preconnect", "https://fonts.gstatic.com");
 header_createlink("preconnect", "https://picsum.photos");
 
-header_createlink("shortcut icon", "https://dmj.one/images/common/logo.png?v=2");
-header_createlink("fluid-icon", "https://dmj.one/images/common/logo.png?v=2");
-header_createlink("apple-touch-icon", "https://dmj.one/images/common/logo.png?v=2");
-header_createlink("stylesheet", "/css/common.css");
-
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
+
+var temp_icon = "https://dmj.one/images/common/logo-min.png?v=2";
+header_createlink("shortcut icon", temp_icon);
+header_createlink("fluid-icon", temp_icon);
+header_createlink("apple-touch-icon", temp_icon);
+header_createlink("stylesheet", "/css/common.css");
 
 /* Verify If jquery and hljs is loaded
 function delayedcheck() {
