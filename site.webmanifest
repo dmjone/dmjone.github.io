@@ -1,6 +1,6 @@
 {
   "short_name": "dmj.one",
-  "name": "An educational initiative by dmj.one",
+  "name": "An initiative by dmj.one",
   "icons": [
     {
       "src": "logo.png",
@@ -19,7 +19,7 @@
       "name": "Go to CSU953?",
       "short_name": "CSU953",
       "description": "Front End Development Lab",
-      "url": "/csu953/?source=pwa",
+      "url": "/csu953/c2?source=pwa",
       "icons": [
         {
           "src": "logo.png",
@@ -32,7 +32,7 @@
       "name": "Go to CSU1128",
       "short_name": "CSU1128",
       "description": "Logic Building with Problem Solving",
-      "url": "/csu1128?source=pwa",
+      "url": "/csu953/c3?source=pwa",
       "icons": [
         {
           "src": "logo.png",
