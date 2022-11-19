@@ -8,7 +8,6 @@
       "sizes": "254x254"
     }
   ],
-  "id": "/?source=pwa",
   "start_url": "/",
   "background_color": "#fafafa",
   "display": "standalone",
