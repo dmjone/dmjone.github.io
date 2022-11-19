@@ -1,6 +1,6 @@
 // This is the "Offline copy of pages" service worker
 
-const CACHE = "pwabuilder-offline";
+const CACHE = "dmjone_offline";
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
