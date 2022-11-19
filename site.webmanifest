@@ -1,12 +1,46 @@
 {
   "short_name": "dmj.one",
-  "name": "An educational initiative by dmj.one for Computer Science.",
-  "icons": [{
-    "src": "logo.png",
-    "type": "image/png",
-    "sizes": "254x254"
-  }],
-  "start_url": "/",
+  "name": "An educational initiative by dmj.one",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "254x254"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
   "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#fafafa",
+  "shortcuts": [
+    {
+      "name": "Go to CSU953?",
+      "short_name": "CSU953",
+      "description": "Front End Development Lab",
+      "url": "/csu953/?source=pwa",
+      "icons": [
+        {
+          "src": "logo.png",
+          "type": "image/png",
+          "sizes": "254x254"
+        }
+      ]
+    },
+    {
+      "name": "Go to CSU1128",
+      "short_name": "CSU1128",
+      "description": "Logic Building with Problem Solving",
+      "url": "/csu1128?source=pwa",
+      "icons": [
+        {
+          "src": "logo.png",
+          "type": "image/png",
+          "sizes": "254x254"
+        }
+      ]
+    }
+  ],
+  "description": "An educational initiative by dmj.one in the subject of Computer Science at graduation level."
 }

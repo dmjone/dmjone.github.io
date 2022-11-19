@@ -1,6 +1,6 @@
 {
-    "short_name": "Weather",
-    "name": "Weather: Do I need an umbrella?",
+    "short_name": "dmj.one",
+    "name": "An educational initiative by dmj.one",
     "icons": [
         {
             "src": "logo.png",
@@ -42,12 +42,5 @@
             ]
         }
     ],
-    "description": "Select a Course",
-    "screenshots": [
-        {
-            "src": "logo.png",
-            "type": "image/png",
-            "sizes": "254x254"
-        }
-    ]
+    "description": "An educational initiative by dmj.one in the subject of Computer Science at graduation level."
 }
