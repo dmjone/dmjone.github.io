@@ -8,11 +8,11 @@
       "sizes": "254x254"
     }
   ],
-  "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
+  "id": "/csu953/?source=pwa",
+  "start_url": "/csu953/?source=pwa",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/csu953/",
   "theme_color": "#fafafa",
   "shortcuts": [
     {
