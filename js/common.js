@@ -100,8 +100,8 @@ function header_author(author_init) {
 
     var folder = window.location.pathname.split("/")[1];
     var file = window.location.pathname.split("/")[2];
-    console.log(folder.length + folder);
-    console.log(file.length + file);
+    // console.log(folder.length + folder);
+    // console.log(file.length + file);
 
     switch (folder) {
         case "csu1128":
@@ -299,10 +299,18 @@ function body_genmenu(course) {
                         body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
                     default:
+                        
                         break;
                 }
             }
         default:
+            link = "#";
+            date = "Not Applicable";
+            title = "The current " + course + " has not been defined.";
+            desc = "Please define a hierchy for the course " + course + ".";
+            codetype = "#CourseNotDefined";
+            readtime = "0";
+            body_blockcards(link, date, title, desc, codetype, readtime, 1);
             break;
     }
     document.write(gen_end);
