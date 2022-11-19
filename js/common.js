@@ -400,7 +400,7 @@ function copyright(rights) {
 
     // Syntax highlighter - Enable is using highlight js.
     // setTimeout(hljs.highlightAll, 2500);
-    document.onload = function () { hljs.highlightAll() };
+    window.onload = function () { hljs.highlightAll() };
 
 
     // UselessFunctions -- Notification cookie
