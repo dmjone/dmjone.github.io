@@ -13,6 +13,7 @@ function header_createlink(rel_link, href) {
 function header_createscript(src) {
     newscript = document.createElement('script');
     newscript.setAttribute('src', src);
+    newscript.async = 1;
     document.head.appendChild(newscript);
 }
 header_createlink("preconnect", "https://fonts.googleapis.com");
