@@ -2,6 +2,7 @@
     "name": "An initiative by dmj.one",
     "short_name": "dmj.one",
     "start_url": "/",
+    "scope": ".",
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#fff",
