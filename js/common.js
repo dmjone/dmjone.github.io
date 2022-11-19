@@ -1,8 +1,8 @@
 /* 
  * This file contains all the js combined.
- *
+ */
 var hljs = "";
-function highlightAll() { }; */
+function highlightAll() { };
 
 function header_createlink(rel_link, href) {
     newlink = document.createElement('link');
