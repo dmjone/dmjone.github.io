@@ -299,10 +299,11 @@ function body_genmenu(course) {
                         body_blockcards(link, date, title, desc, codetype, readtime, 1);
                         break;
                     default:
-                        
+
                         break;
                 }
             }
+            break;
         default:
             link = "#";
             date = "Not Applicable";
