@@ -22,10 +22,12 @@ header_createlink("preconnect", "https://dmj.one");
 header_createlink("preconnect", "https://fonts.gstatic.com");
 header_createlink("preconnect", "https://picsum.photos");
 
+header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js");
+header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
+
 
 header_createscript("/js/vendor/jquery.min.js");
-// header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
 
 var temp_icon = "https://dmj.one/images/common/logo-min.png?v=2";
 header_createlink("shortcut icon", temp_icon);
@@ -398,21 +400,22 @@ function copyright(rights) {
 
     document.write('<footer><span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></footer>');
 
-    // Syntax highlighter - Enable is using highlight js.
-    // setTimeout(hljs.highlightAll, 2500);
-    window.onload = function () { hljs.highlightAll() };
+    window.onload = function () {
+        // Syntax highlighter - Enable is using highlight js.
+        hljs.highlightAll();
 
+        // UselessFunctions -- Notification cookie
+        dcevar(notify_cookie);
+        // Notification - Privacy - I accept
 
-    // UselessFunctions -- Notification cookie
-    dcevar(notify_cookie);
-    // Notification - Privacy - I accept
-    $('.i-accept').on('click', function () {
-        if (localStorage.noshow !== '1') {
+        $('.i-accept').on('click', function () {
+            if (localStorage.noshow !== '1') {
+                $('#cookie-notice').addClass('d-none');
+                localStorage.noshow = '1';
+            }
+        });
+        if (localStorage.noshow == '1') {
             $('#cookie-notice').addClass('d-none');
-            localStorage.noshow = '1';
-        }
-    });
-    if (localStorage.noshow == '1') {
-        $('#cookie-notice').addClass('d-none');
+        };
     };
 }
