@@ -12,7 +12,7 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 10
-    versioning-strategy: auto
+    
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
@@ -20,7 +20,7 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 10
-    versioning-strategy: auto
+    
 
   # Maintain dependencies for Composer
   - package-ecosystem: "composer"
