@@ -4,6 +4,8 @@ function get_vars() {
     var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
     var course = "CSU953";
     var course_detail = "Front End Development Lab";
+
+    return prof, prof_bio, prof_href, course, course_detail;
 }
 
 function get_classes() {
