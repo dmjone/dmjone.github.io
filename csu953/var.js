@@ -1,5 +1,5 @@
 function get_classes() {
-    var clases = [1, 2, 3, 4, 5, 6];
+    var cases = [1, 2, 3, 4, 5, 6];
     for (let i = 0; i < cases.length; i++) {
         switch (cases[i]) {
             case 1:
