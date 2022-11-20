@@ -20,7 +20,6 @@ header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
 
-
 var temp_logo_min = "https://dmj.one/images/common/logo-min.png?v=2";
 var temp_logo = "https://dmj.one/images/common/logo.png?v=2";
 header_createlink("manifest", "/site.webmanifest");
