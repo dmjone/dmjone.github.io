@@ -75,7 +75,7 @@ function header_author(author_init) {
     var file = window.location.pathname.split("/")[2];
     // console.log(folder.length + folder);
     // console.log(file.length + file);
-
+    get_vars();
     switch (folder) {
         case "csu1128":
             var prof = "Dr. Pankaj Vaidya";
@@ -208,7 +208,7 @@ function body_genmenu(course) {
     //  var gen_end = '</div></section>';
     //  document.write(gen_start);
     if (!course) { var course = window.location.pathname.split("/")[1]; }
-    var gen_start = '<article class="genmenu" style="padding:0px">';
+    var gen_start = '<article class="genmenu py-3">';
     var gen_end = '</article>';
     document.write(gen_start);
 
