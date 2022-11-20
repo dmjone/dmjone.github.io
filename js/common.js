@@ -7,13 +7,13 @@ var hljs = "";
 function highlightAll() { };
 
 function header_createlink(rel_link, href) {
-    newlink = document.createElement('link');
+    var newlink = document.createElement('link');
     newlink.setAttribute('rel', rel_link);
     newlink.setAttribute('href', href);
     document.head.appendChild(newlink);
 }
 function header_createscript(src) {
-    newscript = document.createElement('script');
+    var newscript = document.createElement('script');
     newscript.setAttribute('src', src);
     newscript.defer = 1;
     document.head.appendChild(newscript);
