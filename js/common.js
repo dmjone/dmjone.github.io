@@ -1,7 +1,8 @@
 /* 
  * This file contains all the js combined.
  */
-import("/js/var.js");
+// import("/js/var.js");
+import { allvars } from "/js/var.js";
 var hljs = "";
 function highlightAll() { };
 
