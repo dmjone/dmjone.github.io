@@ -1,6 +1,7 @@
 /* 
  * This file contains all the js combined.
  */
+import("/js/var.js");
 var hljs = "";
 function highlightAll() { };
 
