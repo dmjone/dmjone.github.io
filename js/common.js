@@ -91,13 +91,13 @@ function header_author(author_init) {
             var course = "CSU1128(P)";
             var course_detail = "Logic Building with Computer Programming Lab";
             break;
-        /*        case "csu953":
-                    var prof = "Dr. Bharti Thakur";
-                    var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
-                    var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
-                    var course = "CSU953";
-                    var course_detail = "Front End Development Lab";
-                    break; */
+        case "csu953":
+            var prof = "Dr. Bharti Thakur";
+            var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
+            var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+            var course = "CSU953";
+            var course_detail = "Front End Development Lab";
+            break;
         case "fsu030":
             var prof = "Dr. Pawan Kumar";
             var prof_bio = "<p>Dr. Pawan Kumar is a assistant Professor at Shoolini University. He has more than 17 years of experience in teaching, research, and administration. He completed his Ph.D.in 2019 from Amity University, Noida with the collaboration of Punjab University, Chandigarh. He is currently working on Optical, Thermal and Electrical Properties of Chalcogenide Glasses/Thin Films.</p>";

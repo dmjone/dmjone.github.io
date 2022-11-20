@@ -4,6 +4,7 @@ var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20f
 var course = "CSU953";
 var course_detail = "Front End Development Lab";
 
+
 function get_classes() {
     var cases = [1, 2, 3, 4, 5, 6];
     for (let i = 0; i < cases.length; i++) {
