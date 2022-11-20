@@ -1,12 +1,8 @@
-function get_vars() {
-    var prof = "Dr. Bharti Thakur";
-    var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
-    var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
-    var course = "CSU953";
-    var course_detail = "Front End Development Lab";
-
-    return prof, prof_bio, prof_href, course, course_detail;
-}
+var prof = "Dr. Bharti Thakur";
+var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
+var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+var course = "CSU953";
+var course_detail = "Front End Development Lab";
 
 function get_classes() {
     var cases = [1, 2, 3, 4, 5, 6];
