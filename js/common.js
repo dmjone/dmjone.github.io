@@ -4,36 +4,7 @@
 var hljs = "";
 function highlightAll() { };
 
-function header_createlink(rel_link, href) {
-    var newlink = document.createElement('link');
-    newlink.setAttribute('rel', rel_link);
-    newlink.setAttribute('href', href);
-    document.head.appendChild(newlink);
-}
-function header_createscript(src) {
-    var newscript = document.createElement('script');
-    newscript.setAttribute('src', src);
-    newscript.defer = 1;
-    document.head.appendChild(newscript);
-}
-header_createlink("preconnect", "https://fonts.googleapis.com");
-header_createlink("preconnect", "https://cdnjs.cloudflare.com");
-header_createlink("preconnect", "https://dmj.one");
-header_createlink("preconnect", "https://fonts.gstatic.com");
-header_createlink("preconnect", "https://picsum.photos");
 
-header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js");
-header_createscript("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js");
-header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
-header_createscript("var.js");
-
-var temp_logo_min = "https://dmj.one/images/common/logo-min.png?v=2";
-var temp_logo = "https://dmj.one/images/common/logo.png?v=2";
-header_createlink("manifest", "/site.webmanifest");
-header_createlink("shortcut icon", temp_logo_min);
-header_createlink("fluid-icon", temp_logo_min);
-header_createlink("apple-touch-icon", temp_logo_min);
-header_createlink("stylesheet", "/css/common.css");
 
 // Verify If jquery and hljs is loaded
 // window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>');
