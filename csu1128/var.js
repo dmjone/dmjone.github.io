@@ -2,6 +2,9 @@ function get_menu_list() {
     var course = window.location.pathname.split("/")[1];
     var path = window.location.pathname.split("/")[2];
     var file = window.location.pathname.split("/")[3];
+    var readtime = "";
+    var author = "";
+
     if (path) {
         switch (path) {
             case "class":
@@ -21,7 +24,6 @@ function get_menu_list() {
     function get_main() {
         //        var cases = [1];
         var cases = [1];
-        var readtime = "";
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
