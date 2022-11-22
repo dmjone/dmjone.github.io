@@ -21,7 +21,8 @@ function get_menu_list() {
     }
 
     function get_main() {
-        var cases = [1, 2, 3, 4, 5, 6];
+        //        var cases = [1, 2, 3, 4, 5, 6];
+        var cases = [1];
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
