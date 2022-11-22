@@ -286,6 +286,7 @@ body {
   -webkit-user-select: none !important;
   -moz-user-select: none !important;
   user-select: none !important;
+  word-break: break-word;
 }
 
 p {
@@ -382,7 +383,7 @@ main article li {
 .syntax pre,
 .syntax code {
   font-family: Hack, monospace;
-  margin-left: -14px; 
+  margin-left: -14px;
   margin-top: -20px;
   margin-bottom: -22px;
 }
