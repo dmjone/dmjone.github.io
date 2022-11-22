@@ -803,17 +803,9 @@ a:hover {
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
   /* For portrait layouts only */
 
-  .syntax pre,
-  .syntax code {
-    max-width: 400px;
-  }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */
 
-  .syntax pre,
-  .syntax code {
-    max-width: 400px;
-  }
 }
