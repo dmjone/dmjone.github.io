@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lte 8]><html class="pre-ie9" lang="en"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+    <!--<![endif]-->
+
+    <head>
+        <script src="/js/var.js"></script>
+        <script src="var.js"></script>
+        <script src="/js/common.js"></script>
+
+        <title>CSU1128 - CSE 2026 - Shoolini University</title>
+        <meta name="description"
+            content="Learn how to create a number triangle through the Logic Building With Problem Solving of the course in Computer Science Engineering for the Session 2022 - 2026 at Shoolini University.">
+
+        <meta property="og:title" content="CSU1128 - CSE 2026 - Shoolini University">
+        <meta property="og:description"
+            content="Learn how to create a number triangle through the Logic Building With Problem Solving of the course in Computer Science Engineering for the Session 2022 - 2026 at Shoolini University.">
+        <meta property="og:image" content="/logo.png">
+        <meta property="og:type" content="article">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@divyamohan1993">
+        <meta name="twitter:author" content="@divyamohan1993">
+        <meta name="twitter:title" content="CSU1128 - CSE 2026 - Shoolini University">
+        <meta name="twitter:description"
+            content="Learn how to create a number triangle through the Logic Building With Problem Solving of the course in Computer Science Engineering for the Session 2022 - 2026 at Shoolini University.">
+        <meta name="twitter:image" content="/logo.png">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    </head>
+
+    <body>
+
+        <script>
+            header_author("dm");
+        </script>
+
+        <main>
+            <article>
+                <h2>
+                    This program prints the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1
+                </h2>
+            </article>
+            <article></article>
+            <article class="syntax">
+                <pre>
+                    <code>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int d, m, j, o, n;
+    printf("\n\n This program prints
+        the triangle of numbers of the
+        range entered by the user.
+        Example 3 = 1 2 3 2 1 \n\n");
+
+    printf("Enter a number for which
+        you want to print its triangle
+        and its reverse
+        (Example: 4 3 2 1 2 3 4) - and
+        press enter: ");
+    scanf("%d", &n);
+    printf("\n Triangle for the entered
+    range is %d is: \n", n);
+    for (d = 1; d <= n; d++)
+    {
+        for (m = 1; m <= n - d; m++)
+        {
+            printf("  ");
+        }
+        for (j = 1; j <= d; j++)
+        {
+            printf("%d ", j);
+        }
+        for (o = d - 1; o >= 1; o--)
+        {
+            printf("%d ", o);
+        }
+        printf("\n");
+    }
+    return 0;
+}                       
+</code>
+                </pre>
+            </article>
+
+            <article>
+                <h3>
+                    Output:
+                </h3>
+                <p style="text-align: center;">
+                    1 <br>
+                    1 2 1 <br>
+                    1 2 3 2 1 <br>
+                    1 2 3 4 3 2 1 <br>
+                </p>
+            </article>
+        </main>
+
+        <script>copyright("all");</script>
+    </body>
+
+</html>
