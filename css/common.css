@@ -801,12 +801,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* default iPad screens */
+  /* default iPad screens *
 
   .syntax pre,
   .syntax code {
     max-width: 600px;
-  }
+  } */
 }
 
 /* different techniques for iPad screening */
