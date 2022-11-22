@@ -9,8 +9,9 @@
         <script src="../var.js"></script>
         <script src="../../js/common.js"></script>
 
-        <title>Program 11 - CSU1128 - CSE 2026 - Shoolini University</title>
-        <meta name="description" content="Program to check if an entered year is leap or not with if else statement.">
+        <title>Program 14 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <meta name="description"
+            content="Program to print numbers between the numbers that the user chooses. Example 1 to 100.">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -32,7 +33,7 @@
         <main>
             <article>
                 <h2>
-                    Program to check if an entered year is leap or not with if else statement.
+                    Program to print numbers between the numbers that the user chooses. Example 1 to 100.
                 </h2>
             </article>
             <article></article>
@@ -57,19 +58,27 @@
 #include &lt;stdio.h&gt;
 int main()
 {
-    int d;
-    printf("\n\n Program to check if an entered year is leap or not with if else statement. \n\n");
-    printf("Enter an year - (Example: 2100) - and press enter: ");
-    scanf("%d", &d);
-    printf("\n The entered year is");
-    if (d % 4 == 0 || d % 400 == 0)
+    int d, m;
+    printf("\n\n Program to print numbers between the numbers that the user chooses. Example 1 to 100. \n\n");
+
+    printf("Enter two numbers between which you want to print all the numbers with increment of 1 - (Example: 2 100) - and press enter: ");
+    scanf("%d %d", &d, &m);
+
+    // if loop to swap max number if user enters a bigger number first.
+    if (d > m)
     {
-        printf(" a leap year.\n");
+        int j = d;
+        d = m;
+        m = j;
     }
-    else
+
+    printf("\nPrinting all the numbers between %d and %d: \n\t", d, m);
+    while (d <= m)
     {
-        printf(" not a leap year.\n");
+        printf("%d\t", d);
+        d++;
     }
+    printf("\n");
     return 0;
 }                    </code>
                 </pre>
@@ -80,11 +89,15 @@ int main()
                     Output:
                 </h3>
                 <p class="codeoutput text-justify">
-                    Program to check if an entered year is leap or not with if else statement.
+                    Program to print numbers between the numbers that the user chooses. Example 1 to 100.
                 </p>
                 <p class="codeoutput text-justify">
-                    Enter an year - (Example: 2100) - and press enter: 2003<br>
-                    &emsp;The entered year is not a leap year.
+                    Enter two numbers between which you want to print all the numbers with increment of 1 - (Example: 2
+                    100) - and press
+                    enter: 2 40<br>
+                    &emsp;Printing all the numbers between 2 and 40:
+                    2 3 4 5 6 7 8 9 10 11 12 13 14 1516 17 18 19 20 21 22 23 24 25 26 27 28 29 3031 32 33 34 35 36 37 38
+                    39 40
                 </p>
             </article>
         </main>

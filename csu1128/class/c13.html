@@ -9,8 +9,8 @@
         <script src="../var.js"></script>
         <script src="../../js/common.js"></script>
 
-        <title>Program 11 - CSU1128 - CSE 2026 - Shoolini University</title>
-        <meta name="description" content="Program to check if an entered year is leap or not with if else statement.">
+        <title>Program 13 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <meta name="description" content="Program to calculate the insurance premium as per the given norms.">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -32,7 +32,8 @@
         <main>
             <article>
                 <h2>
-                    Program to check if an entered year is leap or not with if else statement.
+                    Program to calculate the insurance premium as per the norms such that if premium is less than 10,000
+                    then a VAT is 10% of the premium else VAT is 15% of the premium.
                 </h2>
             </article>
             <article></article>
@@ -57,19 +58,23 @@
 #include &lt;stdio.h&gt;
 int main()
 {
-    int d;
-    printf("\n\n Program to check if an entered year is leap or not with if else statement. \n\n");
-    printf("Enter an year - (Example: 2100) - and press enter: ");
-    scanf("%d", &d);
-    printf("\n The entered year is");
-    if (d % 4 == 0 || d % 400 == 0)
+    float d, m, j;
+    printf("\n\n Program to calculate the insurance premium as per the following norms:");
+    char o[10][10] = {"%"};
+    printf("\n\t - if premium is less than 10,000 then a VAT is 10%s of the premium.", o[0]);
+    printf("\n\t - else VAT is 15%s of the premium. \n\n", o[0]);
+    printf("Enter the premium amount - (Example: 23232) - and press enter: ");
+    scanf("%f", &d);
+    if (d < 10000)
     {
-        printf(" a leap year.\n");
+        m = 10;
     }
     else
     {
-        printf(" not a leap year.\n");
+        m = 15;
     }
+    j = d + d * m / 100;
+    printf("\n Total premium for the entered amount is %.2f with %.2f as added VAT to it. \n", j, d * m / 100);
     return 0;
 }                    </code>
                 </pre>
@@ -80,11 +85,14 @@ int main()
                     Output:
                 </h3>
                 <p class="codeoutput text-justify">
-                    Program to check if an entered year is leap or not with if else statement.
+                    Program to calculate the insurance premium as per the following norms:<br>
+                    &emsp;- if premium is less than 10,000 then a VAT is 10% of the premium.<br>
+                    &emsp;- else VAT is 15% of the premium.
                 </p>
                 <p class="codeoutput text-justify">
-                    Enter an year - (Example: 2100) - and press enter: 2003<br>
-                    &emsp;The entered year is not a leap year.
+                    Enter the premium amount - (Example: 23232) - and press enter: 44352<br>
+                    &emsp;Gross salary of the employee is 111067.80 with 13066.80 as HRA and 32667.00 as DA amount given
+                    to them.
                 </p>
             </article>
         </main>
