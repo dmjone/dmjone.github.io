@@ -11,7 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import "normalize.css";
+@import "edu_su_normalize.css";
 /** Texts **/
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Gruppo|Lato|Roboto|Quicksand|Maven+Pro|Baloo+2');
 /* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');*/
@@ -19,7 +19,82 @@
 /** FrameWorks **/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs.min.css');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs.min.css'); */
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+
+code.hljs {
+  padding: 3px 5px
+}
+
+.hljs {
+  background: #fff;
+  color: #000
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+  color: green
+}
+
+.hljs-built_in,
+.hljs-keyword,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #00f
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-literal,
+.hljs-section,
+.hljs-string,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-title,
+.hljs-type {
+  color: #a31515
+}
+
+.hljs-deletion,
+.hljs-meta,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #2b91af
+}
+
+.hljs-doctag {
+  color: grey
+}
+
+.hljs-attr {
+  color: red
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-symbol {
+  color: #00b0e8
+}
+
+.hljs-emphasis {
+  font-style: italic
+}
+
+.hljs-strong {
+  font-weight: 700
+}
+
+
+
+
+
 
 
 html {
