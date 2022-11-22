@@ -221,6 +221,9 @@ function body_genmenu(course) {
         case "csu953":
             get_menu_list();
             break;
+        case "csu1128":
+            get_menu_list();
+            break;
         default:
             link = "#";
             date = "Not Applicable";
