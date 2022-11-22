@@ -29,7 +29,7 @@ function get_menu_list() {
                     title = "Programs done in Class";
                     desc = "This contains list of programs written in C language done in class.";
                     codetype = "C Programming";
-                    readtime = "10";
+                    // readtime = "10";
                     body_blockcards(link, date, title, desc, codetype, readtime);
                     break;
                 case 2:
