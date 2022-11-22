@@ -237,7 +237,7 @@ function body_genmenu(course) {
     document.write(gen_end);
 }
 
-function body_blockcards(link, date, title, desc, codetype, readtime) {
+function body_blockcards(link, date, title, desc, codetype, readtime, author) {
 
     // USAGE - body_blockcards("/csu953/c1", "Thursday, September 29th 2022", "Lab 1 fn", "An introduction to HTML.", "HTML", "2");
 
@@ -251,6 +251,14 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     if (desc) { } else desc = "No desc provided";
     var include_generator = 2;
     if (include_generator == 1) { var gen_start = '<article>'; var gen_end = '</article>'; } else { gen_start = ""; gen_end = ""; }
+    switch (author) {
+        case "vp":
+            author = "Vanshika Painuly";
+            break;
+        default:
+            author = "Divya Mohan";
+            break;
+    }
 
 
     var color = ["yellow", "blue", "red", "green"];
@@ -264,9 +272,10 @@ function body_blockcards(link, date, title, desc, codetype, readtime) {
     var m5 = '<ul class="postcard__tagbox">';
     if (codetype) { var m6 = '<li class="tag__item"><i class="bi bi-file-earmark-code"></i>  ' + codetype + '</li>'; } else { var m6 = ""; }
     if (readtime) { var m7 = '<li class="tag__item"><i class="bi bi-clock"></i>  ' + readtime + ' minute read</li>'; } else { var m7 = ""; }
-    var m8 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></div>';
+    var m8 = '<li class="tag__item"><i class="bi bi-pencil-square"></i>  ' + author + ' </li>';
+    var m9 = '<li class="tag__item play ' + getcolor + '"><a href="' + link + '"><i class="bi bi-book"></i>  Cont. Reading</a></li></ul></div></div>';
 
-    document.write(gen_start + m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + gen_end);
+    document.write(gen_start + m + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + gen_end);
 }
 
 // Footer Codes
