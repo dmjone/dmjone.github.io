@@ -107,8 +107,8 @@ function get_menu_list() {
                  case 2:
                     link = "c31";
                     date = "Thu September 27, 2022";
-                    title = "To print a loop which prints a triangle in top down order";
-                    desc = "Use of tags title, details, p, heading, and inline style of background-color.";
+                    title = "Program 31";
+                    desc = "To print a loop which prints a triangle in top down order.";
                     codetype = "C";
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
