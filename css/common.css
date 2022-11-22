@@ -382,9 +382,9 @@ main article li {
 .syntax pre,
 .syntax code {
   font-family: Hack, monospace;
-  /* margin-left: -120px; 
+  margin-left: -14px; 
   margin-top: -20px;
-  margin-bottom: -40px; */
+  margin-bottom: -22px;
 }
 
 main article p .output {
