@@ -9,9 +9,9 @@
         <script src="../var.js"></script>
         <script src="../../js/common.js"></script>
 
-        <title>Program 30 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <title>Program 23 - CSU1128 - CSE 2026 - Shoolini University</title>
         <meta name="description"
-            content="Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1">
+            content="Program to print all numbers which four digit perfect square and where its first two digit and last two digits are also a perfect square. Example 1681.">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -33,7 +33,9 @@
         <main>
             <article>
                 <h2>
-                    Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1
+                    Program to print all numbers which four digit perfect square and where its first two digit and last
+                    two digits are also
+                    a perfect square. Example 1681.
                 </h2>
             </article>
             <article></article>
@@ -56,33 +58,32 @@
  * */
 
 #include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
 int main()
 {
-    int d, m, j, o, n;
-    printf("\n\n Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1 \n\n");
+    int d;
+    printf("\n\n Program to print all numbers which four digit perfect square and where its first two digit and last two digits are also a perfect square. Example 1681. \n\n");
 
-    printf("Enter a number for which you want to print its triangle and its reverse (Example: 4 = 1 2 3 4 3 2 1) - and press enter: ");
-    scanf("%d", &n);
-    printf("\n Triangle for the entered range is %d is: \n", n);
-    for (d = 1; d <= n; d++)
+    printf("All four digit special perfect square numbers between 1111 and 9999 are:\n");
+    for (d = 1000; d <= 9999; d++)
     {
-        for (m = 1; m <= n - d; m++)
+        int m = sqrt(d); // Take root of i
+        if (m * m == d)
         {
-            printf("  ");
+            int j = d / 100;
+            int o = d % 100;
+            int n = sqrt(j);
+            int e = sqrt(o);
+
+            if (n * n == x && e * e == y)
+            {
+                printf("\t %d \t", d);
+            }
         }
-        for (j = 1; j <= d; j++)
-        {
-            printf("%d ", j);
-        }
-        for (o = d - 1; o >= 1; o--)
-        {
-            printf("%d ", o);
-        }
-        printf("\n");
     }
+    printf("\n");
     return 0;
-}
-                    </code>
+}                    </code>
                 </pre>
             </article>
 
@@ -91,22 +92,13 @@ int main()
                     Output:
                 </h3>
                 <p class="codeoutput text-justify">
-                    Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1
+                    Program to print all numbers which four digit perfect square and where its first two digit and last
+                    two digits are also
+                    a perfect square. Example 1681.
                 </p>
                 <p class="codeoutput text-justify">
-                    Enter a number for which you want to print its triangle and its reverse (Example: 4 = 1 2 3 4 3 2 1)
-                    -
-                    and press enter: 5<br>
-                    Triangle for the entered range is 5 is:
-                </p>
-
-                <p class="codeoutput text-center">
-
-                    1 <br>
-                    1 2 1 <br>
-                    1 2 3 2 1 <br>
-                    1 2 3 4 3 2 1 <br>
-                    1 2 3 4 5 4 3 2 1 <br>
+                    All four digit special perfect square numbers between 1111 and 9999 are:<br>
+                    1600 1681 2500 3600 4900 6400 8100
                 </p>
             </article>
         </main>

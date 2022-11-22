@@ -9,9 +9,9 @@
         <script src="../var.js"></script>
         <script src="../../js/common.js"></script>
 
-        <title>Program 30 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <title>Program 24 - CSU1128 - CSE 2026 - Shoolini University</title>
         <meta name="description"
-            content="Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1">
+            content="Program to print the armstrong number. An armstrong number is the number where the sum of cube of each digit is equal to the number itself. Example 370 = 27 + 343 + 0 = 370">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -33,7 +33,9 @@
         <main>
             <article>
                 <h2>
-                    Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1
+                    Program to print the armstrong number. An armstrong number is the number where the sum of cube of
+                    each digit is equal to
+                    the number itself. Example 370 = 27 + 343 + 0 = 370
                 </h2>
             </article>
             <article></article>
@@ -56,33 +58,40 @@
  * */
 
 #include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
 int main()
 {
-    int d, m, j, o, n;
-    printf("\n\n Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1 \n\n");
+    int d, m, j;
+    printf("\n\n Program to print the armstrong number. An armstrong number is the number where the sum of cube of each digit is equal to the number itself. Example 370 = 27 + 343 + 0 = 370 \n\n");
 
-    printf("Enter a number for which you want to print its triangle and its reverse (Example: 4 = 1 2 3 4 3 2 1) - and press enter: ");
-    scanf("%d", &n);
-    printf("\n Triangle for the entered range is %d is: \n", n);
-    for (d = 1; d <= n; d++)
+    printf("Enter two number between which you want to print armstrong numbers (Example: 21 1200) - and press enter: ");
+    scanf("%d %d", &d, &m);
+    printf("\n Armstrong numbers between %d and %d are: \n", d, m);
+
+    for (j = d; j <= m; j++)
     {
-        for (m = 1; m <= n - d; m++)
+        int o, n, e = 0, s = 0;
+        o = j;
+
+        while (o != 0)
         {
-            printf("  ");
+            e += 1;
+            o /= 10;
         }
-        for (j = 1; j <= d; j++)
+
+        for (o = j; o > 0; o = o / 10)
         {
-            printf("%d ", j);
+            n = o % 10;
+            s += pow(n, e);
+
+            if (j == s)
+                printf("\t %d ", j);
         }
-        for (o = d - 1; o >= 1; o--)
-        {
-            printf("%d ", o);
-        }
-        printf("\n");
     }
+
+    printf("\n");
     return 0;
-}
-                    </code>
+}                    </code>
                 </pre>
             </article>
 
@@ -91,22 +100,15 @@ int main()
                     Output:
                 </h3>
                 <p class="codeoutput text-justify">
-                    Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1
+                    Program to print the armstrong number. An armstrong number is the number where the sum of cube of
+                    each digit is equal to
+                    the number itself. Example 370 = 27 + 343 + 0 = 370
                 </p>
                 <p class="codeoutput text-justify">
-                    Enter a number for which you want to print its triangle and its reverse (Example: 4 = 1 2 3 4 3 2 1)
-                    -
-                    and press enter: 5<br>
-                    Triangle for the entered range is 5 is:
-                </p>
-
-                <p class="codeoutput text-center">
-
-                    1 <br>
-                    1 2 1 <br>
-                    1 2 3 2 1 <br>
-                    1 2 3 4 3 2 1 <br>
-                    1 2 3 4 5 4 3 2 1 <br>
+                    Enter two number between which you want to print armstrong numbers (Example: 21 1200) - and press
+                    enter: 100
+                    300<br>
+                    &emsp;Armstrong numbers between 100 and 300 are: 125 153 216
                 </p>
             </article>
         </main>

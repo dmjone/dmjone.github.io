@@ -9,9 +9,9 @@
         <script src="../var.js"></script>
         <script src="../../js/common.js"></script>
 
-        <title>Program 30 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <title>Program 22 - CSU1128 - CSE 2026 - Shoolini University</title>
         <meta name="description"
-            content="Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1">
+            content="Program to print all numbers which are perfect square between user entered values. Example 1681.">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -33,7 +33,7 @@
         <main>
             <article>
                 <h2>
-                    Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1
+                    Program to print all numbers which are perfect square between user entered values. Example 1681.
                 </h2>
             </article>
             <article></article>
@@ -56,33 +56,27 @@
  * */
 
 #include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
 int main()
 {
-    int d, m, j, o, n;
-    printf("\n\n Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1 \n\n");
+    int d, m, j, o;
+    printf("\n\n Program to print all numbers which are perfect square between user entered values. Example 1681. \n\n");
 
-    printf("Enter a number for which you want to print its triangle and its reverse (Example: 4 = 1 2 3 4 3 2 1) - and press enter: ");
-    scanf("%d", &n);
-    printf("\n Triangle for the entered range is %d is: \n", n);
-    for (d = 1; d <= n; d++)
+    printf("Enter two numbers between which you want to find the perfect squares and print all such numbers - (Example: 2 100) - and press enter: ");
+    scanf("%d %d", &j, &o);
+    printf("All four digit special perfect square numbers between %d and %d are:\n", j, o);
+    for (d = j; d <= o; d++)
     {
-        for (m = 1; m <= n - d; m++)
+        m = sqrt(d); // ri = root of i
+        if (m * m == d)
         {
-            printf("  ");
+            printf("\t %d", d);
         }
-        for (j = 1; j <= d; j++)
-        {
-            printf("%d ", j);
-        }
-        for (o = d - 1; o >= 1; o--)
-        {
-            printf("%d ", o);
-        }
-        printf("\n");
     }
+
+    printf("\n");
     return 0;
-}
-                    </code>
+}                    </code>
                 </pre>
             </article>
 
@@ -91,22 +85,18 @@ int main()
                     Output:
                 </h3>
                 <p class="codeoutput text-justify">
-                    Program to print the triangle of numbers of the range entered by the user. Example 3 = 1 2 3 2 1
+                    Program to print all numbers which are perfect square between user entered values. Example 1681.
                 </p>
                 <p class="codeoutput text-justify">
-                    Enter a number for which you want to print its triangle and its reverse (Example: 4 = 1 2 3 4 3 2 1)
-                    -
-                    and press enter: 5<br>
-                    Triangle for the entered range is 5 is:
-                </p>
-
-                <p class="codeoutput text-center">
-
-                    1 <br>
-                    1 2 1 <br>
-                    1 2 3 2 1 <br>
-                    1 2 3 4 3 2 1 <br>
-                    1 2 3 4 5 4 3 2 1 <br>
+                    Enter two numbers between which you want to find the perfect squares and print all such numbers -
+                    (Example: 2 100) - and
+                    press enter: 23 4443<br>
+                    &emsp;All four digit special perfect square numbers between 23 and 4443 are:
+                    25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900
+                    961 1024 1089 1156
+                    1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916
+                    3025 3136 3249 3364
+                    3481 3600 3721 3844 3969 4096 4225 4356
                 </p>
             </article>
         </main>
