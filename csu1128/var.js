@@ -93,7 +93,7 @@ function get_menu_list() {
     }
 
     function get_classes() {
-        var cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32];
+        var cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36];
         for (let i = 0; i < cases.length; i++) {
             var codetype = "C Language";
             switch (cases[i]) {
@@ -151,8 +151,8 @@ function get_menu_list() {
                     readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                default:
-                case 1:
+
+                case 7:
                     link = "c30";
                     date = "Mon November 21, 2022";
                     title = "Program 30";
@@ -161,7 +161,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 2:
+                case 8:
                     link = "c31";
                     date = "Thu September 27, 2022";
                     title = "Program 31";
@@ -170,7 +170,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 3:
+                case 9:
                     link = "c3";
                     date = "Thu September 27, 2022";
                     title = "Lab 3";
@@ -179,7 +179,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 4:
+                case 10:
                     link = "c4";
                     date = "Thu September 27, 2022";
                     title = "Lab 4";
@@ -188,7 +188,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 5:
+                case 11:
                     link = "c5";
                     date = "Thu September 27, 2022";
                     title = "Lab 5";
@@ -197,7 +197,7 @@ function get_menu_list() {
                     readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 6:
+                case 12:
                     link = "c6";
                     date = "Thu November 17, 2022";
                     title = "Lab 6";
@@ -206,8 +206,8 @@ function get_menu_list() {
                     readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                default:
-                case 1:
+
+                case 13:
                     link = "c30";
                     date = "Mon November 21, 2022";
                     title = "Program 30";
@@ -216,7 +216,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 2:
+                case 14:
                     link = "c31";
                     date = "Thu September 27, 2022";
                     title = "Program 31";
@@ -225,7 +225,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 3:
+                case 15:
                     link = "c3";
                     date = "Thu September 27, 2022";
                     title = "Lab 3";
@@ -234,7 +234,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 4:
+                case 16:
                     link = "c4";
                     date = "Thu September 27, 2022";
                     title = "Lab 4";
@@ -243,7 +243,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 5:
+                case 17:
                     link = "c5";
                     date = "Thu September 27, 2022";
                     title = "Lab 5";
@@ -252,7 +252,7 @@ function get_menu_list() {
                     readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 6:
+                case 18:
                     link = "c6";
                     date = "Thu November 17, 2022";
                     title = "Lab 6";
@@ -261,8 +261,8 @@ function get_menu_list() {
                     readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                default:
-                case 1:
+
+                case 19:
                     link = "c30";
                     date = "Mon November 21, 2022";
                     title = "Program 30";
@@ -271,7 +271,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 2:
+                case 20:
                     link = "c31";
                     date = "Thu September 27, 2022";
                     title = "Program 31";
@@ -280,7 +280,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 3:
+                case 21:
                     link = "c3";
                     date = "Thu September 27, 2022";
                     title = "Lab 3";
@@ -289,7 +289,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 4:
+                case 22:
                     link = "c4";
                     date = "Thu September 27, 2022";
                     title = "Lab 4";
@@ -298,7 +298,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 5:
+                case 23:
                     link = "c5";
                     date = "Thu September 27, 2022";
                     title = "Lab 5";
@@ -307,7 +307,7 @@ function get_menu_list() {
                     readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 6:
+                case 24:
                     link = "c6";
                     date = "Thu November 17, 2022";
                     title = "Lab 6";
@@ -316,8 +316,8 @@ function get_menu_list() {
                     readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                default:
-                case 1:
+
+                case 25:
                     link = "c30";
                     date = "Mon November 21, 2022";
                     title = "Program 30";
@@ -326,7 +326,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 2:
+                case 26:
                     link = "c31";
                     date = "Thu September 27, 2022";
                     title = "Program 31";
@@ -335,7 +335,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 3:
+                case 27:
                     link = "c3";
                     date = "Thu September 27, 2022";
                     title = "Lab 3";
@@ -344,7 +344,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 4:
+                case 28:
                     link = "c4";
                     date = "Thu September 27, 2022";
                     title = "Lab 4";
@@ -353,7 +353,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 5:
+                case 29:
                     link = "c5";
                     date = "Thu September 27, 2022";
                     title = "Lab 5";
@@ -362,7 +362,7 @@ function get_menu_list() {
                     readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 6:
+                case 30:
                     link = "c6";
                     date = "Thu November 17, 2022";
                     title = "Lab 6";
@@ -371,8 +371,8 @@ function get_menu_list() {
                     readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                default:
-                case 1:
+
+                case 31:
                     link = "c30";
                     date = "Mon November 21, 2022";
                     title = "Program 30";
@@ -381,7 +381,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 2:
+                case 32:
                     link = "c31";
                     date = "Thu September 27, 2022";
                     title = "Program 31";
@@ -390,7 +390,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 3:
+                case 33:
                     link = "c3";
                     date = "Thu September 27, 2022";
                     title = "Lab 3";
@@ -399,7 +399,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 4:
+                case 34:
                     link = "c4";
                     date = "Thu September 27, 2022";
                     title = "Lab 4";
@@ -408,7 +408,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 5:
+                case 35:
                     link = "c5";
                     date = "Thu September 27, 2022";
                     title = "Lab 5";
@@ -417,7 +417,7 @@ function get_menu_list() {
                     readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 6:
+                case 36:
                     link = "c6";
                     date = "Thu November 17, 2022";
                     title = "Lab 6";
