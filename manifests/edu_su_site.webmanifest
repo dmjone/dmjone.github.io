@@ -22,7 +22,7 @@
   "theme_color": "#fafafa",
   "shortcuts": [
     {
-      "name": "Go to CSU953?",
+      "name": "Go to course CSU953",
       "short_name": "CSU953",
       "description": "Front End Development Lab",
       "url": "csu953",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "name": "Go to CSU1128",
+      "name": "Go to course CSU1128",
       "short_name": "CSU1128",
       "description": "Logic Building with Problem Solving",
       "url": "/csu1128/?source=pwa",
