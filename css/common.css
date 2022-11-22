@@ -757,6 +757,30 @@ a:hover {
   }
 }
 
+@media only screen and (max-width:732px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 630px;
+  }
+}
+
+@media only screen and (max-width:832px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 730px;
+  }
+}
+
+@media only screen and (max-width:950px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 830px;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
 
