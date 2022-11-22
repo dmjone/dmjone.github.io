@@ -780,7 +780,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 280px !important;
+    max-width: 280px;
   }
 }
 
@@ -789,7 +789,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 380px !important;
+    max-width: 380px;
   }
 }
 
@@ -798,7 +798,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 480px !important;
+    max-width: 480px;
   }
 }
 
@@ -806,7 +806,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 530px !important;
+    max-width: 530px;
   }
 }
 
@@ -814,7 +814,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 630px !important;
+    max-width: 630px;
   }
 }
 
@@ -822,7 +822,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 730px !important;
+    max-width: 730px;
   }
 }
 
@@ -830,7 +830,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 830px !important;
+    max-width: 830px;
   }
 }
 
