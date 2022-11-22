@@ -749,12 +749,11 @@ a:hover {
 
 
 /** Portrait Orientation Devices **/
-@media only screen and (orientation: portrait),
-(max-width:632px) {
+@media only screen and (max-width:632px) {
 
   .syntax pre,
   .syntax code {
-    max-width: 550px;
+    max-width: 530px;
   }
 }
 
@@ -787,7 +786,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 400px;
+    max-width: 380px;
   }
 }
 
@@ -796,17 +795,17 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 300px;
+    max-width: 280px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  /* default iPad screens *
+  /* default iPad screens */
 
   .syntax pre,
   .syntax code {
-    max-width: 600px;
-  } */
+    max-width: 670px;
+  }
 }
 
 /* different techniques for iPad screening */
@@ -816,6 +815,7 @@ a:hover {
   .syntax pre,
   .syntax code {
     min-width: 481px;
+    max-width: 920px;
   }
 }
 
@@ -825,5 +825,6 @@ a:hover {
   .syntax pre,
   .syntax code {
     min-width: 481px;
+    max-width: 920px;
   }
 }
