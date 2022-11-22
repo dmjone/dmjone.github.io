@@ -749,37 +749,7 @@ a:hover {
 
 
 /** Portrait Orientation Devices **/
-@media only screen and (max-width:632px) {
 
-  .syntax pre,
-  .syntax code {
-    max-width: 530px;
-  }
-}
-
-@media only screen and (max-width:732px) {
-
-  .syntax pre,
-  .syntax code {
-    max-width: 630px;
-  }
-}
-
-@media only screen and (max-width:832px) {
-
-  .syntax pre,
-  .syntax code {
-    max-width: 730px;
-  }
-}
-
-@media only screen and (max-width:950px) {
-
-  .syntax pre,
-  .syntax code {
-    max-width: 830px;
-  }
-}
 
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
@@ -805,21 +775,62 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 480px) {
-  /* styles for mobile browsers smaller than 480px; (iPhone) */
-
-  .syntax pre,
-  .syntax code {
-    max-width: 380px;
-  }
-}
-
 @media only screen and (max-width: 380px) {
   /* styles for mobile browsers smaller than 350px; (mi) */
 
   .syntax pre,
   .syntax code {
-    max-width: 280px;
+    max-width: 280px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  .syntax pre,
+  .syntax code {
+    max-width: 380px !important;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  /* styles for mobile browsers smaller than 350px; (mi) */
+
+  .syntax pre,
+  .syntax code {
+    max-width: 480px !important;
+  }
+}
+
+@media only screen and (max-width:632px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 530px !important;
+  }
+}
+
+@media only screen and (max-width:732px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 630px !important;
+  }
+}
+
+@media only screen and (max-width:832px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 730px !important;
+  }
+}
+
+@media only screen and (max-width:950px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 830px !important;
   }
 }
 
