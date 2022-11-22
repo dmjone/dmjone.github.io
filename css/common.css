@@ -781,7 +781,8 @@ a:hover {
 
 }
 
-@media only screen and (max-device-width: 480px) {
+
+@media only screen and (max-device-width: 480px) or (max-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
 
   .syntax pre,
@@ -790,7 +791,16 @@ a:hover {
   }
 }
 
-@media only screen and (device-width: 768px) {
+@media only screen and (max-device-width: 350px) or (max-width: 350px) {
+  /* styles for mobile browsers smaller than 350px; (mi) */
+
+  .syntax pre,
+  .syntax code {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-device-width: 768px) or (max-width: 768px) {
   /* default iPad screens */
 
   .syntax pre,
