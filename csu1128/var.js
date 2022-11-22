@@ -31,7 +31,7 @@ function get_menu_list() {
                     desc = "This contains list of programs written in C language done in class.";
                     codetype = "C Programming";
                     // readtime = "10";
-                    body_blockcards(link, date, title, desc, codetype, readtime);
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 2:
                     link = "books";
@@ -40,7 +40,7 @@ function get_menu_list() {
                     desc = "Learn where";
                     // codetype = "HTML";
                     readtime = "2";
-                    body_blockcards(link, date, title, desc, codetype, readtime);
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 default:
                     link = "#";
@@ -49,7 +49,7 @@ function get_menu_list() {
                     desc = "Please define a hierchy for the classes of course " + course + ".";
                     codetype = "#CourseNotDefined";
                     readtime = "0";
-                    body_blockcards(link, date, title, desc, codetype, readtime);
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
             }
         }
@@ -58,12 +58,14 @@ function get_menu_list() {
     function get_classes() {
         var cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36];
         for (let i = 0; i < cases.length; i++) {
+
             var codetype = "C Language";
             var d = i + 1;
             var link = "c" + d;
             var title = "Program " + d;
             var readtime = Math.floor(Math.random() * 5) + 2;
-            author = 1;
+            var author = 1;
+
             switch (cases[i]) {
                 case 1:
                     // link = "add_link like 'c2' ";
@@ -231,7 +233,7 @@ function get_menu_list() {
                 case 32:
                     date = "Thu September 27, 2022";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    body_blockcards(link, date, title, desc, codetype, readtime);
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 33:
                     date = "Thu September 27, 2022";

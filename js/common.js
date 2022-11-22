@@ -254,15 +254,11 @@ function body_blockcards(link, date, title, desc, codetype, readtime, author) {
     var include_generator = 2;
     if (include_generator == 1) { var gen_start = '<article>'; var gen_end = '</article>'; } else { gen_start = ""; gen_end = ""; }
     if (author) {
-        switch (author) {
-            case "vp":
-                author = "Vanshika Painuly";
-                break;
-            default:
-                author = "Divya Mohan";
-                break;
-        }
+        if (author == "vp") { author = "Vanshika Painuly"; }
+        else if (author == 1) { author = "Divya Mohan"; }
+        else { author = author; }
     }
+
 
 
     var color = ["yellow", "blue", "red", "green"];
