@@ -21,6 +21,7 @@ function get_menu_list() {
     function get_main() {
         //        var cases = [1];
         var cases = [1];
+        var readtime = "";
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
