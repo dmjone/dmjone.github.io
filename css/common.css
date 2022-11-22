@@ -782,8 +782,7 @@ a:hover {
 }
 
 
-@media only screen and (max-device-width: 480px),
-(max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
 
   .syntax pre,
@@ -792,8 +791,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-device-width: 380px),
-(max-width: 380px) {
+@media only screen and (max-width: 380px) and (orientation: portrait) {
   /* styles for mobile browsers smaller than 350px; (mi) */
 
   .syntax pre,
@@ -802,8 +800,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-device-width: 768px),
-(max-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* default iPad screens */
 
   .syntax pre,
