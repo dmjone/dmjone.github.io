@@ -393,6 +393,11 @@ main article p .output {
   color: auto;
 }
 
+.codeoutput {
+  font-family: Hack, monospace;
+  color: var(--bs-code-color);
+}
+
 /** Footer **/
 footer {
   background: rgba(192, 192, 192, 0.637);
