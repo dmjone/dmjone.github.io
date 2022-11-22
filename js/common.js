@@ -219,9 +219,11 @@ function body_genmenu(course) {
 
     switch (course) {
         case "csu953":
-            get_menu_list();
-            break;
         case "csu1128":
+        case "csu1128p":
+        case "csu730":
+        case "csu951":
+        case "fsu030":
             get_menu_list();
             break;
         default:
