@@ -222,12 +222,13 @@ function get_menu_list() {
                 case 31:
                     date = "Mon November 21, 2022";
                     desc = "To print a loop which prints a triangle";
-                    body_blockcards(link, date, title, desc, codetype, readtime, 1, "vp");
+                    author = "vp";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 32:
                     date = "Thu September 27, 2022";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    body_blockcards(link, date, title, desc, codetype, readtime, 1);
+                    body_blockcards(link, date, title, desc, codetype, readtime);
                     break;
                 case 33:
                     date = "Thu September 27, 2022";
