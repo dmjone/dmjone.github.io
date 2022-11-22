@@ -9,8 +9,9 @@
         <script src="../var.js"></script>
         <script src="../../js/common.js"></script>
 
-        <title>Program 1 - CSU1128 - CSE 2026 - Shoolini University</title>
-        <meta name="description" content="Program to print the Hello World">
+        <title>Program 5 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <meta name="description"
+            content="Program to check if an entered year is leap or not without if else statement.">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -32,7 +33,7 @@
         <main>
             <article>
                 <h2>
-                    Program to print the Hello World
+                    Program to check if an entered year is leap or not without if else statement.
                 </h2>
             </article>
             <article></article>
@@ -57,10 +58,14 @@
 #include &lt;stdio.h&gt;
 int main()
 {
-    printf("Hello World \n");
+    int d;
+    printf("\n\n Program to check if an entered year is leap or not without if else statement. \n\n");
+    printf("Enter an year - (Example: 2100) - and press enter: ");
+    scanf("%d", &d);
+    printf("\n The entered year is");
+    (d % 4 == 0 || d % 400 == 0) ? printf(" a leap year.\n") : printf(" not a leap year.\n");
     return 0;
-}
-                    </code>
+}                    </code>
                 </pre>
             </article>
 
@@ -68,9 +73,13 @@ int main()
                 <h3>
                     Output:
                 </h3>
-                <p class="codeoutput text-justify">
-                    Hello World
-                </p>
+                <pre class="codeoutput text-justify">
+Program to check if an entered year is leap or not without if else statement.
+
+Enter an year - (Example: 2100) - and press enter: 2000
+
+    The entered year is a leap year.
+                </pre>
             </article>
         </main>
 

@@ -9,8 +9,8 @@
         <script src="../var.js"></script>
         <script src="../../js/common.js"></script>
 
-        <title>Program 1 - CSU1128 - CSE 2026 - Shoolini University</title>
-        <meta name="description" content="Program to print the Hello World">
+        <title>Program 4 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <meta name="description" content="Program to find max between 2 digits.">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -32,7 +32,7 @@
         <main>
             <article>
                 <h2>
-                    Program to print the Hello World
+                    Program to find max between 2 digits.
                 </h2>
             </article>
             <article></article>
@@ -57,10 +57,26 @@
 #include &lt;stdio.h&gt;
 int main()
 {
-    printf("Hello World \n");
+    float d, m;
+    printf("\n\n Program to find max between 2 digits. \n\n");
+    printf("Enter 2 numbers with a space - (Example: 20.3 50.55) - and press enter: ");
+    scanf("%f %f", &d, &m);
+
+    // Using if Loop
+    if (d > m)
+    {
+        printf("\n Using if Loop \n\n \tMaximum number is %.2f from the entered numbers %.2f and %.2f \n", d, d, m);
+    }
+    else
+    {
+        printf("\n Using if Loop \n\n \tMaximum number is %.2f from the entered numbers %.2f and %.2f \n", m, d, m);
+    }
+
+    // Without using if loop
+    float j = (d > m) ? d : m;
+    printf("\n Without using if Loop \n\n \tMaximum number is %.2f from the entered numbers %.2f and %.2f \n", j, d, m);
     return 0;
-}
-                    </code>
+}                    </code>
                 </pre>
             </article>
 
@@ -68,9 +84,17 @@ int main()
                 <h3>
                     Output:
                 </h3>
-                <p class="codeoutput text-justify">
-                    Hello World
-                </p>
+                <pre class="codeoutput text-justify">
+Program to find max between 2 digits
+
+Enter 2 numbers with a space - (Example: 20.3 50.55) - and press enter: 4 65
+
+Using if Loop
+    Maximum number is 65.00 from the entered numbers 4.00 and 65.00
+
+Without using if Loop
+    Maximum number is 65.00 from the entered numbers 4.00 and 65.00
+                </pre>
             </article>
         </main>
 
