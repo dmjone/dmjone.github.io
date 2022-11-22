@@ -58,7 +58,7 @@ function get_menu_list() {
     }
 
     function get_classes() {
-        var cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36];
+        var cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
         for (let i = 0; i < cases.length; i++) {
 
             var codetype = "C Language";
@@ -203,7 +203,7 @@ function get_menu_list() {
                     break;
                 case 26:
                     date = "Wed November 16, 2022";
-                    desc = "Program to print the average of the numbers stored in an array entered by the user.To print a loop which prints a triangle in top down order.";
+                    desc = "Program to print the average of the numbers stored in an array entered by the user.";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 27:
@@ -213,12 +213,12 @@ function get_menu_list() {
                     break;
                 case 28:
                     date = "Thu September 27, 2022";
-                    desc = "Class Test";
+                    desc = "N/A";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 29:
                     date = "Thu September 27, 2022";
-                    desc = "Use of table, tr, th tags in creation of Tables";
+                    desc = "N/A";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 30:
