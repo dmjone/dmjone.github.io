@@ -1,6 +1,6 @@
 {
   "short_name": "dmj.one",
-  "name": "An initiative by dmj.one",
+  "name": "Study @Shoolini with dmj.one",
   "icons": [
     {
       "src": "/logo.png",
@@ -16,7 +16,7 @@
   ],
   "start_url": "/",
   "background_color": "#fafafa",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "scope": ".",
   "theme_color": "#fafafa",
@@ -25,7 +25,7 @@
       "name": "Go to CSU953?",
       "short_name": "CSU953",
       "description": "Front End Development Lab",
-      "url": "csu953/source=pwa",
+      "url": "csu953",
       "icons": [
         {
           "src": "logo.png",
