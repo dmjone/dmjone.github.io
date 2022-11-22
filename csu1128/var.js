@@ -16,8 +16,8 @@ function get_menu_list() {
         }
     }
     else {
-        // get_main();
-        get_classes();
+        get_main();
+
     }
 
     function get_main() {
@@ -27,9 +27,9 @@ function get_menu_list() {
                 case 1:
                     link = "class";
                     date = "Thu September 27, 2022";
-                    title = "Classes";
-                    desc = "This contains list of classes";
-                    codetype = "LABS";
+                    title = "Programs";
+                    desc = "This contains list of programs written in C language.";
+                    codetype = "C Programming";
                     readtime = "10";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
@@ -104,7 +104,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                 case 2:
+                case 2:
                     link = "c31";
                     date = "Thu September 27, 2022";
                     title = "Program 31";
@@ -113,7 +113,7 @@ function get_menu_list() {
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-/*                case 3:
+                case 3:
                     link = "c3";
                     date = "Thu September 27, 2022";
                     title = "Lab 3";
@@ -148,7 +148,7 @@ function get_menu_list() {
                     codetype = "HTML";
                     readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
-                    break;*/
+                    break;
                 default:
                     link = "#";
                     date = "Not Applicable";
