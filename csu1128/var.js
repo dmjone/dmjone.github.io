@@ -99,21 +99,21 @@ function get_menu_list() {
                     link = "c30";
                     date = "Mon November 21, 2022";
                     title = "Program 30";
-                    desc = "To print a loop whichi prints a triangle";
-                    codetype = "HTML";
+                    desc = "To print a loop which prints a triangle";
+                    codetype = "C";
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                /* case 2:
-                    link = "c2";
+                 case 2:
+                    link = "c31";
                     date = "Thu September 27, 2022";
-                    title = "Lab 2";
+                    title = "To print a loop which prints a triangle in top down order";
                     desc = "Use of tags title, details, p, heading, and inline style of background-color.";
-                    codetype = "HTML";
+                    codetype = "C";
                     readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
-                case 3:
+/*                case 3:
                     link = "c3";
                     date = "Thu September 27, 2022";
                     title = "Lab 3";
