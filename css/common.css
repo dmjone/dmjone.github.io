@@ -791,7 +791,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 380px) and (orientation: portrait) {
+@media only screen and (max-width: 380px) {
   /* styles for mobile browsers smaller than 350px; (mi) */
 
   .syntax pre,
@@ -805,7 +805,7 @@ a:hover {
 
   .syntax pre,
   .syntax code {
-    max-width: 700px;
+    max-width: 600px;
   }
 }
 
