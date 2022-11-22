@@ -5,7 +5,8 @@
     {
       "src": "/logo.png",
       "type": "image/png",
-      "sizes": "254x254"
+      "sizes": "254x254",
+      "purpose": "any"
     },
     {
       "src": "/logo.png",
@@ -13,7 +14,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/csu953/",
   "background_color": "#fafafa",
   "display": "standalone",
   "orientation": "portrait",
@@ -24,7 +25,7 @@
       "name": "Go to CSU953?",
       "short_name": "CSU953",
       "description": "Front End Development Lab",
-      "url": "/csu953/source=pwa",
+      "url": "csu953/source=pwa",
       "icons": [
         {
           "src": "logo.png",
