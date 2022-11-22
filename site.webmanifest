@@ -3,14 +3,20 @@
   "name": "An initiative by dmj.one",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "/logo.png",
       "type": "image/png",
       "sizes": "254x254"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/",
   "background_color": "#fafafa",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": ".",
   "theme_color": "#fafafa",
   "shortcuts": [
@@ -18,7 +24,7 @@
       "name": "Go to CSU953?",
       "short_name": "CSU953",
       "description": "Front End Development Lab",
-      "url": "/csu953/c2?source=pwa",
+      "url": "/csu953/source=pwa",
       "icons": [
         {
           "src": "logo.png",
@@ -31,7 +37,7 @@
       "name": "Go to CSU1128",
       "short_name": "CSU1128",
       "description": "Logic Building with Problem Solving",
-      "url": "/csu953/c3?source=pwa",
+      "url": "/csu1128/?source=pwa",
       "icons": [
         {
           "src": "/logo.png",
