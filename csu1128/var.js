@@ -60,261 +60,193 @@ function get_menu_list() {
             var codetype = "C Language";
             var d = i + 1;
             var link = "c" + d;
+            var title = "Program " + d;
+            var readtime = Math.floor(Math.random() * 5) + 2;
             switch (cases[i]) {
                 case 1:
                     // link = "add_link like 'c2' ";
                     date = "Mon November 21, 2022";
-                    title = "Program 30";
+                    // title = "Program 31 / title += 'append something' ";
                     desc = "To print a loop which prints a triangle";
                     // codetype = "replace here with custom var";
-                    readtime = "2";
+                    // readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 2:
                     date = "Thu September 27, 2022";
-                    title = "Program 31";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 3:
                     date = "Thu September 27, 2022";
-                    title = "Lab 3";
                     desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
                     codetype = "HTML";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 4:
                     date = "Thu September 27, 2022";
-                    title = "Lab 4";
                     desc = "Class Test";
                     codetype = "HTML";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 5:
                     date = "Thu September 27, 2022";
-                    title = "Lab 5";
                     desc = "Use of table, tr, th tags in creation of Tables";
-                    readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 6:
                     date = "Thu November 17, 2022";
-                    title = "Lab 6";
                     desc = "VIVA based on questions directed towards odd and even students.";
-                    readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 7:
                     date = "Mon November 21, 2022";
-                    title = "Program 30";
                     desc = "To print a loop which prints a triangle";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 8:
                     date = "Thu September 27, 2022";
-                    title = "Program 31";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 9:
                     date = "Thu September 27, 2022";
-                    title = "Lab 3";
                     desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 10:
                     date = "Thu September 27, 2022";
-                    title = "Lab 4";
                     desc = "Class Test";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 11:
                     date = "Thu September 27, 2022";
-                    title = "Lab 5";
                     desc = "Use of table, tr, th tags in creation of Tables";
-                    readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 12:
                     date = "Thu November 17, 2022";
-                    title = "Lab 6";
                     desc = "VIVA based on questions directed towards odd and even students.";
-                    readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 13:
                     date = "Mon November 21, 2022";
-                    title = "Program 30";
                     desc = "To print a loop which prints a triangle";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 14:
                     date = "Thu September 27, 2022";
-                    title = "Program 31";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 15:
                     date = "Thu September 27, 2022";
-                    title = "Lab 3";
                     desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 16:
                     date = "Thu September 27, 2022";
-                    title = "Lab 4";
                     desc = "Class Test";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 17:
                     date = "Thu September 27, 2022";
-                    title = "Lab 5";
                     desc = "Use of table, tr, th tags in creation of Tables";
-                    readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 18:
                     date = "Thu November 17, 2022";
-                    title = "Lab 6";
                     desc = "VIVA based on questions directed towards odd and even students.";
-                    readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 19:
                     date = "Mon November 21, 2022";
-                    title = "Program 30";
                     desc = "To print a loop which prints a triangle";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 20:
                     date = "Thu September 27, 2022";
-                    title = "Program 31";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 21:
                     date = "Thu September 27, 2022";
-                    title = "Lab 3";
                     desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 22:
                     date = "Thu September 27, 2022";
-                    title = "Lab 4";
                     desc = "Class Test";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 23:
                     date = "Thu September 27, 2022";
-                    title = "Lab 5";
                     desc = "Use of table, tr, th tags in creation of Tables";
-                    readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 24:
                     date = "Thu November 17, 2022";
-                    title = "Lab 6";
                     desc = "VIVA based on questions directed towards odd and even students.";
-                    readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 25:
                     date = "Mon November 21, 2022";
-                    title = "Program 30";
                     desc = "To print a loop which prints a triangle";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 26:
                     date = "Thu September 27, 2022";
-                    title = "Program 31";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 27:
                     date = "Thu September 27, 2022";
-                    title = "Lab 3";
                     desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 28:
                     date = "Thu September 27, 2022";
-                    title = "Lab 4";
                     desc = "Class Test";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 29:
                     date = "Thu September 27, 2022";
-                    title = "Lab 5";
                     desc = "Use of table, tr, th tags in creation of Tables";
-                    readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 30:
                     date = "Thu November 17, 2022";
-                    title = "Lab 6";
                     desc = "VIVA based on questions directed towards odd and even students.";
-                    readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 31:
                     date = "Mon November 21, 2022";
-                    title = "Program 30";
                     desc = "To print a loop which prints a triangle";
-                    readtime = "2";
-                    body_blockcards(link, date, title, desc, codetype, readtime, 1);
+                    body_blockcards(link, date, title, desc, codetype, readtime, 1, "vp");
                     break;
                 case 32:
                     date = "Thu September 27, 2022";
-                    title = "Program 31";
                     desc = "To print a loop which prints a triangle in top down order.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 33:
                     date = "Thu September 27, 2022";
-                    title = "Lab 3";
                     desc = "Use of tags tags sub, sup, text-align, address, and abbr.";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 34:
                     date = "Thu September 27, 2022";
-                    title = "Lab 4";
                     desc = "Class Test";
-                    readtime = "2";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 35:
                     date = "Thu September 27, 2022";
-                    title = "Lab 5";
                     desc = "Use of table, tr, th tags in creation of Tables";
-                    readtime = "4";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 case 36:
                     date = "Thu November 17, 2022";
-                    title = "Lab 6";
                     desc = "VIVA based on questions directed towards odd and even students.";
-                    readtime = "5";
                     body_blockcards(link, date, title, desc, codetype, readtime, 1);
                     break;
                 default:
