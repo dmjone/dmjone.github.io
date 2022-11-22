@@ -252,7 +252,7 @@ function get_menu_list() {
                 default:
                     link = "#";
                     date = "Not Applicable";
-                    title = "Classes for current " + course + " has not been defined.";
+                    title = "Classes for current course " + course + " has not been defined.";
                     desc = "Please define a hierchy for the classes of course " + course + ".";
                     codetype = "#CourseNotDefined";
                     readtime = "0";
