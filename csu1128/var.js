@@ -16,7 +16,8 @@ function get_menu_list() {
         }
     }
     else {
-        get_main();
+        // get_main();
+        get_classes();
     }
 
     function get_main() {
@@ -91,7 +92,7 @@ function get_menu_list() {
     }
 
     function get_classes() {
-        var cases = [1, 2, 3, 4, 5, 6];
+        var cases = [1];
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
