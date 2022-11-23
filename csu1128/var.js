@@ -13,6 +13,9 @@ function get_menu_list() {
             case "books":
                 get_books();
                 break;
+            case "program":
+                get_programs();
+                break;
             default:
                 break;
         }
@@ -22,13 +25,46 @@ function get_menu_list() {
     }
 
     function get_main() {
-        //        var cases = [1];
         var cases = [1];
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
-                    link = "class/";
+                    link = "program/";
+                    date = "Last Updated: Wed November 23, 2022";
+                    title = "Programs done in Class";
+                    desc = "Learn to code! Contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    codetype = "C Programming";
+                    // readtime = "10";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
+                    break;
+                case 2:
+                    link = "books";
                     date = "Thu September 27, 2022";
+                    title = "Reference Books";
+                    desc = "Learn where";
+                    // codetype = "HTML";
+                    readtime = "2";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
+                    break;
+                default:
+                    link = "#";
+                    date = "Not Applicable";
+                    title = "Classes for current " + course + " has not been defined.";
+                    desc = "Please define a hierchy for the classes of course " + course + ".";
+                    codetype = "#CourseNotDefined";
+                    readtime = "0";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
+                    break;
+            }
+        }
+    }
+    function get_classes() {
+        var cases = [1];
+        for (let i = 0; i < cases.length; i++) {
+            switch (cases[i]) {
+                case 1:
+                    link = "program/";
+                    date = "Last Updated: Wed November 23, 2022";
                     title = "Programs done in Class";
                     desc = "This contains list of programs written in C language done in class.";
                     codetype = "C Programming";
@@ -57,13 +93,13 @@ function get_menu_list() {
         }
     }
 
-    function get_classes() {
+    function get_programs() {
         var cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
         for (let i = 0; i < cases.length; i++) {
 
             var codetype = "C Language";
             var d = i + 1;
-            var link = "c" + d;
+            var link = "p" + d;
             var title = "Program " + d;
             var readtime = Math.floor(Math.random() * 5) + 2;
             var author = 1;
