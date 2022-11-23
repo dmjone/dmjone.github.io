@@ -179,7 +179,7 @@ function header_author(author_init) {
 
     if (file.length != 0) {
         var prof_bio = "";
-        var author_bio = "";
+        // var author_bio = "";
     }
 
     course = "<h1>" + course + " (" + course_detail + ")</h2>";
@@ -330,7 +330,7 @@ function copyright(rights) {
     }
 
     // UselessFunctions -- Notification cookie
-    //dcevar(notify_cookie);
+    dcevar(notify_cookie);
 
     window.onload = function () {
         // Syntax highlighter - Enable is using highlight js.
