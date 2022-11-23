@@ -27,7 +27,7 @@ function get_menu_list() {
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
-                    link = "class";
+                    link = "class/";
                     date = "Thu September 27, 2022";
                     title = "Programs done in Class";
                     desc = "This contains list of programs written in C language done in class.";
