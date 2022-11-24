@@ -17,11 +17,10 @@ function header_nav() {
     var nav_subfolder = url.pathname.split("/")[4];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
-    var navv = window.location.pathname.split("/")[3];
     console.log(url.hostname);
     console.log(nav_folder);
+    console.log(nav_subfolder);
     console.log(nav_filename);
-    console.log(navv);
 
     var nav_home = '<a href="https://' + url.hostname + ' " data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-house-fill text-light"></i></a>';
     var nav_path = '<a href="/' + nav_folder + '/" data-toggle="tooltip" data-placement="top" title="' + nav_folder + '" data-original-title="' + nav_folder + '"><i class="bi bi-journals text-light"></i></a>';
