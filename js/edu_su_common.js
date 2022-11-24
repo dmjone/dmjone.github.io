@@ -330,22 +330,22 @@ function copyright(rights) {
     }
 
     // UselessFunctions -- Notification cookie
-    dcevar(notify_cookie);
+    // dcevar(notify_cookie);
 
-    window.onload = function () {
-        // Syntax highlighter - Enable is using highlight js.
-        hljs.highlightAll();
+    // window.onload = function () {
+    // Syntax highlighter - Enable is using highlight js.
+    hljs.highlightAll();
 
-        // Notification - Privacy - I accept
+    // Notification - Privacy - I accept
 
-        $('.i-accept').on('click', function () {
-            if (localStorage.noshow !== '1') {
-                $('#cookie-notice').addClass('d-none');
-                localStorage.noshow = '1';
-            }
-        });
-        if (localStorage.noshow == '1') {
+    $('.i-accept').on('click', function () {
+        if (localStorage.noshow !== '1') {
             $('#cookie-notice').addClass('d-none');
-        };
+            localStorage.noshow = '1';
+        }
+    });
+    if (localStorage.noshow == '1') {
+        $('#cookie-notice').addClass('d-none');
     };
+    //};
 }
