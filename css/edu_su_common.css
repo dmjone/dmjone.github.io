@@ -287,7 +287,8 @@ body {
   -moz-user-select: none !important;
   user-select: none !important;
   word-break: break-word;
-  transition: 0.5s;
+  text-shadow: 4px 4px 4px #aaa;
+  transition: all .8s ease;
   transition-timing-function: ease-in;
 }
 
