@@ -15,6 +15,7 @@ header_createlink("preconnect", "https://cdnjs.cloudflare.com");
 header_createlink("preconnect", "https://dmj.one");
 header_createlink("preconnect", "https://fonts.gstatic.com");
 header_createlink("preconnect", "https://picsum.photos");
+header_createlink("preconnect", "https://type.fit");
 
 header_createscript("/js/edu_su_common.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js");
