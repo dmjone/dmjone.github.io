@@ -13,11 +13,11 @@ function highlightAll() { };
 // Get current URL
 function header_nav() {
     var url = new URL(window.location.href);
-    var nav_folder = url.pathname.split("/")[1];
-    var nav_subfolder = url.pathname.split("/")[2];
+    var nav_folder = url.pathname.split("/")[3];
+    var nav_subfolder = url.pathname.split("/")[4];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
-    var navv = window.location.pathname.split("/")[1];
+    var navv = window.location.pathname.split("/")[3];
     console.log(url.hostname);
     console.log(nav_folder);
     console.log(nav_filename);
@@ -51,7 +51,7 @@ function header_navbar() {
 
     var li_link = "";
     var path = window.location.pathname;
-    var folder = window.location.pathname.split("/")[1];
+    var folder = window.location.pathname.split("/")[3];
     var alreadyactive = 0;
     var links = ["csu1128p", "csu1128", "csu953", "fsu030", "csu730", "csu951"];
     links.sort();
@@ -76,8 +76,8 @@ function header_author(author_init) {
     */
     //  get the actual author and professor name
 
-    var folder = window.location.pathname.split("/")[1];
-    var file = window.location.pathname.split("/")[2];
+    var folder = window.location.pathname.split("/")[3];
+    var file = window.location.pathname.split("/")[4];
     // console.log(folder.length + folder);
     // console.log(file.length + file);
 
@@ -212,7 +212,7 @@ function body_genmenu(course) {
     //  var gen_start = '<section class="light"><div class="container py-2">';
     //  var gen_end = '</div></section>';
     //  document.write(gen_start);
-    if (!course) { var course = window.location.pathname.split("/")[1]; }
+    if (!course) { var course = window.location.pathname.split("/")[3]; }
     var gen_start = '<article class="genmenu py-3">';
     var gen_end = '</article>';
     document.write(gen_start);
