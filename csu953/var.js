@@ -60,8 +60,17 @@ function get_menu_list() {
     }
 
     function get_classes() {
-        var cases = [1, 2, 3, 4, 5, 6];
+        var cases = [1, 2, 3, 4, 5, 6, 7];
+
         for (let i = 0; i < cases.length; i++) {
+
+            var codetype = "C Language";
+            var d = i + 1;
+            var link = "p" + d;
+            var title = "Program " + d;
+            var readtime = Math.floor(Math.random() * 5) + 2;
+            var author = 1;
+
             switch (cases[i]) {
                 case 1:
                     link = "c1";
