@@ -2,4 +2,4 @@
 
 # Repo for dmjone.github.io
 This repo contains frontend of our educational initiative.
-&copy;, 2022, dmj.one
+&copy; 2022, dmj.one
