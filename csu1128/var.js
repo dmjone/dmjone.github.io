@@ -32,7 +32,7 @@ function get_menu_list() {
                     link = "program/";
                     date = "Last Updated: Wed November 23, 2022";
                     title = "Programs done in Class";
-                    desc = "Learn to code! Contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
                     codetype = "C Programming";
                     // readtime = "10";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
@@ -49,8 +49,8 @@ function get_menu_list() {
                 default:
                     link = "#";
                     date = "Not Applicable";
-                    title = "Classes for current " + course + " has not been defined.";
-                    desc = "Please define a hierchy for the classes of course " + course + ".";
+                    title = "Voila! Party Time!";
+                    desc = "<strong>WIP: Work in Progress! </strong><br> For admin: Please define a hierchy for the main menu for the course " + course + ".";
                     codetype = "#CourseNotDefined";
                     readtime = "0";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
