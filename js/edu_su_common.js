@@ -360,38 +360,40 @@ function copyright(rights) {
 
 /********************* Plugins *********************/
 /*******Generate Blockquote **********/
-var data;
-
-//const authors = document.querySelectorAll(".blockquote-footer");
-// const texts = document.querySelectorAll(".blockquote");
-const authorFront = authors[0];
-const textFront = texts[0];
-
-// An arrow function used to get a quote randomly
-const displayQuote = () => {
-    let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
-    let quote = data[index].text;
-    let author = data[index].author;
-    if (!author) {
-        author = "Anonymous"
+function gen_blquote() {
+    var data;
+    /*let front = true;
+    const authors = document.querySelectorAll(".blockquote-footer");
+    const texts = document.querySelectorAll(".blockquote");
+    const authorFront = authors[0];
+    const textFront = texts[0];
+    */
+    // An arrow function used to get a quote randomly
+    const displayQuote = () => {
+        let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+        let quote = data[index].text;
+        let author = data[index].author;
+        if (!author) {
+            author = "Anonymous"
+        }
+        //    textFront.innerHTML = quote;
+        //    authorFront.innerHTML = author;
+        var output_l1 = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5">';
+        var output_quote = '<blockquote class="blockquote">' + quote + '</blockquote><figcaption class="blockquote-footer">' + author + '</figcaption></figure>';
+        document.write(output_l1 + output_quote);
     }
-    //    textFront.innerHTML = quote;
-    //    authorFront.innerHTML = author;
-    var output_l1 = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5">';
-    var output_quote = '<blockquote class="blockquote">' + quote + '</blockquote><figcaption class="blockquote-footer">' + author + '</figcaption></figure>';
-    document.write(output_l1 + output_quote);
+    // Fetching the quotes from the type.fit API using promises
+    fetch("https://type.fit/api/quotes")
+        .then(function (response) {
+            return response.json();
+        }) // Getting the raw JSON data
+        .then(function (data) {
+
+            // Storing the quotes internally upon
+            // successful completion of request
+            this.data = data;
+
+            // Displaying the quote When the Webpage loads
+            displayQuote();
+        });
 }
-// Fetching the quotes from the type.fit API using promises
-fetch("https://type.fit/api/quotes")
-    .then(function (response) {
-        return response.json();
-    }) // Getting the raw JSON data
-    .then(function (data) {
-
-        // Storing the quotes internally upon
-        // successful completion of request
-        this.data = data;
-
-        // Displaying the quote When the Webpage loads
-        displayQuote();
-    });
