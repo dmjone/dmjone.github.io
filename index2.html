@@ -129,6 +129,20 @@
     </head>
 
     <body id="body">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>Quote</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+        </figure>
+
+
+
+
+
+
         <div>
 
             <!-- Quote Box -->
@@ -191,10 +205,10 @@
             let front = true;
 
             // Getting the front and the back author boxes
-            const authors = document.querySelectorAll(".author");
+            const authors = document.querySelectorAll(".blockquote-footer");
 
             // Getting the front and the back texts
-            const texts = document.querySelectorAll(".text");
+            const texts = document.querySelectorAll(".blockquote");
 
             // Getting the body
             const body = document.getElementById("body");
