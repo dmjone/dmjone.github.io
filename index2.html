@@ -128,120 +128,110 @@
 
     </head>
 
-    <body id="body">
+    <body class="text-bg-light p-3 position-absolute top-50 start-50 translate-middle">
 
-        <div>
-
-            <div class="block text-center">
-
-                <div class="quote-box block__main block__front">
-
-                    <figure class="text-center">
-                        <blockquote class="blockquote">
-                            <p></p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer">
-                        </figcaption>
-                    </figure> <span class="text">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p></p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+            </figcaption>
+        </figure> <span class="text">
 
 
-                </div>
-            </div>
-        </div>
+            <!-- Linking Your JavaScript File -->
+            <script>
+                // Global Variable used to store the quotes
+                // fetched from the API
+                var data;
+                let front = true;
 
-        <!-- Linking Your JavaScript File -->
-        <script>
-            // Global Variable used to store the quotes
-            // fetched from the API
-            var data;
-            let front = true;
+                // Getting the front and the back author boxes
+                const authors = document.querySelectorAll(".blockquote-footer");
 
-            // Getting the front and the back author boxes
-            const authors = document.querySelectorAll(".blockquote-footer");
+                // Getting the front and the back texts
+                const texts = document.querySelectorAll(".blockquote");
 
-            // Getting the front and the back texts
-            const texts = document.querySelectorAll(".blockquote");
+                // Getting the body
+                const body = document.getElementById("body");
 
-            // Getting the body
-            const body = document.getElementById("body");
+                // Getting the buttons
+                const button = document.querySelectorAll(".new-quote");
 
-            // Getting the buttons
-            const button = document.querySelectorAll(".new-quote");
+                const blockFront = document.querySelector(".block__front");
+                const blockBack = document.querySelector(".block__back");
 
-            const blockFront = document.querySelector(".block__front");
-            const blockBack = document.querySelector(".block__back");
+                const authorFront = authors[0];
+                const authorBack = authors[1];
 
-            const authorFront = authors[0];
-            const authorBack = authors[1];
+                const textFront = texts[0];
+                const textBack = texts[1];
 
-            const textFront = texts[0];
-            const textBack = texts[1];
-
-            const buttonFront = button[0];
-            const buttonBack = button[1];
+                const buttonFront = button[0];
+                const buttonBack = button[1];
 
 
-            // An arrow function used to get a quote randomly
-            const displayQuote = () => {
+                // An arrow function used to get a quote randomly
+                const displayQuote = () => {
 
-                // Generates a random number between 0
-                // and the length of the dataset
-                let index = Math.floor(Math.random() * data.length);
+                    // Generates a random number between 0
+                    // and the length of the dataset
+                    let index = Math.floor(Math.random() * data.length);
 
-                // Stores the quote present at the randomly generated index
-                let quote = data[index].text;
+                    // Stores the quote present at the randomly generated index
+                    let quote = data[index].text;
 
-                // Stores the author of the respective quote
-                let author = data[index].author;
+                    // Stores the author of the respective quote
+                    let author = data[index].author;
 
-                // Making the author anonymous if no author is present
-                if (!author) {
-                    author = "Anonymous"
+                    // Making the author anonymous if no author is present
+                    if (!author) {
+                        author = "Anonymous"
+                    }
+
+                    // Replacing the current quote and the author with a new one
+
+                    if (front) {
+                        // Changing the front if back-side is displayed
+                        textFront.innerHTML = quote;
+                        authorFront.innerHTML = author;
+                    } else {
+                        // Changing the back if front-side is displayed
+                        textBack.innerHTML = quote;
+                        authorBack.innerHTML = author;
+                    }
+
+                    front = !front;
+
                 }
 
-                // Replacing the current quote and the author with a new one
+                // Fetching the quotes from the type.fit API using promises
+                fetch("https://type.fit/api/quotes")
+                    .then(function (response) {
+                        return response.json();
+                    }) // Getting the raw JSON data
+                    .then(function (data) {
 
-                if (front) {
-                    // Changing the front if back-side is displayed
-                    textFront.innerHTML = quote;
-                    authorFront.innerHTML = author;
-                } else {
-                    // Changing the back if front-side is displayed
-                    textBack.innerHTML = quote;
-                    authorBack.innerHTML = author;
+                        // Storing the quotes internally upon
+                        // successful completion of request
+                        this.data = data;
+
+                        // Displaying the quote When the Webpage loads
+                        displayQuote()
+                    });
+
+
+                // Adding an onclick listener for the button
+                function newQuote() {
+
+                    // Rotating the Quote Box
+                    blockBack.classList.toggle('rotateB');
+                    blockFront.classList.toggle('rotateF');
+
+                    // Displaying a new quote when the webpage loads
+                    displayQuote();
                 }
-
-                front = !front;
-
-            }
-
-            // Fetching the quotes from the type.fit API using promises
-            fetch("https://type.fit/api/quotes")
-                .then(function (response) {
-                    return response.json();
-                }) // Getting the raw JSON data
-                .then(function (data) {
-
-                    // Storing the quotes internally upon
-                    // successful completion of request
-                    this.data = data;
-
-                    // Displaying the quote When the Webpage loads
-                    displayQuote()
-                });
-
-
-            // Adding an onclick listener for the button
-            function newQuote() {
-
-                // Rotating the Quote Box
-                blockBack.classList.toggle('rotateB');
-                blockFront.classList.toggle('rotateF');
-
-                // Displaying a new quote when the webpage loads
-                displayQuote();
-            }
-        </script>
+            </script>
     </body>
 
 </html>
