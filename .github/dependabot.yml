@@ -13,6 +13,13 @@ updates:
       interval: "daily"
     open-pull-requests-limit: 10
     
+version: 2
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: weekly
+
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
