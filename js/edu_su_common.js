@@ -360,7 +360,7 @@ function copyright(rights) {
             this.data = data;
 
             // Displaying the quote When the Webpage loads
-            displayQuote()
+            displayQuote();
         });
 
 
