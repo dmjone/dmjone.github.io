@@ -369,8 +369,8 @@ function gen_blquote() {
     */
     // An arrow function used to get a quote randomly
     const displayQuote = () => {
-        
-        JSON.parse(data);
+
+
         let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
         let quote = data[index].text;
         let author = data[index].author;
