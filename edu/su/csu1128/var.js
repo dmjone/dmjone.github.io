@@ -2,6 +2,8 @@ function get_menu_list() {
     var course = window.location.pathname.split("/")[3];
     var path = window.location.pathname.split("/")[4];
     var file = window.location.pathname.split("/")[5];
+    console.log(course + "_1/2_" + path + "_2/3_" + file);
+    console.log(window.location.pathname);
     var readtime = "";
     var author = "";
 
