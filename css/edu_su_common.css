@@ -287,6 +287,8 @@ body {
   -moz-user-select: none !important;
   user-select: none !important;
   word-break: break-word;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 p {
