@@ -27,7 +27,7 @@ header_createlink("manifest", "/site.webmanifest");
 header_createlink("shortcut icon", temp_logo_min);
 header_createlink("fluid-icon", temp_logo_min);
 header_createlink("apple-touch-icon", temp_logo_min);
-header_createlink("stylesheet", "/css/edu_su_common.css");
+header_createlink("stylesheet", "../css/edu_su_common.css");
 
 
 
