@@ -383,7 +383,7 @@ function gen_blquote() {
     }
     // Fetching the quotes from the type.fit API using promises
     //    fetch("https://type.fit/api/quotes")
-    fetch("quotes.json")
+    fetch("/js/quotes.json")
         .then(function (response) {
             return response.json();
         }) // Getting the raw JSON data
