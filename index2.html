@@ -129,70 +129,49 @@
     </head>
 
     <body class="text-bg-light p-5 position-absolute top-50 start-50 translate-middle w-100">
+        <h1 class="shadow p-4 rounded warning">Page Not Found</h1>
+
         <figure class="text-center shadow p-4 rounded">
             <blockquote class="blockquote"></blockquote>
             <figcaption class="blockquote-footer"></figcaption>
-        </figure> <span class="text">
+        </figure>
 
-            <script>
-                var data;
-                let front = true;
+        <p class="shadow p-4 rounded">Sorry, but the page you were trying to view does not exist.</p>
 
-                const authors = document.querySelectorAll(".blockquote-footer");
+        <script>
+            var data;
+            let front = true;
+            const authors = document.querySelectorAll(".blockquote-footer");
+            const texts = document.querySelectorAll(".blockquote");
+            const authorFront = authors[0];
+            const textFront = texts[0];
 
-                // Getting the front and the back texts
-                const texts = document.querySelectorAll(".blockquote");
-
-                // Getting the body
-                const body = document.getElementById("body");
-
-                const authorFront = authors[0];
-                const textFront = texts[0];
-
-
-
-                // An arrow function used to get a quote randomly
-                const displayQuote = () => {
-
-                    // Generates a random number between 0
-                    // and the length of the dataset
-                    let index = Math.floor(Math.random() * data.length);
-
-                    // Stores the quote present at the randomly generated index
-                    let quote = data[index].text;
-
-                    // Stores the author of the respective quote
-                    let author = data[index].author;
-
-                    // Making the author anonymous if no author is present
-                    if (!author) {
-                        author = "Anonymous"
-                    }
-
-                    // Replacing the current quote and the author with a new one
-
-                    textFront.innerHTML = quote;
-                    authorFront.innerHTML = author;
-
-
+            // An arrow function used to get a quote randomly
+            const displayQuote = () => {
+                let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+                let quote = data[index].text;
+                let author = data[index].author;
+                if (!author) {
+                    author = "Anonymous"
                 }
+                textFront.innerHTML = quote;
+                authorFront.innerHTML = author;
+            }
+            // Fetching the quotes from the type.fit API using promises
+            fetch("https://type.fit/api/quotes")
+                .then(function (response) {
+                    return response.json();
+                }) // Getting the raw JSON data
+                .then(function (data) {
 
-                // Fetching the quotes from the type.fit API using promises
-                fetch("https://type.fit/api/quotes")
-                    .then(function (response) {
-                        return response.json();
-                    }) // Getting the raw JSON data
-                    .then(function (data) {
+                    // Storing the quotes internally upon
+                    // successful completion of request
+                    this.data = data;
 
-                        // Storing the quotes internally upon
-                        // successful completion of request
-                        this.data = data;
-
-                        // Displaying the quote When the Webpage loads
-                        displayQuote()
-                    });
-
-            </script>
+                    // Displaying the quote When the Webpage loads
+                    displayQuote()
+                });
+        </script>
     </body>
 
 </html>
