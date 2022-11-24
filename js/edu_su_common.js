@@ -369,6 +369,8 @@ function gen_blquote() {
     */
     // An arrow function used to get a quote randomly
     const displayQuote = () => {
+        
+        JSON.parse(data);
         let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
         let quote = data[index].text;
         let author = data[index].author;
@@ -384,9 +386,6 @@ function gen_blquote() {
     // Fetching the quotes from the type.fit API using promises
     //    fetch("https://type.fit/api/quotes")
     fetch("/js/quotes.json")
-        .then(function (response) {
-            return response.json();
-        }) // Getting the raw JSON data
         .then(function (data) {
 
             // Storing the quotes internally upon
