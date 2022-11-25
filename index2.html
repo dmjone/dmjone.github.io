@@ -148,7 +148,13 @@
             </figure>
         </main>
 
-        <script> gen_blquote(); </script>
+        <script> // gen_blquote(); 
+            loadJSON("https://jsonplaceholder.typicode.com/posts", getData, 'jsonp');
+
+            function getData(Data) {
+                console.log(Data[0]);
+            }
+        </script>
         <script> copyright("all"); </script>
 
         <script>
