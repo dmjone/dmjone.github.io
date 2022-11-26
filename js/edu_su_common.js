@@ -359,7 +359,7 @@ function copyright(rights) {
 
 /********************* Plugins *********************/
 /*******Generate Blockquote **********/
-function gen_blockquote() {
+async function gen_blockquote() {
 
 
     let data = fetch("/js/quotes.json")
