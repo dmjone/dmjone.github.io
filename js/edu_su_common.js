@@ -354,7 +354,7 @@ function copyright(rights) {
 
     //define service worker
     if (typeof navigator.serviceWorker !== 'undefined') {
-        navigator.serviceWorker.register('/edu/su/sw.js')
+        navigator.serviceWorker.register('/sw.js')
     }
 
     // Notification cookie
