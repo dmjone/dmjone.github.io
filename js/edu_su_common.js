@@ -138,8 +138,8 @@ function header_author(author_init) {
         var prof = "";
         var prof_bio = "";
         var prof_href = "";
-        var course = "Home";
-        var course_detail = "Course Home";
+        var course = "Shoolini University with dmj.one";
+        var course_detail = "";
     }
     switch (author_init) {
         case "dm":
@@ -199,7 +199,7 @@ function header_author(author_init) {
     }
 
     course = "<h1>" + course + " (" + course_detail + ")</h2>";
-    if (profname) { var under_guidance = " under the guidance of "; } else { var under_guidance = "" };
+    if (prof) { var under_guidance = " under the guidance of "; } else { var under_guidance = "" };
 
     document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + under_guidance + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>" + header_navbar());
 }
