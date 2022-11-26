@@ -216,25 +216,27 @@ function body_genmenu(course) {
     var gen_end = '</article>';
     document.write(gen_start);
 
-    switch (course) {
-        case "csu953":
-        case "csu1128":
-        case "csu1128p":
-        case "csu730":
-        case "csu951":
-        case "fsu030":
-            get_menu_list();
-            break;
-        default:
-            link = "#";
-            date = "Not Applicable";
-            title = "The current " + course + " has not been defined.";
-            desc = "Please define a hierchy for the course " + course + ".";
-            codetype = "#CourseNotDefined";
-            readtime = "0";
-            body_blockcards(link, date, title, desc, codetype, readtime, 1);
-            break;
-    }
+    if (course) {
+        switch (course) {
+            case "csu953":
+            case "csu1128":
+            case "csu1128p":
+            case "csu730":
+            case "csu951":
+            case "fsu030":
+                get_menu_list();
+                break;
+            default:
+                link = "#";
+                date = "Not Applicable";
+                title = "The current " + course + " has not been defined.";
+                desc = "Please define a hierchy for the course " + course + ".";
+                codetype = "#CourseNotDefined";
+                readtime = "0";
+                body_blockcards(link, date, title, desc, codetype, readtime, 1);
+                break;
+        }
+    } else { get_menu_list() };
     document.write(gen_end);
 }
 
