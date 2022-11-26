@@ -152,7 +152,7 @@
         </main>
 
         <script>
-            !async function () {
+            async function errt() {
                 let data = await fetch("/js/quotes.json")
                     .then((response) => response.json())
                     .then(data => {
@@ -171,7 +171,7 @@
                 var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + quote + '</blockquote><figcaption class="blockquote-footer showauthor">' + author + '</figcaption>';
                 document.write(quoteblock);
 
-            }();
+            } errt();
         </script>
 
         <script>copyright("all")</script>
