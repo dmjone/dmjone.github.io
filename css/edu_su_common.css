@@ -756,22 +756,21 @@ a:hover {
 
 
 /** Portrait Orientation Devices **/
-@media only screen and (min-width: 1440px) {
-  /* styles for browsers larger than 1440px; */
-
-  .syntax pre,
-  .syntax code {
-    min-width: 1440px;
-  }
-}
-
-
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 330px) {
   /* styles for mobile browsers smaller than 350px; (mi) */
 
   .syntax pre,
   .syntax code {
-    max-width: 280px;
+    max-width: 230px;
+  }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 380px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  .syntax pre,
+  .syntax code {
+    max-width: 230px;
   }
 }
 
@@ -826,7 +825,31 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 730px) and (max-width:832px) {
+@media only screen and (min-width: 680px) and (max-width:730px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 580px;
+  }
+}
+
+@media only screen and (min-width: 730px) and (max-width:780px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 630px;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width:830px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 680px;
+  }
+}
+
+@media only screen and (min-width: 830px) and (max-width:880px) {
 
   .syntax pre,
   .syntax code {
@@ -834,7 +857,15 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 830px) and (max-width:950px) {
+@media only screen and (min-width: 880px) and (max-width:930px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 780px;
+  }
+}
+
+@media only screen and (min-width: 930px) and (max-width:980px) {
 
   .syntax pre,
   .syntax code {
@@ -842,28 +873,83 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  /* default iPad screens */
-
-}
-
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
+@media only screen and (min-width: 980px) and (max-width:1030px) {
 
   .syntax pre,
   .syntax code {
-    min-width: 481px;
-    max-width: 920px;
+    max-width: 880px;
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
+@media only screen and (min-width: 1030px) and (max-width:1080px) {
 
   .syntax pre,
   .syntax code {
-    min-width: 481px;
-    max-width: 920px;
+    max-width: 930px;
+  }
+}
+
+@media only screen and (min-width: 1080px) and (max-width:1130px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 980px;
+  }
+}
+
+@media only screen and (min-width: 1130px) and (max-width:1180px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 1030px;
+  }
+}
+
+@media only screen and (min-width: 1180px) and (max-width:1230px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 1080px;
+  }
+}
+
+@media only screen and (min-width: 1230px) and (max-width:1280px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 1130px;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1330px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 1180px;
+  }
+}
+
+@media only screen and (min-width: 1330px) and (max-width:1380px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 1230px;
+  }
+}
+
+@media only screen and (min-width: 1380px) and (max-width:1439px) {
+
+  .syntax pre,
+  .syntax code {
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+
+  .syntax pre,
+  .syntax code {
+    min-width: 1340px;
   }
 }
