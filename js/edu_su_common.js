@@ -16,7 +16,7 @@ function header_nav() {
     var base = "/edu/su/";
     var nav_secondary = base + url.pathname.split("/")[3];
     var nav_folder = nav_secondary + url.pathname.split("/")[4];
-    var nav_subfolder = folder + url.pathname.split("/")[5];
+    var nav_subfolder = nav_folder + url.pathname.split("/")[5];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
     console.log(url.hostname);
