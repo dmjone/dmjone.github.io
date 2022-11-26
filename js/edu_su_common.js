@@ -370,8 +370,8 @@ function gen_blockquote() {
             .then(data => { return data; });
         return data;
     }
-    var data2 = errt();
-    console.log(errt());
+    var data2 = errt().json();
+    console.log(data2);
 
     //    let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
     //  let quote = data[index].text;
