@@ -151,7 +151,8 @@
 
         </main>
 
-        <script>!async function () {
+        <script>
+            !async function () {
                 let data = await fetch("/js/quotes.json")
                     .then((response) => response.json())
                     .then(data => {
@@ -161,7 +162,12 @@
                         console.error(error);
                     });
 
-                console.log(data[0].author);
+                let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+                let quote = data[index].text;
+                let author = data[index].author;
+                console.log(data[index].author);
+                console.log(data[index].quote);
+
             }();
         </script>
 
