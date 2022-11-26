@@ -423,4 +423,4 @@ async function gen_blockquote() {
     /*  let ew = teq();
       console.log(ew[0], ew[1]); */
 
-} que();
+} 
