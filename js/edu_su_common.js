@@ -359,25 +359,23 @@ function copyright(rights) {
 
 /********************* Plugins *********************/
 /*******Generate Blockquote **********/
-async function gen_blockquote() {
-
-
-    let data = await fetch("/js/quotes.json")
-        .then((response) => response.json())
-        .then(data => { return data; });
-
-    var sun = data.length;
-    console.log(sun);
-    let index = Math.floor(Math.random() * sun); // Generates a random number between 0 and the length of the dataset
-    let quote = data[index].text;
-    let author = data[index].author;
-    console.log(author);
-    console.log(quote);
+function gen_blockquote() {
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + quote + '</blockquote><figcaption class="blockquote-footer showauthor">' + author + '</figcaption>';
     document.write(quoteblock);
 
+    !async function () {
+        let data = await fetch("/js/quotes.json")
+            .then((response) => response.json())
+            .then(data => { return data; });
 
-
+        var sun = data.length;
+        console.log(sun);
+        let index = Math.floor(Math.random() * sun); // Generates a random number between 0 and the length of the dataset
+        let quote = data[index].text;
+        let author = data[index].author;
+        console.log(author);
+        console.log(quote);
+    }();
 
 
     /*    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
