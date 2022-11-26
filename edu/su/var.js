@@ -30,7 +30,7 @@ function get_menu_list() {
         var cases = [1];
 
         // var readtime = Math.floor(Math.random() * 5) + 2;
-        var author = 1;
+        // var author = 1;
 
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
