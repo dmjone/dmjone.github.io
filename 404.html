@@ -147,17 +147,17 @@
                 <figcaption class="blockquote-footer showauthor"></figcaption>
             </figure>
         </main>
-        
+
         <script>copyright("all")</script>
 
         <script>
-
-            const texts = document.querySelectorAll(".showquote");
-            const textFront = texts[0];
-            const authors = document.querySelectorAll(".showauthor");
-            const authorFront = authors[0];
             // An arrow function used to get a quote randomly
             const displayQuote = async () => {
+                const texts = document.querySelectorAll(".showquote");
+                const textFront = texts[0];
+                const authors = document.querySelectorAll(".showauthor");
+                const authorFront = authors[0];
+
                 let index = await Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
                 let quote = data[index].text;
                 let author = data[index].author;
@@ -173,7 +173,7 @@
             .then(function (response) { return response.json(); })
             .then(function (data) { this.data = data; displayQuote(); }); */
 
-            fetch('https://type.fit/api/quotes')
+            fetch('/js/quotes.json')
                 .then((response) => response.json())
                 .then(function (json) { this.data = json; displayQuote(); });
         </script>
