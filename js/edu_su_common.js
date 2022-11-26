@@ -199,9 +199,9 @@ function header_author(author_init) {
     }
 
     course = "<h1>" + course + " (" + course_detail + ")</h2>";
+    if (profname) { var under_guidance = " under the guidance of "; } else { var under_guidance = "" };
 
-
-    document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + " under the guidance of " + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>" + header_navbar());
+    document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + under_guidance + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>" + header_navbar());
 }
 
 /******** Body ***********/
