@@ -366,7 +366,7 @@ function gen_blockquote() {
     async function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function (json) { this.data = json; displayQuote(); });
+            .then(function (json) { this.data = json; displayQuote(); return author, quote;  });
 
         // An arrow function used to get a quote randomly
         function displayQuote () {
@@ -383,6 +383,7 @@ function gen_blockquote() {
             }
             textFront.innerHTML = quote;
             authorFront.innerHTML = author;
+            console.log('1. ' + author);
             return author, quote;
         }
         // Fetching the quotes from the type.fit API using promises
