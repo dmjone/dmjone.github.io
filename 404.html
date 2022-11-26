@@ -152,7 +152,7 @@
 
         </script>
 
-        <script>copyright("all");</script>
+        <script>copyright("all"); qtg();</script>
 
         <script>
             /*            var data;
@@ -190,38 +190,35 @@
                             });
              */</script>
         <script>
+            async function qtg() {
+                var data;
+                let front = true;
+                const authors = document.querySelectorAll(".blockquote-footer");
+                const texts = document.querySelectorAll(".blockquote");
+                const authorFront = authors[0];
+                const textFront = texts[0];
 
-            var data;
-            let front = true;
-            const authors = document.querySelectorAll(".blockquote-footer");
-            const texts = document.querySelectorAll(".blockquote");
-            const authorFront = authors[0];
-            const textFront = texts[0];
-
-            // An arrow function used to get a quote randomly
-            const displayQuote = async () => {
-                let index = await Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
-                let quote = data[index].text;
-                let author = data[index].author;
-                if (!author) {
-                    author = "Anonymous"
+                // An arrow function used to get a quote randomly
+                const displayQuote = async () => {
+                    let index = await Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+                    let quote = data[index].text;
+                    let author = data[index].author;
+                    if (!author) {
+                        author = "Anonymous"
+                    }
+                    textFront.innerHTML = quote;
+                    authorFront.innerHTML = author;
                 }
-                textFront.innerHTML = quote;
-                authorFront.innerHTML = author;
-                
-                var output_l1 = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5">';
-                var output_quote = '<blockquote class="blockquote">' + quote + '</blockquote><figcaption class="blockquote-footer">' + author + '</figcaption></figure>';
-                document.write(output_l1 + output_quote);
-            }
-            // Fetching the quotes from the type.fit API using promises
-            //             fetch("https://type.fit/api/quotes")
-            /* fetch("/js/quotes.json")
-            .then(function (response) { return response.json(); })
-            .then(function (data) { this.data = data; displayQuote(); }); */
+                // Fetching the quotes from the type.fit API using promises
+                //             fetch("https://type.fit/api/quotes")
+                /* fetch("/js/quotes.json")
+                .then(function (response) { return response.json(); })
+                .then(function (data) { this.data = data; displayQuote(); }); */
 
-            fetch('https://type.fit/api/quotes')
-                .then((response) => response.json())
-                .then(function (json) { this.data = json; displayQuote(); console.log(json) });
+                await fetch('https://type.fit/api/quotes')
+                    .then((response) => response.json())
+                    .then(function (json) { this.data = json; displayQuote(); console.log(json) });
+            }
         </script>
     </body>
 
