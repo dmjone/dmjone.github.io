@@ -381,8 +381,8 @@ function gen_blockquote() {
             if (!author) {
                 author = "Anonymous"
             }
-            textFront.innerHTML = quote;
-            authorFront.innerHTML = author;
+     //       textFront.innerHTML = quote;
+     //       authorFront.innerHTML = author;
             console.log('1. ' + author);
             return [author, quote];
         }
