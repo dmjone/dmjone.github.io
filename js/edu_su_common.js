@@ -328,14 +328,12 @@ function copyright(rights) {
         navigator.serviceWorker.register('/edu/su/sw.js')
     }
 
-    // UselessFunctions -- Notification cookie
+    // Notification cookie
     if (!(localStorage.getItem("noshow"))) { dcevar(notify_cookie); }
-
-    
 
     window.onload = function () {
         // Syntax highlighter - Enable is using highlight js.
-    //    hljs.highlightAll();
+        hljs.highlightAll();
 
         // Notification - Privacy - I accept
 
