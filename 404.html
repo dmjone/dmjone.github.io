@@ -158,7 +158,7 @@
             var data;
             const authors = document.querySelectorAll(".showauthor");
             const texts = document.querySelectorAll(".showquote");
-//            const authorFront = authors[0];
+            //            const authorFront = authors[0];
             // const textFront = texts[0];
             // An arrow function used to get a quote randomly
             const displayQuote = async () => {
@@ -168,7 +168,7 @@
                 if (!author) {
                     author = "Anonymous"
                 }
-                textFront.innerHTML = quote;
+                authors.innerHTML = quote;
                 authorFront.innerHTML = author;
             }
             // Fetching the quotes from the type.fit API using promises
