@@ -360,10 +360,11 @@ function copyright(rights) {
 /********************* Plugins *********************/
 /*******Generate Blockquote **********/
 function gen_blockquote() {
-    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + quote + '</blockquote><figcaption class="blockquote-footer showauthor">' + author + '</figcaption>';
+//    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + quote + '</blockquote><figcaption class="blockquote-footer showauthor">' + author + '</figcaption>';
+    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote"></blockquote><figcaption class="blockquote-footer showauthor"></figcaption>';
     document.write(quoteblock);
 
-    !async function () {
+    async function errp() {
         let data = await fetch("/js/quotes.json")
             .then((response) => response.json())
             .then(data => { return data; });
@@ -375,7 +376,7 @@ function gen_blockquote() {
         let author = data[index].author;
         console.log(author);
         console.log(quote);
-    }();
+    } errp();
 
 
     /*    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
