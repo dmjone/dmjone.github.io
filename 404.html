@@ -151,6 +151,10 @@
         <script>copyright("all")</script>
 
         <script>
+            fetch('/js/quotes.json')
+                .then((response) => response.json())
+                .then(function (json) { this.data = json; displayQuote(); });
+
             // An arrow function used to get a quote randomly
             const displayQuote = async () => {
                 const texts = document.querySelectorAll(".showquote");
@@ -173,9 +177,7 @@
             .then(function (response) { return response.json(); })
             .then(function (data) { this.data = data; displayQuote(); }); */
 
-            fetch('/js/quotes.json')
-                .then((response) => response.json())
-                .then(function (json) { this.data = json; displayQuote(); });
+
         </script>
 
         <script>
