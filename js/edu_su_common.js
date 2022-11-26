@@ -366,7 +366,7 @@ function gen_blockquote() {
     async function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function (json) { this.data = json; displayQuote(); console.log('2. ' + author); return author, quote; });
+            .then(function test (json) { this.data = json; displayQuote(); console.log('2. ' + author); return author, quote; });
 
         // An arrow function used to get a quote randomly
         function displayQuote() {
@@ -384,14 +384,14 @@ function gen_blockquote() {
             textFront.innerHTML = quote;
             authorFront.innerHTML = author;
             console.log('1. ' + author);
-            return author, quote;
+            return [author, quote];
         }
         // Fetching the quotes from the type.fit API using promises
         //             fetch("https://type.fit/api/quotes")
         /* fetch("/js/quotes.json")
         .then(function (response) { return response.json(); })
         .then(function (data) { this.data = data; displayQuote(); }); */
-        console.log(author);
+        console.log(author.[0]);
         return author, quote;
     } que();
 }
