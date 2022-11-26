@@ -157,13 +157,13 @@
                     .then(function (json) { this.data = json; displayQuote(); });
 
                 // An arrow function used to get a quote randomly
-                const displayQuote = async () => {
+                const displayQuote = () => {
                     const texts = document.querySelectorAll(".showquote");
                     const textFront = texts[0];
                     const authors = document.querySelectorAll(".showauthor");
                     const authorFront = authors[0];
 
-                    let index = await Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+                    let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
                     let quote = data[index].text;
                     let author = data[index].author;
                     if (!author) {
