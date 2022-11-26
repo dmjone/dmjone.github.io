@@ -14,11 +14,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/edu/su/",
   "background_color": "#fafafa",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": ".",
+  "scope": "./",
   "theme_color": "#fafafa",
   "shortcuts": [
     {
