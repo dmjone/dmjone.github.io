@@ -368,7 +368,7 @@ function gen_blockquote() {
             .then((response) => response.json())
             .then(function (json) {
                 this.data = json;
-                displayQuote();
+                //                displayQuote();
                 let dq = displayQuote();
                 console.log('3. ' + dq[0]);
             });
@@ -391,13 +391,12 @@ function gen_blockquote() {
             console.log('1. ' + author + '2.' + quote);
             return [author, quote];
         }
-        let dq = displayQuote();
+
         // Fetching the quotes from the type.fit API using promises
         //             fetch("https://type.fit/api/quotes")
         /* fetch("/js/quotes.json")
         .then(function (response) { return response.json(); })
         .then(function (data) { this.data = data; displayQuote(); }); */
-        console.log(dq[0]);
-        return author, quote;
+
     } que();
 }
