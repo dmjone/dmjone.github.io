@@ -183,6 +183,7 @@
         </script>
         <script>
             fetch('https://type.fit/api/quotes')
+                .then((response) => response.text())
                 .then(function (hlj) { this.data = hlj; console.log(hlj) });
         </script>
         <script>
