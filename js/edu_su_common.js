@@ -13,8 +13,9 @@ function highlightAll() { };
 // Get current URL
 function header_nav() {
     var url = new URL(window.location.href);
-    var base = url + "edu/su/";
-    var nav_folder = base + url.pathname.split("/")[4];
+    var base = url + "/edu/su/";
+    var courses = base + "courses/";
+    var nav_folder = courses + url.pathname.split("/")[4];
     var nav_subfolder = nav_folder + url.pathname.split("/")[5];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
