@@ -206,7 +206,7 @@ function header_author(author_init) {
         }
     }
 
-    if (secondary) { course_detail = " <h3>(" + course_detail + ")"; } else { course_detail = "" };
+    if (secondary) { course_detail = " <h3 style='color:white'>(" + course_detail + ")"; } else { course_detail = "" };
 
     course = "<h1>" + course + course_detail + "</h3></h1>";
     if (prof) { var under_guidance = " under the guidance of "; } else { var under_guidance = ""; var prof_link = ""; };
