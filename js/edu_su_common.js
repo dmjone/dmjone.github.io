@@ -372,12 +372,17 @@ function gen_blockquote() {
         var quote = data[index].text;
         var author = data[index].author;
         if (!author) { author = "Anonymous"; }
+
+        const texts = document.querySelectorAll(".showquote");
+        const authors = document.querySelectorAll(".showauthor");
+        texts[0].innerHTML = quote;
+        authors[0].innerHTML = author;
+
         console.log(author);
         console.log(quote);
-        return author;
+
     } errt();
-    var uss = errt();
-    console.log(author);
+
     /*    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
         document.write(quoteblock);
     
