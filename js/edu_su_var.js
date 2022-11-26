@@ -17,7 +17,7 @@ header_createlink("preconnect", "https://fonts.gstatic.com");
 header_createlink("preconnect", "https://picsum.photos");
 header_createlink("preconnect", "https://type.fit");
 
-header_createscript("/js/edu_su_common.js");
+header_createscript("/js/edu_su_common.js?ver=0.1");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
