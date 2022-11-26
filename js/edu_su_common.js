@@ -13,7 +13,7 @@ function highlightAll() { };
 // Get current URL
 function header_nav() {
     var url = new URL(window.location.href);
-    var base = url + "/edu/su/";
+    var base = "/edu/su/";
     var courses = base + "courses/";
     var nav_folder = courses + url.pathname.split("/")[4];
     var nav_subfolder = nav_folder + url.pathname.split("/")[5];
