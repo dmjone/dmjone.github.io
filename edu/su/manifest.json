@@ -1,6 +1,6 @@
 {
   "short_name": "dmj.one",
-  "name": "dmj.one - edu@su",
+  "name": "A Sholinian, dmj.one",
   "icons": [
     {
       "src": "/logo.png",
@@ -14,11 +14,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/edu/su/",
   "background_color": "#fafafa",
-  "display": "default",
+  "display": "fullscreen",
   "orientation": "portrait",
-  "scope": ".",
+  "scope": "./",
   "theme_color": "#fafafa",
   "shortcuts": [
     {
@@ -35,18 +35,18 @@
       ]
     },
     {
-      "name": "CSU1128",
-      "url": "/edu/su/csu1128/",
+      "name": "Go to course CSU1128",
+      "url": "/csu1128/",
       "icons": [
         {
           "src": "/logo.png"
         }
       ],
-      "description": "Logic Building with Computer Programming"
+      "description": "Logic Building with Problem Solving"
     },
     {
-      "name": "CSU1128p",
-      "url": "/edu/su/csu1128p/",
+      "name": "Go to course CSU1128p",
+      "url": "/csu1128p",
       "icons": [
         {
           "src": "/logo.png"
