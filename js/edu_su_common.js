@@ -133,14 +133,19 @@ function header_author(author_init) {
                     var prof = "";
                     var prof_bio = "";
                     var prof_href = "";
-                    var course = "Home";
-                    var course_detail = "Course Home";
+                    var course = "Study @ Shoolini University";
+                    var course_detail = "";
                     break;
             }
             break;
         case "life":
             break;
         default:
+            var prof = "";
+            var prof_bio = "";
+            var prof_href = "";
+            var course = "Shoolini University with dmj.one";
+            var course_detail = "";
             break;
     }
 
