@@ -374,7 +374,7 @@ function gen_blockquote() {
         if (!author) { author = "Anonymous"; }
         console.log(author);
         console.log(quote);
-    }
+    } errt();
 
     /*    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
         document.write(quoteblock);
