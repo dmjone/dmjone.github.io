@@ -152,7 +152,7 @@
         </main>
 
         <script>
-            !async function () {
+            async function () {
                 let data = await fetch("/js/quotes.json")
                     .then((response) => response.json())
                     .then(data => {
@@ -168,7 +168,7 @@
                 console.log(data[index].author);
                 console.log(data[index].quote);
 
-            }();
+            } ();
         </script>
 
         <script>copyright("all")</script>
