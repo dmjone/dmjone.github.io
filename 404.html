@@ -208,6 +208,10 @@
                 }
                 textFront.innerHTML = quote;
                 authorFront.innerHTML = author;
+                
+                var output_l1 = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5">';
+                var output_quote = '<blockquote class="blockquote">' + quote + '</blockquote><figcaption class="blockquote-footer">' + author + '</figcaption></figure>';
+                document.write(output_l1 + output_quote);
             }
             // Fetching the quotes from the type.fit API using promises
             //             fetch("https://type.fit/api/quotes")
