@@ -211,13 +211,13 @@
             }
             // Fetching the quotes from the type.fit API using promises
             //             fetch("https://type.fit/api/quotes")
-            fetch("/js/quotes.json")
+            /* fetch("/js/quotes.json")
             .then(function (response) { return response.json(); })
-            .then(function (data) { this.data = data; displayQuote(); });
+            .then(function (data) { this.data = data; displayQuote(); }); */
 
             fetch('https://type.fit/api/quotes')
-                    .then((response) => response.json())
-                    .then((json) => console.log(json));
+                .then((response) => response.json())
+                .then(function (json) { this.data = data; displayQuote(); console.log(json) });
         </script>
     </body>
 
