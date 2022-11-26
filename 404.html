@@ -161,12 +161,13 @@
                     .catch(error => {
                         console.error(error);
                     });
-
-                let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+                var sun = data.length;
+                console.log(sun);
+                let index = Math.floor(Math.random() * sun); // Generates a random number between 0 and the length of the dataset
                 let quote = data[index].text;
                 let author = data[index].author;
-                console.log(data[index].author);
-                console.log(data[index].quote);
+                console.log(author);
+                console.log(quote);
 
             }();
         </script>
