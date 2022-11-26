@@ -364,12 +364,14 @@ function gen_blockquote() {
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote"></blockquote><figcaption class="blockquote-footer showauthor"></figcaption>';
     document.write(quoteblock);
 
-    !async function () {
+    async function errt() {
         let data = await fetch("/js/quotes.json")
             .then((response) => response.json())
             .then(data => { return data; });
         return data;
-    }();
+    }
+    let data = errt();
+
     let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
     let quote = data[index].text;
     author = data[index].author;
