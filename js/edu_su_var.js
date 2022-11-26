@@ -25,11 +25,11 @@ header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/
 var temp_logo_min = "https://dmj.one/images/common/logo-min.png?v=2";
 var temp_logo = "https://dmj.one/images/common/logo.png";
 
-// header_createlink("manifest", "/site.webmanifest");
+header_createlink("manifest", "/site.webmanifest");
 header_createlink("shortcut icon", temp_logo_min);
 header_createlink("fluid-icon", temp_logo_min);
 header_createlink("apple-touch-icon", temp_logo_min);
-header_createlink("stylesheet", "/css/edu_su_common.css?v=2");
+header_createlink("stylesheet", "/css/edu_su_common.css?v=0.1");
 
 
 
