@@ -366,7 +366,7 @@ function gen_blockquote() {
     async function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function test(json) { this.data = json; displayQuote(); console.log('2. ' + author); return author, quote; });
+            .then(function test(json) { this.data = json; displayQuote(); console.log('2. ' + author); });
 
         // An arrow function used to get a quote randomly
         function displayQuote() {
@@ -381,8 +381,8 @@ function gen_blockquote() {
             if (!author) {
                 author = "Anonymous"
             }
-     //       textFront.innerHTML = quote;
-     //       authorFront.innerHTML = author;
+            //       textFront.innerHTML = quote;
+            //       authorFront.innerHTML = author;
             console.log('1. ' + author);
             return [author, quote];
         }
