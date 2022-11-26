@@ -134,7 +134,7 @@ function header_author(author_init) {
                     var prof_bio = "";
                     var prof_href = "";
                     var course = "Study @ Shoolini University";
-                    var course_detail = "";
+                    var course_detail = "with dmj";
                     break;
             }
             break;
@@ -206,7 +206,8 @@ function header_author(author_init) {
         }
     }
 
-    if (secondary) { course_detail = " (" + course_detail + ")"; } else { course_detail = "" };
+    if (secondary) { course_detail = "</h1> <h3>(" + course_detail + ")"; } else { course_detail = "" };
+
     course = "<h1>" + course + course_detail + "</h2>";
     if (prof) { var under_guidance = " under the guidance of "; } else { var under_guidance = ""; var prof_link = ""; };
 
