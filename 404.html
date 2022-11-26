@@ -182,9 +182,9 @@
                 .then(function (json) { this.data = json; displayQuote(); });
         </script>
         <script>
-            fetch('https://type.fit/api/quotes')
+            fetch('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js')
                 .then((response) => response.text())
-                .then(function (hlj) { this.data = hlj; console.log(hlj) });
+                .then(function (hlj) { this.hljs = hlj; console.log(hljs) });
         </script>
         <script>
             /*            var data;
