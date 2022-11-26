@@ -360,7 +360,6 @@ function copyright(rights) {
 /********************* Plugins *********************/
 /*******Generate Blockquote **********/
 function gen_blockquote() {
-    //    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + quote + '</blockquote><figcaption class="blockquote-footer showauthor">' + author + '</figcaption>';
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote"></blockquote><figcaption class="blockquote-footer showauthor"></figcaption>';
     document.write(quoteblock);
 
@@ -377,53 +376,5 @@ function gen_blockquote() {
         const authors = document.querySelectorAll(".showauthor");
         texts[0].innerHTML = quote;
         authors[0].innerHTML = author;
-
-        console.log(author);
-        console.log(quote);
-
     } errt();
-
-    /*    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
-        document.write(quoteblock);
-    
-        async function que() {
-            // let data = await fetch('/js/quotes.json').then((response) => response.json()).then(data => { return data; });
-            //        console.log('Data is here' + data);
-            /*            .then( function teq(json) {
-                                this.data = json;
-                                // displayQuote();
-                                let dq = displayQuote();
-                                console.log('3. ' + dq[0]);
-                                return [dq[0], dq[1]];
-                                // var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + dq[0] + '</blockquote><figcaption class="blockquote-footer showauthor">' + dq[1] + '</figcaption>';
-                                // document.write(quoteblock);
-                            });
-            */
-    // An arrow function used to get a quote randomly
-    function displayQuote() {
-        const texts = document.querySelectorAll(".showquote");
-        const textFront = texts[0];
-        const authors = document.querySelectorAll(".showauthor");
-        const authorFront = authors[0];
-
-        let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
-        let quote = data[index].text;
-        let author = data[index].author;
-        if (!author) {
-            author = "Anonymous"
-        }
-        textFront.innerHTML = quote;
-        authorFront.innerHTML = author;
-        // console.log('1. ' + author + '2.' + quote);
-        return [quote, author];
-    }
-
-    // Fetching the quotes from the type.fit API using promises
-    //             fetch("https://type.fit/api/quotes")
-    /* fetch("/js/quotes.json")
-    .then(function (response) { return response.json(); })
-    .then(function (data) { this.data = data; displayQuote(); }); */
-    /*  let ew = teq();
-      console.log(ew[0], ew[1]); */
-
 } 
