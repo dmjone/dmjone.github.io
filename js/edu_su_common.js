@@ -366,10 +366,10 @@ function gen_blockquote() {
     async function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function (json) { this.data = json; displayQuote(); return author, quote;  });
+            .then(function (json) { this.data = json; displayQuote(); console.log('2. ' + author); return author, quote; });
 
         // An arrow function used to get a quote randomly
-        function displayQuote () {
+        function displayQuote() {
             const texts = document.querySelectorAll(".showquote");
             const textFront = texts[0];
             const authors = document.querySelectorAll(".showauthor");
