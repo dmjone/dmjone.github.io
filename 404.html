@@ -152,14 +152,14 @@
 
         </script>
 
-        <script>copyright("all");</script>
+        <script>copyright("all"); </script>
 
         <script>
             var data;
             const authors = document.querySelectorAll(".showauthor");
             const texts = document.querySelectorAll(".showquote");
-            //            const authorFront = authors[0];
-            // const textFront = texts[0];
+            const authorFront = authors[0];
+            const textFront = texts[0];
             // An arrow function used to get a quote randomly
             const displayQuote = async () => {
                 let index = await Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
@@ -168,8 +168,8 @@
                 if (!author) {
                     author = "Anonymous"
                 }
-                authors.innerHTML = quote;
-                texts.innerHTML = author;
+                textFront.innerHTML = quote;
+                authorFront.innerHTML = author;
             }
             // Fetching the quotes from the type.fit API using promises
             //             fetch("https://type.fit/api/quotes")
@@ -181,7 +181,10 @@
                 .then((response) => response.json())
                 .then(function (json) { this.data = json; displayQuote(); console.log(json) });
         </script>
-
+        <script>
+            fetch('https://type.fit/api/quotes')
+                .then(function (hlj) { this.data = hlj; console.log(hlj) });
+        </script>
         <script>
             /*            var data;
                         let front = true;
