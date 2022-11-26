@@ -363,7 +363,7 @@ function gen_blockquote() {
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote"></blockquote><figcaption class="blockquote-footer showauthor"></figcaption>';
     document.write(quoteblock);
 
-    async function errt() {
+    async function quote() {
         let data = await fetch("/js/quotes.json")
             .then((response) => response.json())
             .then(data => { return data; });
@@ -377,5 +377,5 @@ function gen_blockquote() {
         const authors = document.querySelectorAll(".showauthor");
         texts[0].innerHTML = quote;
         authors[0].innerHTML = author;
-    } errt();
+    } quote();
 } 
