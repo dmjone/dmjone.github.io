@@ -370,9 +370,9 @@ function gen_blockquote() {
     // An arrow function used to get a quote randomly
     const displayQuote = async () => {
         const texts = document.querySelectorAll(".showquote");
-        const textFront = texts[0];
+        const textFront = texts[1];
         const authors = document.querySelectorAll(".showauthor");
-        const authorFront = authors[0];
+        const authorFront = authors[1];
 
         let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
         let quote = data[index].text;
