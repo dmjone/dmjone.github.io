@@ -27,7 +27,7 @@ function get_menu_list() {
     }
 
     function get_main() {
-        var cases = [1, 2, 3, 4, 5];
+        var cases = [1];
 
         // var readtime = Math.floor(Math.random() * 5) + 2;
         // var author = 1;
@@ -35,11 +35,11 @@ function get_menu_list() {
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
-                    link = "csu1128/";
+                    link = "courses/";
                     date = "Last Updated: Sun November 27, 2022";
-                    title = "Logic Building with Computer Prgramming";
-                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
-                    codetype = "CSU1128";
+                    title = "Study @ Shoolini";
+                    desc = "Lets Study! This section contains all the courses required for graduation in Computer Science and Engineering.";
+                    codetype = "study@shoolini";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 2:
