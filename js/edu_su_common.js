@@ -363,7 +363,7 @@ function gen_blockquote() {
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
     document.write(quoteblock);
 
-    async function que() {
+    function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
             .then(function (json) { this.data = json; displayQuote(); console.log('2. ' + author); });
@@ -383,7 +383,7 @@ function gen_blockquote() {
             }
             //       textFront.innerHTML = quote;
             //       authorFront.innerHTML = author;
-            console.log('1. ' + author);
+            console.log('1. ' + author + 2. + quote);
             return [author, quote];
         }
         let dq = displayQuote();
