@@ -13,8 +13,9 @@ function highlightAll() { };
 // Get current URL
 function header_nav() {
     var url = new URL(window.location.href);
-    var nav_folder = url.pathname.split("/")[4];
-    var nav_subfolder = url.pathname.split("/")[5];
+    var base = url + "edu/su/";
+    var nav_folder = base + url.pathname.split("/")[4];
+    var nav_subfolder = nav_folder + url.pathname.split("/")[5];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
     console.log(url.hostname);
@@ -23,8 +24,8 @@ function header_nav() {
     console.log(nav_filename);
 
     var nav_home = '<a href="https://' + url.hostname + ' " data-toggle="tooltip" data-placement="top" title="Home" data-original-title="Home"><i class="bi bi-house-fill text-light"></i></a>';
-    var nav_path = '<a href="/edu/su/' + nav_folder + '/" data-toggle="tooltip" data-placement="top" title="' + nav_folder + '" data-original-title="' + nav_folder + '"><i class="bi bi-journals text-light"></i></a>';
-    var nav_subpath = '<a href="/edu/su/' + nav_folder + '/' + nav_subfolder + '/" data-toggle="tooltip" data-placement="top" title="' + nav_subfolder + '" data-original-title="' + nav_subfolder + '"><i class="bi bi-card-list text-light"></i></a>';
+    var nav_path = '<a href="' + nav_folder + '/" data-toggle="tooltip" data-placement="top" title="' + nav_folder + '" data-original-title="' + nav_folder + '"><i class="bi bi-journals text-light"></i></a>';
+    var nav_subpath = '<a href="' + nav_folder + '/' + nav_subfolder + '/" data-toggle="tooltip" data-placement="top" title="' + nav_subfolder + '" data-original-title="' + nav_subfolder + '"><i class="bi bi-card-list text-light"></i></a>';
     var nav_file = '<a href="' + nav_filename + '" data-toggle="tooltip" data-placement="top" title="' + nav_filename + '" data-original-title="' + nav_filename + '"><i class="bi bi-journal-code text-light"></i></a>';
 
     var list_start = '<nav aria-label="breadcrumb" class="navbar-brand text-light"><ol class="breadcrumb" style="margin:auto">';
