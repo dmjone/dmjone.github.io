@@ -28,6 +28,10 @@ function get_menu_list() {
 
     function get_main() {
         var cases = [1];
+
+        // var readtime = Math.floor(Math.random() * 5) + 2;
+        var author = 1;
+
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
@@ -35,7 +39,7 @@ function get_menu_list() {
                     date = "Last Updated: Sun November 27, 2022";
                     title = "CSU1128";
                     desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
-                    codetype = "C Programming";
+                    codetype = "CSU1128";
                     // readtime = "10";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
