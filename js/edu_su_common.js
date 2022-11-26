@@ -366,7 +366,7 @@ function gen_blockquote() {
     function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function (json) {
+            .then(function teq(json) {
                 this.data = json;
                 //                displayQuote();
                 let dq = displayQuote();
@@ -401,8 +401,8 @@ function gen_blockquote() {
         /* fetch("/js/quotes.json")
         .then(function (response) { return response.json(); })
         .then(function (data) { this.data = data; displayQuote(); }); */
-
-        console.log(dq[0], dq[1]);
+        let ew = teq();
+        console.log(ew[0], ew[1]);
 
     } que();
 }
