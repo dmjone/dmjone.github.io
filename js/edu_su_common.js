@@ -321,7 +321,7 @@ function copyright(rights) {
         var rights = footer_some_rights;
     } else { rights = ""; }
 
-    document.write('<footer><span>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></footer>');
+    document.write('<footer><span><strong>&copy; 2007-' + new Date().getFullYear() + ' Divya Mohan' + rights + footer_link_privacy + footer_link_tos + '</span></strong></footer>');
 
     //define service worker
     if (typeof navigator.serviceWorker !== 'undefined') {
