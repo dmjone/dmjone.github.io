@@ -360,16 +360,19 @@ function copyright(rights) {
 /********************* Plugins *********************/
 /*******Generate Blockquote **********/
 function gen_blquote() {
-    var data;
-    /*let front = true;
-    const authors = document.querySelectorAll(".blockquote-footer");
-    const texts = document.querySelectorAll(".blockquote");
-    const authorFront = authors[0];
-    const textFront = texts[0];
-    */
-    // An arrow function used to get a quote randomly
-    const displayQuote = () => {
+    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
+    document.write(quoteblock);
 
+    fetch('/js/quotes.json')
+        .then((response) => response.json())
+        .then(function (json) { this.data = json; await displayQuote(); });
+
+    // An arrow function used to get a quote randomly
+    const displayQuote = async () => {
+        const texts = document.querySelectorAll(".showquote");
+        const textFront = texts[0];
+        const authors = document.querySelectorAll(".showauthor");
+        const authorFront = authors[0];
 
         let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
         let quote = data[index].text;
@@ -377,22 +380,8 @@ function gen_blquote() {
         if (!author) {
             author = "Anonymous"
         }
-        //    textFront.innerHTML = quote;
-        //    authorFront.innerHTML = author;
-        var output_l1 = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5">';
-        var output_quote = '<blockquote class="blockquote">' + quote + '</blockquote><figcaption class="blockquote-footer">' + author + '</figcaption></figure>';
-        document.write(output_l1 + output_quote);
+        textFront.innerHTML = quote;
+        authorFront.innerHTML = author;
+
     }
-    // Fetching the quotes from the type.fit API using promises
-    //    fetch("https://type.fit/api/quotes")
-    fetch("/js/quotes.json")
-        .then(function (data) {
-
-            // Storing the quotes internally upon
-            // successful completion of request
-            this.data = data;
-
-            // Displaying the quote When the Webpage loads
-            displayQuote();
-        });
 }
