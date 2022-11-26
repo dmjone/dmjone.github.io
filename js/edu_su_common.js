@@ -63,7 +63,7 @@ function header_navbar() {
             var linkactive = ' active" aria-current="page"';
         }
         linkname = links[i].toUpperCase();
-        li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/edu/su/' + links[i] + '/">' + linkname + "</a></li>";
+        li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/edu/su/courses/' + links[i] + '/">' + linkname + "</a></li>";
     }
 
     nav = common_nav_start + li_link + common_nav_end;
