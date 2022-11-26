@@ -152,12 +152,12 @@
 
         <script>
             async function que() {
-                await fetch('/js/quotes.json')
+                fetch('/js/quotes.json')
                     .then((response) => response.json())
                     .then(function (json) { this.data = json; displayQuote(); });
 
                 // An arrow function used to get a quote randomly
-                const displayQuote = () => {
+                const displayQuote = async () => {
                     const texts = document.querySelectorAll(".showquote");
                     const textFront = texts[0];
                     const authors = document.querySelectorAll(".showauthor");
