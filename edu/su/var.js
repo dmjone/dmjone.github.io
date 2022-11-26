@@ -35,7 +35,7 @@ function get_menu_list() {
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
-                    link = "courses/";
+                    link = "course/";
                     date = "Last Updated: Sun November 27, 2022";
                     title = "Study @ Shoolini";
                     desc = "Let us study! This section contains all the courses required for graduation in Computer Science and Engineering.";
