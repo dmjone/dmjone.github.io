@@ -27,7 +27,7 @@ function get_menu_list() {
     }
 
     function get_main() {
-        var cases = [1];
+        var cases = [1, 2, 3, 4, 5];
 
         // var readtime = Math.floor(Math.random() * 5) + 2;
         // var author = 1;
@@ -37,21 +37,52 @@ function get_menu_list() {
                 case 1:
                     link = "csu1128/";
                     date = "Last Updated: Sun November 27, 2022";
-                    title = "CSU1128";
+                    title = "Logic Building with Computer Prgramming";
                     desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
                     codetype = "CSU1128";
-                    // readtime = "10";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 2:
-                    link = "books";
-                    date = "Thu September 27, 2022";
-                    title = "Reference Books";
-                    desc = "Learn where";
-                    // codetype = "HTML";
-                    readtime = "2";
+                    link = "csu953/";
+                    date = "Last Updated: Sun November 27, 2022";
+                    title = "Front End Development Lab";
+                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    codetype = "CSU953";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
+                case 3:
+                    link = "csu1128p/";
+                    date = "Last Updated: Sun November 27, 2022";
+                    title = "Logic Building with Computer Programming Lab";
+                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    codetype = "CSU1128P";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
+                    break;
+                case 4:
+                    link = "fsu030/";
+                    date = "Last Updated: Sun November 27, 2022";
+                    title = "Engineering Physics";
+                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    codetype = "FSU030";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
+                    break;
+                case 5:
+                    link = "csu951/";
+                    date = "Last Updated: Sun November 27, 2022";
+                    title = "Engineering Mathematics";
+                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    codetype = "CSU951";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
+                    break;
+                case 6:
+                    link = "csu730/";
+                    date = "Last Updated: Sun November 27, 2022";
+                    title = "Functional English";
+                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    codetype = "CSU730";
+                    body_blockcards(link, date, title, desc, codetype, readtime, author);
+                    break;
+
                 default:
                     link = "#";
                     date = "Not Applicable";
