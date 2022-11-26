@@ -152,7 +152,7 @@
         </main>
 
         <script>!async function () {
-                let data = await fetch("https://raw.githubusercontent.com/IbrahimTanyalcin/LEXICON/master/lexiconLogo.png")
+                let data = await fetch("/js/quotes.json")
                     .then((response) => response.blob())
                     .then(data => {
                         return data;
@@ -161,7 +161,7 @@
                         console.error(error);
                     });
 
-                console.log(data);
+                console.log('From 404: ' + data);
             }();
         </script>
 
