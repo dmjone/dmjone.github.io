@@ -363,25 +363,31 @@ function gen_blockquote() {
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
     document.write(quoteblock);
 
-    fetch('/js/quotes.json')
-        .then((response) => response.json())
-        .then(function (json) { this.data = json; displayQuote(); });
+    async function que() {
+        fetch('/js/quotes.json')
+            .then((response) => response.json())
+            .then(function (json) { this.data = json; displayQuote(); });
 
-    // An arrow function used to get a quote randomly
-    const displayQuote = () => {
-        const texts = document.querySelectorAll(".showquote");
-        const textFront = texts[1];
-        const authors = document.querySelectorAll(".showauthor");
-        const authorFront = authors[1];
+        // An arrow function used to get a quote randomly
+        const displayQuote = async () => {
+            const texts = document.querySelectorAll(".showquote");
+            const textFront = texts[0];
+            const authors = document.querySelectorAll(".showauthor");
+            const authorFront = authors[0];
 
-        let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
-        let quote = data[index].text;
-        let author = data[index].author;
-        if (!author) {
-            author = "Anonymous"
+            let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+            let quote = data[index].text;
+            let author = data[index].author;
+            if (!author) {
+                author = "Anonymous"
+            }
+            textFront.innerHTML = quote;
+            authorFront.innerHTML = author;
         }
-        textFront.innerHTML = quote;
-        authorFront.innerHTML = author;
-
-    }
+        // Fetching the quotes from the type.fit API using promises
+        //             fetch("https://type.fit/api/quotes")
+        /* fetch("/js/quotes.json")
+        .then(function (response) { return response.json(); })
+        .then(function (data) { this.data = data; displayQuote(); }); */
+    } que();
 }
