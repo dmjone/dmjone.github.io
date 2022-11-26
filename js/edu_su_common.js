@@ -85,7 +85,7 @@ function header_author(author_init) {
     // console.log(file.length + file);
 
     switch (secondary) {
-        case courses:
+        case "courses":
             switch (folder) {
                 case "csu1128":
                     var prof = "Dr. Pankaj Vaidya";
