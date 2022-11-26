@@ -206,9 +206,9 @@ function header_author(author_init) {
         }
     }
 
-    if (secondary) { course_detail = "</h1> <h3>(" + course_detail + ")"; } else { course_detail = "" };
+    if (secondary) { course_detail = " <h3>(" + course_detail + ")"; } else { course_detail = "" };
 
-    course = "<h1>" + course + course_detail + "</h3>";
+    course = "<h1>" + course + course_detail + "</h3></h1>";
     if (prof) { var under_guidance = " under the guidance of "; } else { var under_guidance = ""; var prof_link = ""; };
 
     document.write("<header>" + course + "<p>Summarized by " + authorname + author_link + under_guidance + profname + prof_link + "</p>" + prof_bio + author_bio + button + "</header>" + header_navbar());
