@@ -369,11 +369,10 @@ function gen_blockquote() {
             .then((response) => response.json())
             .then(data => { return data; });
 
-        var sun = data.length;
-        console.log(sun);
         let index = Math.floor(Math.random() * sun); // Generates a random number between 0 and the length of the dataset
         let quote = data[index].text;
-        let author = data[index].author;
+        author = data[index].author;
+        if (!author) { author = "Anonymous"; }
         console.log(author);
         console.log(quote);
         return [quote, author];
