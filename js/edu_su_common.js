@@ -329,7 +329,7 @@ function copyright(rights) {
     }
 
     // UselessFunctions -- Notification cookie
-    dcevar(notify_cookie);
+    if (!(localStorage.getItem("noshow"))) { dcevar(notify_cookie); }
 
     window.onload = function () {
         // Syntax highlighter - Enable is using highlight js.
