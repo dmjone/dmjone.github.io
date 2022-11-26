@@ -364,10 +364,8 @@ function gen_blockquote() {
     document.write(quoteblock);
 
     async function que() {
-        let data = await fetch('/js/quotes.json')
-            .then((response) => response.json())
-            .then(data => { return data; })
-        console.log('Data is here' + data);
+        // let data = await fetch('/js/quotes.json').then((response) => response.json()).then(data => { return data; });
+        //        console.log('Data is here' + data);
         /*            .then( function teq(json) {
                             this.data = json;
                             // displayQuote();
