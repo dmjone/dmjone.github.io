@@ -82,51 +82,64 @@ function header_author(author_init) {
     // console.log(folder.length + folder);
     // console.log(file.length + file);
 
-    switch (folder) {
-        case "csu1128":
-            var prof = "Dr. Pankaj Vaidya";
-            var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
-            var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
-            var course = "CSU1128";
-            var course_detail = "Logic Building with Computer Programming";
-            break;
-        case "csu1128p":
-            var prof = "Dr. Pankaj Vaidya";
-            var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
-            var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
-            var course = "CSU1128(P)";
-            var course_detail = "Logic Building with Computer Programming Lab";
-            break;
-        case "csu953":
-            var prof = "Dr. Bharti Thakur";
-            var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
-            var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
-            var course = "CSU953";
-            var course_detail = "Front End Development Lab";
-            break;
-        case "fsu030":
-            var prof = "Dr. Pawan Kumar";
-            var prof_bio = "<p>Dr. Pawan Kumar is a assistant Professor at Shoolini University. He has more than 17 years of experience in teaching, research, and administration. He completed his Ph.D.in 2019 from Amity University, Noida with the collaboration of Punjab University, Chandigarh. He is currently working on Optical, Thermal and Electrical Properties of Chalcogenide Glasses/Thin Films.</p>";
-            var prof_href = "mailto:pawankumarsu783@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
-            var course = "FSU030";
-            var course_detail = "Engineering Physics";
-            break;
-        case "csu951":
-            var prof = "Dr. Ravinder Thakur";
-            var prof_bio = "<p>Dr. Ravinder Thakur is an assistant professor at Shoolini University.</p>";
-            var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Dr.%20Ravinder%20Thakur.%20Please%20provide%20his%20contact%20details.%0AThanks";
-            var course = "CSU951";
-            var course_detail = "Basic Mathematics";
-            break;
-        case "csu730":
-            var prof = "Rajesh Williams";
-            var prof_bio = "<p>Rajesh Williams is an English Language professional from Faculty of Liberal Arts.</p>";
-            var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Rajesh%20Williams.%20Please%20provide%20his%20contact%20details.%0AThanks";
-            var course = "CSU730";
-            var course_detail = "Functional English - 1";
-            break;
-        default:
-            break;
+    if (folder) {
+        switch (folder) {
+            case "csu1128":
+                var prof = "Dr. Pankaj Vaidya";
+                var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
+                var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+                var course = "CSU1128";
+                var course_detail = "Logic Building with Computer Programming";
+                break;
+            case "csu1128p":
+                var prof = "Dr. Pankaj Vaidya";
+                var prof_bio = "<p>Dr. Pankaj Vaidya is the Head of the Yogananda School of AI, Computers and Data Sciences. He holds 22 years of teaching experience and is conducting research in Machine Learning and Drug Discovery using Machine Learning. He completed his M Tech (2005) and received PhD (2020) in Computer Science Engineering from Shoolini University.</p>";
+                var prof_href = "mailto:pankaj.vaidya@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+                var course = "CSU1128(P)";
+                var course_detail = "Logic Building with Computer Programming Lab";
+                break;
+            case "csu953":
+                var prof = "Dr. Bharti Thakur";
+                var prof_bio = "<p>Bharti Thakur is an Assistant Professor at the Yogananda School of Artificial Intelligence, Computing and Data Science, Shoolini University of Biotechnology and Management Sciences, Solan (HP) India. She is doing her research on ‘Data Mining and Machine Learning’. She holds 10 years of teaching experience.</p>";
+                var prof_href = "mailto:bhartithakur@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+                var course = "CSU953";
+                var course_detail = "Front End Development Lab";
+                break;
+            case "fsu030":
+                var prof = "Dr. Pawan Kumar";
+                var prof_bio = "<p>Dr. Pawan Kumar is a assistant Professor at Shoolini University. He has more than 17 years of experience in teaching, research, and administration. He completed his Ph.D.in 2019 from Amity University, Noida with the collaboration of Punjab University, Chandigarh. He is currently working on Optical, Thermal and Electrical Properties of Chalcogenide Glasses/Thin Films.</p>";
+                var prof_href = "mailto:pawankumarsu783@shooliniuniversity.com?subject=referred%20from%3A%20dmj.one";
+                var course = "FSU030";
+                var course_detail = "Engineering Physics";
+                break;
+            case "csu951":
+                var prof = "Dr. Ravinder Thakur";
+                var prof_bio = "<p>Dr. Ravinder Thakur is an assistant professor at Shoolini University.</p>";
+                var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Dr.%20Ravinder%20Thakur.%20Please%20provide%20his%20contact%20details.%0AThanks";
+                var course = "CSU951";
+                var course_detail = "Basic Mathematics";
+                break;
+            case "csu730":
+                var prof = "Rajesh Williams";
+                var prof_bio = "<p>Rajesh Williams is an English Language professional from Faculty of Liberal Arts.</p>";
+                var prof_href = "mailto:contact@dmj.one?subject=Want%20to%20contact%20Dr.%20Ravinder%20Thakur&body=Hello%2C%20I%20want%20to%20contact%20Rajesh%20Williams.%20Please%20provide%20his%20contact%20details.%0AThanks";
+                var course = "CSU730";
+                var course_detail = "Functional English - 1";
+                break;
+            default:
+                var prof = "";
+                var prof_bio = "";
+                var prof_href = "";
+                var course = "Home";
+                var course_detail = "Course Home";
+                break;
+        }
+    } else {
+        var prof = "";
+        var prof_bio = "";
+        var prof_href = "";
+        var course = "Home";
+        var course_detail = "Course Home";
     }
     switch (author_init) {
         case "dm":
