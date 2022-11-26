@@ -388,7 +388,7 @@ function gen_blockquote() {
             }
             //       textFront.innerHTML = quote;
             //       authorFront.innerHTML = author;
-            console.log('1. ' + author + 2. + quote);
+            console.log('1. ' + author + '2.' + quote);
             return [author, quote];
         }
         let dq = displayQuote();
