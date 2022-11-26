@@ -21,6 +21,8 @@ header_createscript("/js/edu_su_common.js?ver=0.1");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js");
 header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js");
+header_createscript("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9436488945721774");
+header_createscript("https://www.googletagmanager.com/gtag/js?id=G-D8EG8249SV");
 
 var temp_logo_min = "https://dmj.one/images/common/logo-min.png?v=2";
 var temp_logo = "https://dmj.one/images/common/logo.png";
@@ -31,9 +33,8 @@ header_createlink("fluid-icon", temp_logo_min);
 header_createlink("apple-touch-icon", temp_logo_min);
 header_createlink("stylesheet", "/css/edu_su_common.css?v=0.1");
 
-
-
-
+document.write("<script>window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments); }gtag('js', new Date());gtag('config', 'G-D8EG8249SV');</script>");
+document.write("<script>(function (w, d, s, l, i) {w[l] = w[l] || []; w[l].push({'gtm.start':new Date().getTime(), event: 'gtm.js'}); var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);}) (window, document, 'script', 'dataLayer', 'GTM-PQ4VPSD');</script> ");
 
 // execute the vars by calling <script>_decode-encryptedvar-fuction_(_varname_);</script> in html where it is required.
 

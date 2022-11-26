@@ -27,25 +27,25 @@ function get_menu_list() {
     }
 
     function get_main() {
-        var cases = [1];
+        var cases = [1,2];
         for (let i = 0; i < cases.length; i++) {
             switch (cases[i]) {
                 case 1:
-                    link = "a1/";
+                    link = "a1";
                     date = "Last Updated: Wed November 02, 2022";
                     title = "Assignment 1";
                     desc = "Assignment 1 based on Mechanics.";
-                    codetype = "Assignment";
+                    codetype = "Mechanics";
                     readtime = "10";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 2:
-                    link = "books";
+                    link = "s2";
                     date = "Thu September 27, 2022";
-                    title = "Reference Books";
-                    desc = "Learn where";
-                    // codetype = "HTML";
-                    readtime = "2";
+                    title = "Seminar 2";
+                    desc = "Seminar 2 based on EM Waves";
+                    codetype = "EM Waves";
+                    readtime = "15";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 default:
