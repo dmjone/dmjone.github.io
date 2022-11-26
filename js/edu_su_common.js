@@ -134,7 +134,7 @@ function header_author(author_init) {
                     var prof_bio = "";
                     var prof_href = "";
                     var course = "Study @ Shoolini University";
-                    var course_detail = "with dmj";
+                    var course_detail = "2026";
                     break;
             }
             break;
