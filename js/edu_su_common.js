@@ -386,12 +386,13 @@ function gen_blockquote() {
             console.log('1. ' + author);
             return [author, quote];
         }
+        let dq = displayQuote();
         // Fetching the quotes from the type.fit API using promises
         //             fetch("https://type.fit/api/quotes")
         /* fetch("/js/quotes.json")
         .then(function (response) { return response.json(); })
         .then(function (data) { this.data = data; displayQuote(); }); */
-        console.log(author[0]);
+        console.log(dq[0]);
         return author, quote;
     } que();
 }
