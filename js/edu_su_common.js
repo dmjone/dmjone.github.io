@@ -383,11 +383,14 @@ function gen_blockquote() {
             }
             textFront.innerHTML = quote;
             authorFront.innerHTML = author;
+            return author, quote;
         }
         // Fetching the quotes from the type.fit API using promises
         //             fetch("https://type.fit/api/quotes")
         /* fetch("/js/quotes.json")
         .then(function (response) { return response.json(); })
         .then(function (data) { this.data = data; displayQuote(); }); */
+        console.log(author);
+        return author, quote;
     } que();
 }
