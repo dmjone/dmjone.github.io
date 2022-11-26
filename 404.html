@@ -184,7 +184,7 @@
         <script>
             fetch('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js')
                 .then((response) => response.text())
-                .then(function (hlj) { this.hljs = hlj; console.log(hljs) });
+                .then(function (hlj) { this.hljs = hlj; console.log(hljs); hljs.highlightAll(); });
         </script>
         <script>
             /*            var data;

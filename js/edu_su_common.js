@@ -335,7 +335,7 @@ function copyright(rights) {
 
     window.onload = function () {
         // Syntax highlighter - Enable is using highlight js.
-        hljs.highlightAll();
+    //    hljs.highlightAll();
 
         // Notification - Privacy - I accept
 
