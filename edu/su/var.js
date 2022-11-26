@@ -38,7 +38,7 @@ function get_menu_list() {
                     link = "courses/";
                     date = "Last Updated: Sun November 27, 2022";
                     title = "Study @ Shoolini";
-                    desc = "Lets Study! This section contains all the courses required for graduation in Computer Science and Engineering.";
+                    desc = "Let us study! This section contains all the courses required for graduation in Computer Science and Engineering.";
                     codetype = "study@shoolini";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;

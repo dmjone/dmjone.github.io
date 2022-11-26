@@ -38,15 +38,15 @@ function get_menu_list() {
                     link = "csu1128/";
                     date = "Last Updated: Sun November 27, 2022";
                     title = "Logic Building with Computer Prgramming";
-                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    desc = "Lets learn to code C! This section contains all the course related things of Logic Building with Computer Programming.";
                     codetype = "CSU1128";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 2:
                     link = "csu953/";
-                    date = "Last Updated: Sun November 27, 2022";
+                    date = "Last Updated: Thu November 24, 2022";
                     title = "Front End Development Lab";
-                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    desc = "Lets learn to code HTML! This section contains all the course related things of Front End Development Lab";
                     codetype = "CSU953";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
@@ -54,7 +54,7 @@ function get_menu_list() {
                     link = "csu1128p/";
                     date = "Last Updated: Sun November 27, 2022";
                     title = "Logic Building with Computer Programming Lab";
-                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    desc = "<strong>WIP: Work in Progress! </strong> No content uploaded";
                     codetype = "CSU1128P";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
@@ -62,7 +62,7 @@ function get_menu_list() {
                     link = "fsu030/";
                     date = "Last Updated: Sun November 27, 2022";
                     title = "Engineering Physics";
-                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    desc = "Revisit the concepts of Physics and its real-world applications! This section contains all the course related things of Engineering Physics";
                     codetype = "FSU030";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
@@ -70,7 +70,7 @@ function get_menu_list() {
                     link = "csu951/";
                     date = "Last Updated: Sun November 27, 2022";
                     title = "Engineering Mathematics";
-                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    desc = "<strong>WIP: Work in Progress! </strong> No content uploaded";
                     codetype = "CSU951";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
@@ -78,7 +78,7 @@ function get_menu_list() {
                     link = "csu730/";
                     date = "Last Updated: Sun November 27, 2022";
                     title = "Functional English";
-                    desc = "Lets learn to code! This section contains list of the programs which from basic to advanced level which were done in class and is written in C language.";
+                    desc = "<strong>WIP: Work in Progress! </strong> No content uploaded";
                     codetype = "CSU730";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
