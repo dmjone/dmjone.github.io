@@ -368,7 +368,6 @@ function gen_blockquote() {
         let data = await fetch("/js/quotes.json")
             .then((response) => response.json())
             .then(data => { return data; });
-        return data;
         let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
         var quote = data[index].text;
         var author = data[index].author;
