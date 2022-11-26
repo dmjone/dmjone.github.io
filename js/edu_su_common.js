@@ -359,13 +359,13 @@ function copyright(rights) {
 
 /********************* Plugins *********************/
 /*******Generate Blockquote **********/
-function gen_blquote() {
+function gen_blockquote() {
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
     document.write(quoteblock);
 
     fetch('/js/quotes.json')
         .then((response) => response.json())
-        .then(function (json) { this.data = json; await displayQuote(); });
+        .then(function (json) { this.data = json; displayQuote(); });
 
     // An arrow function used to get a quote randomly
     const displayQuote = async () => {
