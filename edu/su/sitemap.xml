@@ -1,27 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-	    <loc>https://dmjone.github.io/csu953/sitemap.xml</loc>
-		<lastmod>2021-06-29T01:08:10-05:00</lastmod>
+	    <loc>https://dmj.one/edu/su/courses/csu953/sitemap.xml</loc>
+		<lastmod>2021-06-29</lastmod>
+		<changefreq>weekly</changefreq>
 	</sitemap>
 	<sitemap>
-		<loc>https://dmjone.github.io/csu1128/sitemap.xml</loc>
-		<lastmod>2022-11-19T14:41:28-06:00</lastmod>
+		<loc>https://dmj.one/edu/su/courses/csu1128/sitemap.xml</loc>
+		<lastmod>2022-11-19</lastmod>
+		<changefreq>weekly</changefreq>
 	</sitemap>
 	<sitemap>
-		<loc>https://dmjone.github.io/csu1128p/sitemap.xml</loc>
-		<lastmod>2021-11-17T10:11:43-06:00</lastmod>
+		<loc>https://dmj.one/edu/su/courses/csu1128p/sitemap.xml</loc>
+		<lastmod>2021-11-17</lastmod>
+		<changefreq>weekly</changefreq>
 	</sitemap>
 	<sitemap>
-		<loc>https://dmjone.github.io/csu730/sitemap.xml</loc>
-		<lastmod>2022-11-19T14:41:28-06:00</lastmod>
+		<loc>https://dmj.one/edu/su/courses/csu730/sitemap.xml</loc>
+		<lastmod>2022-11-19</lastmod>
+		<changefreq>monthly</changefreq>
 	</sitemap>
 	<sitemap>
-		<loc>https://dmjone.github.io/fsu030/sitemap.xml</loc>
-		<lastmod>2022-11-19T14:41:28-06:00</lastmod>
+		<loc>https://dmj.one/edu/su/courses/fsu030/sitemap.xml</loc>
+		<lastmod>2022-11-19</lastmod>
+		<changefreq>weekly</changefreq>
 	</sitemap>
 	<sitemap>
-		<loc>https://dmjone.github.io/csu951/sitemap.xml</loc>
-		<lastmod>2022-11-15T13:45:33-06:00</lastmod>
+		<loc>https://dmj.one/edu/su/courses/csu951/sitemap.xml</loc>
+		<lastmod>2022-11-15</lastmod>
+		<changefreq>monthly</changefreq>
 	</sitemap>
 </sitemapindex>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+    	<loc>https://dmj.one/</loc>
+    	<lastmod>2022-01-27</lastmod>
+  	</url>
+  	<url>
+	    <loc>https://su.dmj.one/</loc>
+	    <lastmod>2022-11-27</lastmod>
+  	</url>
+  	<url>
+	    <loc>https://dmj.one/edu/su/</loc>
+	    <lastmod>2022-11-27</lastmod>
+  	</url>
+  	<url>
+	    <loc>https://su.dmj.one/courses/</loc>
+	    <lastmod>2022-11-24</lastmod>
+  	</url>
+  	<url>
+	    <loc>https://su.dmj.one/courses/csu1128/</loc>
+	    <lastmod>2022-11-27</lastmod>
+  	</url>
+</urlset>	
