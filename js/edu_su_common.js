@@ -368,7 +368,7 @@ function gen_blockquote() {
         .then(function (json) { this.data = json; displayQuote(); });
 
     // An arrow function used to get a quote randomly
-    const displayQuote = async () => {
+    const displayQuote = () => {
         const texts = document.querySelectorAll(".showquote");
         const textFront = texts[1];
         const authors = document.querySelectorAll(".showauthor");
