@@ -379,7 +379,7 @@ function gen_blockquote() {
         return [quote, author];
     }
     let weu = errp();
-    console.log(weu[0]);
+    window.onload = function () { console.log(weu[0]); };
 
 
     /*    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
