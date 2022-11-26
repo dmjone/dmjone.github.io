@@ -217,7 +217,7 @@
 
             fetch('https://type.fit/api/quotes')
                 .then((response) => response.json())
-                .then(function (json) { this.data = data; displayQuote(); console.log(json) });
+                .then(function (json) { this.data = json; displayQuote(); console.log(json) });
         </script>
     </body>
 
