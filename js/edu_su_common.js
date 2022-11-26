@@ -369,17 +369,13 @@ function gen_blockquote() {
             .then((response) => response.json())
             .then(data => { return data; });
         return data;
+        let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
+        let quote = data[index].text;
+        author = data[index].author;
+        if (!author) { author = "Anonymous"; }
+        console.log(author);
+        console.log(quote);
     }
-    var data2 = errt();
-    var eyt = data2.json();
-    console.log(eyt);
-
-    //    let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
-    //  let quote = data[index].text;
-    //   author = data[index].author;
-    //  if (!author) { author = "Anonymous"; }
-    console.log(author);
-    console.log(quote);
 
     /*    var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
         document.write(quoteblock);
