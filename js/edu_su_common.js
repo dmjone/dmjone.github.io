@@ -366,7 +366,12 @@ function gen_blockquote() {
     function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function (json) { this.data = json; displayQuote(); console.log('2. ' + author); });
+            .then(function (json) {
+                this.data = json;
+                displayQuote();
+                let dq = displayQuote();
+                console.log('3. ' + dq[0]);
+            });
 
         // An arrow function used to get a quote randomly
         function displayQuote() {
