@@ -14,7 +14,7 @@ function highlightAll() { };
 function header_nav() {
     var url = new URL(window.location.href);
     var base = "/edu/su/";
-    var courses = base + "courses/";
+    var courses = base + "course/";
     if (url.pathname.split("/")[4]) { var nav_folder = courses + url.pathname.split("/")[4]; }
     var nav_subfolder = url.pathname.split("/")[5];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
@@ -63,7 +63,7 @@ function header_navbar() {
             var linkactive = ' active" aria-current="page"';
         }
         linkname = links[i].toUpperCase();
-        li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/edu/su/courses/' + links[i] + '/">' + linkname + "</a></li>";
+        li_link += '<li class="nav-item"><a class="nav-link' + linkactive + ' href="/edu/su/course/' + links[i] + '/">' + linkname + "</a></li>";
     }
 
     nav = common_nav_start + li_link + common_nav_end;
