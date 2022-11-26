@@ -363,20 +363,21 @@ function gen_blockquote() {
     var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5 my-5"><blockquote class="blockquote"></blockquote><figcaption class="blockquote-footer"></figcaption></figure>';
     document.write(quoteblock);
 
-    function que() {
-        fetch('/js/quotes.json')
+    async function que() {
+        let qye = await fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function teq(json) {
-                this.data = json;
-                //                displayQuote();
-                let dq = displayQuote();
-                console.log('3. ' + dq[0]);
-                return [dq[0], dq[1]];
-                //                var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + dq[0] + '</blockquote><figcaption class="blockquote-footer showauthor">' + dq[1] + '</figcaption>';
-                // document.write(quoteblock);
-
-            });
-
+            .then(data => { return data; })
+        console.log(data);
+        /*            .then( function teq(json) {
+                            this.data = json;
+                            // displayQuote();
+                            let dq = displayQuote();
+                            console.log('3. ' + dq[0]);
+                            return [dq[0], dq[1]];
+                            // var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + dq[0] + '</blockquote><figcaption class="blockquote-footer showauthor">' + dq[1] + '</figcaption>';
+                            // document.write(quoteblock);
+                        });
+        */
         // An arrow function used to get a quote randomly
         function displayQuote() {
             const texts = document.querySelectorAll(".showquote");
@@ -390,8 +391,8 @@ function gen_blockquote() {
             if (!author) {
                 author = "Anonymous"
             }
-            //       textFront.innerHTML = quote;
-            //       authorFront.innerHTML = author;
+            textFront.innerHTML = quote;
+            authorFront.innerHTML = author;
             // console.log('1. ' + author + '2.' + quote);
             return [quote, author];
         }
