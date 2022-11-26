@@ -151,6 +151,20 @@
 
         </main>
 
+        <script>!async function () {
+                let data = await fetch("https://raw.githubusercontent.com/IbrahimTanyalcin/LEXICON/master/lexiconLogo.png")
+                    .then((response) => response.blob())
+                    .then(data => {
+                        return data;
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    });
+
+                console.log(data);
+            }();
+        </script>
+
         <script>copyright("all")</script>
 
         <script>
