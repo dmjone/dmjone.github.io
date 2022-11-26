@@ -155,12 +155,8 @@
             async function errt() {
                 let data = await fetch("/js/quotes.json")
                     .then((response) => response.json())
-                    .then(data => {
-                        return data;
-                    })
-                    .catch(error => {
-                        console.error(error);
-                    });
+                    .then(data => { return data; });
+
                 var sun = data.length;
                 console.log(sun);
                 let index = Math.floor(Math.random() * sun); // Generates a random number between 0 and the length of the dataset
