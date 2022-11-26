@@ -364,7 +364,7 @@ function gen_blockquote() {
     document.write(quoteblock);
 
     async function que() {
-        let qye = await fetch('/js/quotes.json')
+        let data = await fetch('/js/quotes.json')
             .then((response) => response.json())
             .then(data => { return data; })
         console.log(data);
