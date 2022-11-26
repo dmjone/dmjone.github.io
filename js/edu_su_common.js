@@ -362,7 +362,7 @@ function copyright(rights) {
 async function gen_blockquote() {
 
 
-    let data = fetch("/js/quotes.json")
+    let data = await fetch("/js/quotes.json")
         .then((response) => response.json())
         .then(data => { return data; });
 
