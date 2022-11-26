@@ -371,6 +371,7 @@ function gen_blockquote() {
                 //                displayQuote();
                 let dq = displayQuote();
                 console.log('3. ' + dq[0]);
+                return [quote, author];
                 var quoteblock = '<figure class="text-center shadow p-4 rounded bg-warning bg-gradient bg-opacity-25 p-5"><blockquote class="blockquote showquote">' + dq[0] + '</blockquote><figcaption class="blockquote-footer showauthor">' + dq[1] + '</figcaption>';
                 document.write(quoteblock);
 
@@ -389,9 +390,9 @@ function gen_blockquote() {
             if (!author) {
                 author = "Anonymous"
             }
-             //       textFront.innerHTML = quote;
+            //       textFront.innerHTML = quote;
             //       authorFront.innerHTML = author;
-           // console.log('1. ' + author + '2.' + quote);
+            // console.log('1. ' + author + '2.' + quote);
             return [quote, author];
         }
 
