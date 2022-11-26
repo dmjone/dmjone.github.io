@@ -230,7 +230,7 @@ function body_genmenu(course) {
                 link = "#";
                 date = "Not Applicable";
                 title = "The current " + course + " has not been defined.";
-                desc = "Please define a hierchy for the course " + course + ".";
+                desc = "Please define an hierchy in js for the course " + course + ".";
                 codetype = "#CourseNotDefined";
                 readtime = "0";
                 body_blockcards(link, date, title, desc, codetype, readtime, 1);
