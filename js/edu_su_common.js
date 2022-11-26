@@ -366,7 +366,7 @@ function gen_blockquote() {
     async function que() {
         fetch('/js/quotes.json')
             .then((response) => response.json())
-            .then(function test (json) { this.data = json; displayQuote(); console.log('2. ' + author); return author, quote; });
+            .then(function test(json) { this.data = json; displayQuote(); console.log('2. ' + author); return author, quote; });
 
         // An arrow function used to get a quote randomly
         function displayQuote() {
@@ -391,7 +391,7 @@ function gen_blockquote() {
         /* fetch("/js/quotes.json")
         .then(function (response) { return response.json(); })
         .then(function (data) { this.data = data; displayQuote(); }); */
-        console.log(author.[0]);
+        console.log(author[0]);
         return author, quote;
     } que();
 }
