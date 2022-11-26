@@ -1,7 +1,7 @@
 function get_menu_list() {
-    var course = window.location.pathname.split("/")[1];
-    var path = window.location.pathname.split("/")[2];
-    var file = window.location.pathname.split("/")[3];
+    var course = window.location.pathname.split("/")[4];
+    var path = window.location.pathname.split("/")[5];
+    var file = window.location.pathname.split("/")[6];
     var readtime = "";
     var author = "";
 
