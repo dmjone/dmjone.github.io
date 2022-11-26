@@ -155,11 +155,11 @@
         <script>copyright("all"); </script>
 
         <script>
-            var data;
-            const authors = document.querySelectorAll(".showauthor");
+
             const texts = document.querySelectorAll(".showquote");
-            const authorFront = authors[0];
             const textFront = texts[0];
+            const authors = document.querySelectorAll(".showauthor");
+            const authorFront = authors[0];
             // An arrow function used to get a quote randomly
             const displayQuote = async () => {
                 let index = await Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
@@ -181,11 +181,7 @@
                 .then((response) => response.json())
                 .then(function (json) { this.data = json; displayQuote(); });
         </script>
-        <script>
-            fetch('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js')
-                .then((response) => response.json())
-                .then(function (hlj) { console.log(hlj); hlj[0].highlightAll(); });
-        </script>
+
         <script>
             /*            var data;
                         let front = true;
