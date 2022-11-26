@@ -369,7 +369,7 @@ function gen_blockquote() {
             .then((response) => response.json())
             .then(data => { return data; });
 
-        let index = Math.floor(Math.random() * sun); // Generates a random number between 0 and the length of the dataset
+        let index = Math.floor(Math.random() * data.length); // Generates a random number between 0 and the length of the dataset
         let quote = data[index].text;
         author = data[index].author;
         if (!author) { author = "Anonymous"; }
