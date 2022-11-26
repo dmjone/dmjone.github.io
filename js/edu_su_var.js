@@ -27,7 +27,7 @@ header_createscript("https://www.googletagmanager.com/gtag/js?id=G-D8EG8249SV");
 var temp_logo_min = "https://dmj.one/images/common/logo-min.png?v=2";
 var temp_logo = "https://dmj.one/images/common/logo.png";
 
-header_createlink("manifest", "/site.webmanifest");
+header_createlink("manifest", "/edu/su/site.webmanifest");
 header_createlink("shortcut icon", temp_logo_min);
 header_createlink("fluid-icon", temp_logo_min);
 header_createlink("apple-touch-icon", temp_logo_min);
