@@ -15,7 +15,7 @@ function header_nav() {
     var url = new URL(window.location.href);
     var base = "/edu/su/";
     var courses = base + "courses/";
-    var nav_folder = courses + url.pathname.split("/")[4];
+    if (url.pathname.split("/")[4]) { var nav_folder = courses + url.pathname.split("/")[4]; }
     var nav_subfolder = url.pathname.split("/")[5];
     var nav_filename = url.pathname.substring(url.pathname.lastIndexOf('/') + 1);
 
