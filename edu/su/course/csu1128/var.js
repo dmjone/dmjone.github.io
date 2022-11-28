@@ -250,13 +250,13 @@ function get_menu_list() {
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 28:
-                    date = "Thu September 27, 2022";
-                    desc = "N/A";
+                    date = "Mon November 21, 2022";
+                    desc = "Program to find the maximum number from the numbers stored in an array entered by the user.";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 29:
-                    date = "Thu September 27, 2022";
-                    desc = "N/A";
+                    date = "Mon November 21, 2022";
+                    desc = "Program to demonstrate the nested for loop by printing a right angled triangle.";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 30:
