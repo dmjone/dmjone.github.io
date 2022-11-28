@@ -9,9 +9,9 @@
         <script src="/js/edu_su_var.js"></script>
         <script src="/js/edu_su_common.js"></script>
 
-        <title>Program 27 - CSU1128 - CSE 2026 - Shoolini University</title>
+        <title>Program 29 - CSU1128 - CSE 2026 - Shoolini University</title>
         <meta name="description"
-            content="Program to print the power of the two numbers entered by the user. (Example: 2 3) = 2 to the power 3 = 8">
+            content="Program to demonstrate the nested for loop by printing a right angled triangle.">
 
         <meta property="og:image" content="/logo.png">
         <meta property="og:type" content="article">
@@ -33,8 +33,7 @@
         <main>
             <article>
                 <h2>
-                    Program to print the power of the two numbers entered by the user. (Example: 2 3) = 2 to the power 3
-                    = 8
+                    Program to demonstrate the nested for loop by printing a right angled triangle.
                 </h2>
             </article>
             <article></article>
@@ -57,19 +56,27 @@
  * */
 
 #include &lt;stdio.h&gt;
-#include &lt;math.h&gt;
 int main()
 {
-    long double d, m;
-    printf("\n\n Program to print the power of the two numbers entered by the user. (Example: 2 3) = 2 to the power 3 = 8\n\n");
+    int d, m, j;
 
-    printf("Enter a number and its power for which you want to print x raised to the power y (Example: 3 6) - and press enter: ");
-    scanf("%Lf %Lf", &d, &m);
-    printf("\n Power for the entered number %.1Lf to the power %.1Lf is: %.1Lf", d, m, pow(d, m));
+    printf("\n\n Program to demonstrate the nested for loop by printing a right angled triangle. \n\n");
 
-    printf("\n");
+    printf("Enter total number of times you want the loop to repeat - (Example: 5) - and press enter: ");
+    scanf("%d", &d);
+
+    for (m = 1; m <= d; m++)
+    {
+        for (j = 1; j <= m; j++)
+        {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    printf("\n\n");
     return 0;
-}                    </code>
+}
+                    </code>
                 </pre>
             </article>
 
@@ -78,13 +85,15 @@ int main()
                     Output:
                 </h3>
                 <p class="codeoutput text-justify">
-                    Program to print the power of the two numbers entered by the user. (Example: 2 3) = 2 to the power 3
-                    = 8
+                    Program to demonstrate the nested for loop by printing a right angled triangle.
                 </p>
                 <p class="codeoutput text-justify">
-                    Enter a number and its power for which you want to print x raised to the power y (Example: 3 6) -
-                    and press enter: 3 7<br>
-                    &emsp;Power for the entered number 3 to the power 7 is: 2187.0
+                    Enter total number of times you want the loop to repeat - (Example: 5) - and press enter: 5<br>
+                    1<br>
+                    1 2<br>
+                    1 2 3<br>
+                    1 2 3 4<br>
+                    1 2 3 4 5<br>
                 </p>
             </article>
         </main>
