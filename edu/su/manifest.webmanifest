@@ -35,22 +35,27 @@
     ],
     "icons": [
         {
-            "src": "/img/manifest/icon-192x192.png",
-            "sizes": "192x192",
+            "src": "/img/manifest/logo_round_64.png",
+            "sizes": "64x64",
             "type": "image/png"
         },
         {
-            "src": "/img/manifest/icon-256x256.png",
+            "src": "/img/manifest/logo_round_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/manifest/logo_round_256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/img/manifest/icon-384x384.png",
-            "sizes": "384x384",
+            "src": "/img/manifest/logo_round_512.png",
+            "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "/img/manifest/icon-512x512.png",
+            "src": "/img/manifest/logo_square_512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
