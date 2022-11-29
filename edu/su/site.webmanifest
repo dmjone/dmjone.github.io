@@ -2,7 +2,7 @@
     "theme_color": "#fafafa",
     "background_color": "#fafafa",
     "display": "minimal-ui",
-    "scope": "/",
+    "scope": "/edu/su/",
     "start_url": "/edu/su/",
     "name": "dmj.one",
     "short_name": "A Sholinian, dmj.one",
@@ -27,7 +27,7 @@
             "src": "/img/manifest/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
-			"purpose": "any"
+            "purpose": "any"
         }
     ]
 }
