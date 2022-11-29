@@ -4,9 +4,18 @@
     "display": "minimal-ui",
     "scope": "/edu/su/",
     "start_url": "/edu/su/",
+    "orientation": "portrait",
     "name": "dmj.one",
     "short_name": "A Sholinian, dmj.one",
     "description": "An educational initiative by dmj.one in the subject of Computer Science at graduation level.",
+    "categories": [
+        "books",
+        "education",
+        "lifestyle",
+        "magazines",
+        "productivity",
+        "utilities"
+    ],
     "icons": [
         {
             "src": "/img/manifest/icon-192x192.png",
