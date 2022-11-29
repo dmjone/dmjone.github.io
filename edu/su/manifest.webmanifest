@@ -38,5 +38,17 @@
             "type": "image/png",
             "purpose": "any"
         }
+    ],
+    "screenshots": [
+        {
+            "src": "/img/manifest/screenshot.png",
+            "sizes": "1319x780",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/manifest/screenshot_portrait.png",
+            "sizes": "200x561",
+            "type": "image/png"
+        }
     ]
 }
