@@ -24,13 +24,12 @@ header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/
 header_createscript("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9436488945721774");
 header_createscript("https://www.googletagmanager.com/gtag/js?id=G-D8EG8249SV");
 
-var temp_logo_min = "/logo.png?v=2.1";
-var temp_logo = "/logo.png";
+var temp_logo = "/logo.png?v=2.2";
 
 header_createlink("manifest", "/edu/su/manifest.webmanifest");
-header_createlink("shortcut icon", temp_logo_min);
-header_createlink("fluid-icon", temp_logo_min);
-header_createlink("apple-touch-icon", temp_logo_min);
+header_createlink("shortcut icon", temp_logo);
+header_createlink("fluid-icon", temp_logo);
+header_createlink("apple-touch-icon", temp_logo);
 header_createlink("stylesheet", "/css/edu_su_common.css?v=0.1");
 
 document.write("<script>window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments); }gtag('js', new Date());gtag('config', 'G-D8EG8249SV');</script>");
