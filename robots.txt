@@ -3,6 +3,7 @@
 
 User-agent: *
 Disallow: /doc/
+Disallow: /development/
 Disallow: /.github/
 Allow: /
 
