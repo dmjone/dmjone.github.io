@@ -24,8 +24,8 @@ header_createscript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/
 header_createscript("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9436488945721774");
 header_createscript("https://www.googletagmanager.com/gtag/js?id=G-D8EG8249SV");
 
-var temp_logo_min = "https://dmj.one/images/common/logo-min.png?v=2";
-var temp_logo = "https://dmj.one/images/common/logo.png";
+var temp_logo_min = "/logo_min.png?v=2";
+var temp_logo = "/logo.png";
 
 header_createlink("manifest", "/edu/su/manifest.webmanifest");
 header_createlink("shortcut icon", temp_logo_min);
