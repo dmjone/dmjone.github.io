@@ -277,8 +277,8 @@ function get_menu_list() {
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 33:
-                    date = "Mon November 21, 2022";
-                    desc = "Edit";
+                    date = "Wed November 23, 2022";
+                    desc = "";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 34:
