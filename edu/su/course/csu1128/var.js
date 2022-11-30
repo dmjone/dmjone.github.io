@@ -271,8 +271,9 @@ function get_menu_list() {
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 32:
-                    date = "Thu September 27, 2022";
-                    desc = "To print a loop which prints a triangle in top down order.";
+                    date = "Wed November 30, 2022";
+                    author = "vp";
+                    desc = "Program to print the rhombus of numbers of the range entered by the user. Example 3 = 3 2 1 2 3";
                     body_blockcards(link, date, title, desc, codetype, readtime, author);
                     break;
                 case 33:
