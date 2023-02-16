@@ -35,8 +35,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
-          path: '.'
+          # Upload entire repository - Uncomment as necessary 
+          # path: '.' # When host is down or testing purpose, use this
+          path: 'redirect' # redirect folder path - If users visit dmjone.github.io, they will be redirected to host dmj.one
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
