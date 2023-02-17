@@ -1,6 +1,7 @@
 [![CodeQL](https://github.com/dmjone/dmjone.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/dmjone/dmjone.github.io/actions/workflows/codeql.yml) | [![Deploy static content to Pages](https://github.com/dmjone/dmjone.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/dmjone/dmjone.github.io/actions/workflows/pages.yml) | [![Dependency Review](https://github.com/dmjone/dmjone.github.io/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/dmjone/dmjone.github.io/actions/workflows/dependency-review.yml)
 
-Welcome to the educational initiative of [dmj.one](https://dmj.one)!
+# Welcome to the educational initiative of [dmj.one](https://dmj.one)!
+
 🎓 Are you a student studying computer science and engineering? Or maybe a teacher or industry expert who wants to share their knowledge with the next generation? We invite you to join our community and contribute to our educational content!
 
 🌟 Our mission is to provide high-quality educational resources to students and teachers alike. The world is moving at an incredible pace, and we believe that education is the key to unlocking its full potential. By sharing knowledge, we empower individuals to achieve great things and make a positive impact on the world.
