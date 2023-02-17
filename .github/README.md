@@ -14,4 +14,5 @@
 
 🌎 We believe that education has the power to change the world. By sharing our knowledge and working together, we can create a better future for everyone. Join our community and let's make a difference, together.
 
+***
 &copy; 2022, dmj.one
