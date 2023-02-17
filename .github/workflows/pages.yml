@@ -38,8 +38,6 @@ jobs:
           # Upload entire repository - Uncomment as necessary 
           # path: '.' # When host is down or testing purpose, use this
           path: '.github' # redirect folder path - If users visit dmjone.github.io, they will be redirected to host dmj.one
-      - name: Cache
-        uses: actions/cache@v3.2.5
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
