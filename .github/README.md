@@ -1,3 +1,5 @@
+# Repository moved and merged at [dmjone](https://github.com/dmjone/dmjone)
+
 [![CodeQL](https://github.com/dmjone/dmjone.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/dmjone/dmjone.github.io/actions/workflows/codeql.yml) | [![Deploy static content to Pages](https://github.com/dmjone/dmjone.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/dmjone/dmjone.github.io/actions/workflows/pages.yml) | [![Dependency Review](https://github.com/dmjone/dmjone.github.io/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/dmjone/dmjone.github.io/actions/workflows/dependency-review.yml)
 
 # Welcome to the educational initiative of [dmj.one](https://dmj.one)!
